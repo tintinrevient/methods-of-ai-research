@@ -1,6 +1,6 @@
 import os, json
 
-path = '/Users/zhaoshu/Documents/courses/Methods_of_AI_Research/project-1/dstc2_traindev/data'
+path = '/Users/zhaoshu/Documents/courses/Methods_of_AI_Research/lab-assignments/part-1a/dstc2_traindev/data'
 
 logs = []
 labels = []
@@ -22,4 +22,3 @@ for i in range(0, logs.__len__()):
 
     print()
     not input("Press enter to continue")
-
