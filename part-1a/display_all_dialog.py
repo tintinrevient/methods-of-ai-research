@@ -14,8 +14,12 @@ for r, d, f in os.walk(path):
 
 for i in range(0, logs.__len__()):
     log = json.loads(open(logs[i]).read())
-    print("system: ", log["turns"])
     label = json.loads(open(labels[i]).read())
-    print("user: ", label["turns"])
 
+    for j in range(len(log["turns"])):
+         print("System: ", log["turns"][j]["output"]["transcript"])
+         print("User: ", label["turns"][j]["transcription"])
+
+    print()
+    not input("Press enter to continue")
 
