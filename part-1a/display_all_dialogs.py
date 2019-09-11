@@ -12,7 +12,7 @@ for r, d, f in os.walk(path):
         if 'label.json' in file:
             labels.append(os.path.join(r, file))
 
-for i in range(logs.__len__()):
+for i in range(len(logs)):
     log = json.loads(open(logs[i]).read())
     label = json.loads(open(labels[i]).read())
 
