@@ -12,9 +12,9 @@ for r, d, f in os.walk(path):
         if 'label.json' in file:
             labels.append(os.path.join(r, file))
 
-f= open("/Users/zhaoshu/Documents/courses/Methods_of_AI_Research/lab-assignments/part-1a/dialogs.txt","w+")
+f = open("/Users/zhaoshu/Documents/courses/Methods_of_AI_Research/lab-assignments/part-1a/dialogs.txt","w+")
 
-for i in range(0, logs.__len__()):
+for i in range(logs.__len__()):
     log = json.loads(open(logs[i]).read())
     label = json.loads(open(labels[i]).read())
 
