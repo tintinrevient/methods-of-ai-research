@@ -1,23 +1,28 @@
 def keywordMatching(utterance):
 
-    keyword = ["bye", "dont", "thank", "what", "looking"]
     inform_keywords = ["looking", "want"]
+    bye_keywords = ["bye"]
+    thank_keywords = ["thank"]
+    request_keywords = ["what"]
+    deny_keywords = ["dont"]
 
-    if keyword[0] in utterance:
+    utterance = utterance.split(" ", 1)
+
+    if len(set(bye_keywords).intersection(utterance)) >= 1:
         dialog_act = "bye"
-    elif keyword[1] in utterance:
+    elif len(set(deny_keywords).intersection(utterance)) >= 1:
         dialog_act = "deny"
-    elif keyword[2] in utterance:
+    elif len(set(thank_keywords).intersection(utterance)) >= 1:
         dialog_act = "thankyou"
-    elif keyword[3] in utterance:
+    elif len(set(request_keywords).intersection(utterance)) >= 1:
         dialog_act = "request"
-    elif keyword[4] in utterance:
+    elif len(set(inform_keywords).intersection(utterance)) >= 1:
         dialog_act = "inform"
     else:
         dialog_act = "noise"
 
     return dialog_act
 
-sentence = " the post code"
+sentence = "what is the post code"
 
 print(keywordMatching(sentence))
