@@ -1,0 +1,965 @@
+(affirm) yea
+(affirm) right
+(affirm) yes
+(affirm) yes indian food
+(affirm) yes
+(affirm) yes i would like to know the address
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) correct
+(affirm) yes
+(affirm) yes address
+(affirm) ye
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) right
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes expensive
+(affirm) uh yes im looking for malaysian food
+(affirm) ye
+(affirm) right
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) right
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes barbecue food
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) right
+(affirm) yes
+(affirm) yes
+(affirm) uh yes i need the north part of town
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) correct
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) right
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yea
+(affirm) yes
+(affirm) yes
+(affirm) yes korean food
+(affirm) right
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes in the south of town
+(affirm) yes
+(affirm) uh yes im looking for an expensive restaurant and it should be in the east part of town
+(affirm) right
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) right
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) right
+(affirm) yea
+(affirm) yes
+(affirm) yes could you recommend me a place that serves british food in a moderate price range
+(affirm) yea
+(affirm) yes
+(affirm) right
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) uh yes turkish food
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) correct
+(affirm) yea
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) uh yeah can i find a restaurant in the south part of town serving turkish food
+(affirm) yes id like an expensive restaurant in the east part of town
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) correct
+(affirm) yes
+(affirm) yes serving chinese food
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes id like hungarian food in the south part of town
+(affirm) yes
+(affirm) yes
+(affirm) yeah
+(affirm) yea
+(affirm) right
+(affirm) yes
+(affirm) uh yes im looking for a belgian restaurant in new york city
+(affirm) yes
+(affirm) yes moderately priced
+(affirm) breath correct
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes im looking for a restaurant in the north part of town
+(affirm) right
+(affirm) yes that serves british food
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) right
+(affirm) yes
+(affirm) right
+(affirm) yes
+(affirm) yes
+(affirm) yeah do you have thai food
+(affirm) yes
+(affirm) correct
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yea
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes and it needs to be moderately priced
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) correct
+(affirm) uh yes im looking for a restaurant that serves afghan food
+(affirm) yes
+(affirm) yes
+(affirm) yea
+(affirm) yes
+(affirm) yes im looking for english food
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) uh yes id like a restaurant in the west part of town and it should serve christmas food
+(affirm) yes right
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) correct
+(affirm) yes
+(affirm) yes
+(affirm) yes moderate priced
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) uh huh
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) uh yes im looking for a restaurant in the center that serves lebanese food
+(affirm) yes
+(affirm) right
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) right
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yeah
+(affirm) right east part of town
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes that serves chinese food
+(affirm) right
+(affirm) yes in the east part of town
+(affirm) yea
+(affirm) right
+(affirm) yes
+(affirm) yes
+(affirm) right
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes hi im looking for a restaurant in the north
+(affirm) yes
+(affirm) right
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yea whats the address
+(affirm) yes
+(affirm) yes
+(affirm) yes cheap spanish restaurant
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes can i have a vegetarian restaurant in the east part of town
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) uh yes i am looking for an expensive restaurant in the south part of
+(affirm) um yes
+(affirm) yes
+(affirm) yes id like a moderately priced restaurant
+(affirm) yes
+(affirm) correct
+(affirm) yes
+(affirm) yes
+(affirm) yes im looking for a restaurant in the north part of town
+(affirm) yes
+(affirm) yes
+(affirm) yeah im looking for a cheap restaurant
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) right
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yeah
+(affirm) right
+(affirm) yes spanish restaurant
+(affirm) yes
+(affirm) right
+(affirm) yeah im looking for a moderately priced restaurant
+(affirm) yes
+(affirm) ye
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes cheap restaurant
+(affirm) yes italian food
+(affirm) right
+(affirm) yes
+(affirm) yea
+(affirm) yes
+(affirm) right
+(affirm) yea in the east part of town
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) correct
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) right
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yeah
+(affirm) yes
+(affirm) yes
+(affirm) right
+(affirm) yea
+(affirm) yes
+(affirm) right
+(affirm) yes
+(affirm) yes
+(affirm) right
+(affirm) yes can i have a moderate priced restaurant
+(affirm) yes
+(affirm) yea
+(affirm) yes
+(affirm) yes
+(affirm) yes the address
+(affirm) yes indian food
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) right
+(affirm) yes part of town
+(affirm) yes
+(affirm) correct
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes west part of town
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) right
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yea
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) right
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) ah yes can i get ah expensive restaurant in the south part of town
+(affirm) perfect
+(affirm) ye
+(affirm) yes i want the phone number
+(affirm) yes in the moderately priced
+(affirm) yes
+(affirm) yes
+(affirm) yes iam looking for a cheap restaurant in the south part of town
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) uh yes can i find a restaurant in the east part of town that serves chinese
+(affirm) correct
+(affirm) yes
+(affirm) right
+(affirm) yeah
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) right
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes yes
+(affirm) yes fusion
+(affirm) yes
+(affirm) uh yes an expensive restaurant
+(affirm) yes
+(affirm) okay and they serve portuguese food correct
+(affirm) yes
+(affirm) yes spanish food
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) uh yes im looking for a restaurant in any area that serves thai food
+(affirm) yes
+(affirm) yes
+(affirm) yeah im looking for a restaurant serving kosher food
+(affirm) yes that serves korean food
+(affirm) yeah im looking for a restaurant in the south part of town that serves international food
+(affirm) yes
+(affirm) yeah
+(affirm) yes
+(affirm) yes
+(affirm) yeah
+(affirm) yes
+(affirm) yea
+(affirm) yes
+(affirm) yes
+(affirm) yeah
+(affirm) right
+(affirm) yes
+(affirm) yes
+(affirm) yes cheap
+(affirm) yes serving cuban food
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) uh yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yeah
+(affirm) yes
+(affirm) right
+(affirm) correct
+(affirm) yes in the west part of town
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yeah im looking for food cheap restaurant
+(affirm) yes an expensive restaurant serving african food
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yeah
+(affirm) yes
+(affirm) ye
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes can i have can i get swedish food in any area
+(affirm) yes
+(affirm) yes
+(affirm) yes and i dont care about the price range
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) ah yes im looking for persian food though
+(affirm) yes danish food
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) noise yes
+(affirm) breath yes id like a moderately priced restaurant that serves thai food
+(affirm) yes
+(affirm) oh god uh yes mediterranean food
+(affirm) yes
+(affirm) yea
+(affirm) yeah i need um um m
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yea
+(affirm) yes
+(affirm) yeah a cheap restaurant serving international food
+(affirm) yes
+(affirm) yes
+(affirm) correct
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes in the west part of town
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) right
+(affirm) yes
+(affirm) yes
+(affirm) ye
+(affirm) right
+(affirm) yes
+(affirm) yes
+(affirm) yes in the north part of town
+(affirm) yes
+(affirm) uh yes can i find a moderately priced restaurant and it serve it should serve brazilian food
+(affirm) yes
+(affirm) yes
+(affirm) in the center yes
+(affirm) right
+(affirm) unintelligible yeah what about thai food
+(affirm) ye
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) right
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yeah
+(affirm) yes
+(affirm) breath yes id like a moderately priced restaurant that serves thai food
+(affirm) yes
+(affirm) yes barbecue food
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes id like to find a cheap
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes that serves corsica food
+(affirm) yes
+(affirm) right
+(affirm) yes
+(affirm) yes
+(affirm) yea
+(affirm) right
+(affirm) yes
+(affirm) yes
+(affirm) yes i am currently in the north part of town and im looking to see if theres any restaurant that serves brazilian food
+(affirm) right
+(affirm) mmhm
+(affirm) right
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes yea
+(affirm) yeah
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes id like a restaurant in the east part of town that serves indian food
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yea
+(affirm) yes im looking for a
+(affirm) yes im looking for barbecue food
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yea i want indian food
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes knocking
+(affirm) yes im looking for an expensive restaurant and it should serve
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes i am in the east part of town right now and i am looking for any place that serves indonesian food
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) ok yeah
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) right
+(affirm) yes
+(affirm) yes mexican food
+(affirm) right
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) correct
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) correct
+(affirm) yes
+(affirm) yeah
+(affirm) im looking yes a restaurant in the east of town
+(affirm) yes
+(affirm) ye
+(affirm) yes
+(affirm) uh yes a cheap restaurant
+(affirm) right
+(affirm) right
+(affirm) yeah
+(affirm) yes
+(affirm) right
+(affirm) right
+(affirm) yes
+(affirm) correct
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) correct
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) thats correct gastropub food
+(affirm) yes
+(affirm) yes
+(affirm) yes korean food
+(affirm) yes id like an expensive restaurant in the east part of town
+(affirm) yes
+(affirm) yea thank you good bye
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) thats correct
+(affirm) yes
+(affirm) uh yes can i find a cheap restaurant in the north part of town
+(affirm) yes
+(affirm) yes
+(affirm) uh yes can i find an expensive restaurant that serves italian food
+(affirm) yeah
+(affirm) yeah
+(affirm) yes
+(affirm) yea
+(affirm) yes
+(affirm) yes in the west part of town
+(affirm) uh yes i want to find a restaurant in the north part of town that serves
+(affirm) yes
+(affirm) yes
+(affirm) uh yes i would like a restaurant in the center and it should serve jamaica
+(affirm) yes
+(affirm) ye
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes can i get an expensive restaurant in the south part of town
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) right
+(affirm) ah yes im looking for persian food and i dont care about the pri
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) right
+(affirm) yes can i have malaysian food
+(affirm) right
+(affirm) yes
+(affirm) ye
+(affirm) yes
+(affirm) yes
+(affirm) yeah
+(affirm) yes
+(affirm) ye
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) ah yes
+(affirm) right in the south side of town though
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yeah
+(affirm) uh yes can i get the address
+(affirm) yes
+(affirm) yes african food
+(affirm) yes
+(affirm) yes in the cheap price range
+(affirm) yes
+(affirm) right
+(affirm) yes in the north part of town
+(affirm) yes
+(affirm) yes indian food
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) right
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) uh yeah im looking for a restaurant in the south part of town and that serves kosher food
+(affirm) yes in the south part of town
+(affirm) yes
+(affirm) yea
+(affirm) yes
+(affirm) uh yes international food please
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) ye
+(affirm) ye
+(affirm) uh yes im looking for a restaurant that serves chinese food
+(affirm) yes
+(affirm) yeah can i um
+(affirm) yes
+(affirm) right
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) right
+(affirm) yes
+(affirm) yea
+(affirm) yes
+(affirm) yes
+(affirm) uh yes can i get a cheap restaurant in the west part of town
+(affirm) yes
+(affirm) yea
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yea
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) ye
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes it should be in the east part of town
+(affirm) yea the area
+(affirm) ah yes that serves french food
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yea
+(affirm) yes
+(affirm) yes
+(affirm) yes south part of town
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes can i have restaurants serving
+(affirm) yes
+(affirm) yes
+(affirm) yes in the west part of town
+(affirm) yes
+(affirm) uh yes can i have expensive restaurant that serves thai food
+(affirm) yes
+(affirm) yes
+(affirm) yes creative food
+(affirm) right
+(affirm) yeah
+(affirm) yea
+(affirm) yea
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) correct
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) correct
+(affirm) yes
+(affirm) yes
+(affirm) yes italian food
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) ye
+(affirm) right
+(affirm) uh yes im looking for an expensive restaurant that serves korean food
+(affirm) yes can i have
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes cheap restaurant
+(affirm) yes
+(affirm) yea
+(affirm) yes could i have
+(affirm) yea in the west part of town
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes a moderately priced restaurant
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yeah i need to find
+(affirm) yes can i have an expensive restaurant
+(affirm) yes
+(affirm) right
+(affirm) yes
+(affirm) right
+(affirm) yes
+(affirm) yes i would like portuguese food
+(affirm) right
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yea
+(affirm) yea
+(affirm) yes
+(affirm) uh yes
+(affirm) right
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes id like to find a cheap restaurant in the north part of town
+(affirm) yes
+(affirm) yes
+(affirm) yea im wondering if theres a steak house restaurant in the north part of
+(affirm) right
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) uh yes iam looking for a british type of food restaurant
+(affirm) yes
+(affirm) yes
+(affirm) yes
+(affirm) right

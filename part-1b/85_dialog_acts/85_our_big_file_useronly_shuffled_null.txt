@@ -1,0 +1,1372 @@
+(null) breathing
+(null) unintelligible
+(null) cough
+(null) unintelligible
+(null) noise
+(null) noise
+(null) sil
+(null) not sure
+(null) hello welcome to the cambridge system
+(null) unintelligible
+(null) modern europene
+(null) noise
+(null) okay
+(null) sil
+(null) unintelligible
+(null) unintelligible
+(null) sil
+(null) noise
+(null) range please
+(null) id like a
+(null) okay
+(null) cannabis
+(null) cough
+(null) noise
+(null) unintelligible
+(null) sil
+(null) sil
+(null) noise
+(null) serving in
+(null) sil
+(null) noise
+(null) sil
+(null) sil
+(null) noise
+(null) okay
+(null) sil
+(null) sil
+(null) that serves unintelligible
+(null) sil
+(null) noise
+(null) unintelligible
+(null) noise
+(null) unintelligible
+(null) noise
+(null) noise
+(null) noise
+(null) please
+(null) noise
+(null) breathing
+(null) serve
+(null) type
+(null) noise
+(null) sil
+(null) cough
+(null) sil
+(null) that serves unintelligible
+(null) unintelligible
+(null) noise
+(null) im looking
+(null) i dont
+(null) s
+(null) what is the
+(null) uh what is the
+(null) unintelligible
+(null) ad
+(null) unintelligible
+(null) sil
+(null) i would like
+(null) i need
+(null) sil
+(null) of the venue
+(null) system
+(null) sil
+(null) would you like something
+(null) noise
+(null) town
+(null) um
+(null) noise
+(null) unintelligible
+(null) im sorry
+(null) sil
+(null) sil
+(null) sil
+(null) unintelligible
+(null) okay
+(null) unintelligible
+(null) priced
+(null) unintelligible
+(null) previews
+(null) noise
+(null) cough
+(null) worthless system
+(null) sil
+(null) unintelligible
+(null) noise
+(null) uh
+(null) sil
+(null) noise
+(null) unintelligible
+(null) sil
+(null) noise
+(null) okay
+(null) unintelligible
+(null) okay
+(null) noise
+(null) finished
+(null) unintelligible
+(null) noise
+(null) noise
+(null) sil
+(null) um
+(null) okay
+(null) noise
+(null) system
+(null) unintelligible
+(null) sil
+(null) okay can i
+(null) cough
+(null) sil
+(null) noise
+(null) um how about
+(null) sil
+(null) expe
+(null) noise
+(null) sil
+(null) cough
+(null) sil
+(null) unintelligible
+(null) suggestion
+(null) what is one of them
+(null) noise
+(null) i need
+(null) sil
+(null) sil
+(null) okay
+(null) tv_noise
+(null) unintelligible
+(null) unintelligible
+(null) um
+(null) noise
+(null) sil
+(null) type
+(null) inaudible
+(null) sil
+(null) unintelligible
+(null) i need
+(null) noise
+(null) unintelligible
+(null) unintelligible
+(null) unintelligible
+(null) unintelligible
+(null) sil
+(null) unintelligible
+(null) noise
+(null) im sorry
+(null) um i want
+(null) noise
+(null) unintelligible
+(null) is there one serving
+(null) sil
+(null) noise
+(null) unintelligible
+(null) noise
+(null) noise
+(null) sil
+(null) sil
+(null) noise
+(null) unintelligible
+(null) um
+(null) sil
+(null) sil
+(null) cough
+(null) sil
+(null) noise
+(null) now
+(null) unintelligible
+(null) noise
+(null) unintelligible
+(null) sil
+(null) noise
+(null) cough
+(null) nosie
+(null) noise
+(null) sil
+(null) sil
+(null) okay
+(null) system
+(null) what about unintelligible food restaurants
+(null) noise
+(null) um what
+(null) care
+(null) noise
+(null) noise
+(null) sil
+(null) okay
+(null) first one
+(null) system
+(null) cough
+(null) noise
+(null) unintelligible
+(null) unintelligible
+(null) noise
+(null) pizza
+(null) sil
+(null) noise
+(null) okay
+(null) system
+(null) sil
+(null) noise
+(null) noise
+(null) unintelligible
+(null) noise
+(null) unintelligible
+(null) none
+(null) i need the nor
+(null) alright
+(null) sil
+(null) unintelligible
+(null) noise
+(null) noise
+(null) im looking
+(null) noise
+(null) pizza
+(null) sil
+(null) sil
+(null) sil
+(null) is
+(null) breathing
+(null) you have a shitty system
+(null) unintelligible
+(null) both
+(null) unintelligible
+(null) noise
+(null) unintelligible
+(null) what
+(null) um
+(null) unintelligible
+(null) static
+(null) sil
+(null) noise
+(null) noise
+(null) unintelligible
+(null) i dont
+(null) post
+(null) noise
+(null) unintelligible
+(null) noise
+(null) now
+(null) sil
+(null) noise
+(null) sil
+(null) sil
+(null) sil
+(null) okay
+(null) whats the other one
+(null) noise
+(null) i dont want pizza
+(null) im looking
+(null) noise
+(null) unintelligible
+(null) what about
+(null) sil
+(null) noise
+(null) nothing
+(null) system
+(null) noise
+(null) noise
+(null) unintelligible
+(null) and
+(null) background_speech
+(null) serving
+(null) noise
+(null) unintelligible
+(null) sil
+(null) sil
+(null) on the rest and the
+(null) unintelligible
+(null) sil
+(null) sil
+(null) oh my god
+(null) noise
+(null) okay
+(null) sil
+(null) noise
+(null) sil
+(null) sil
+(null) noise
+(null) unintelligible
+(null) sil
+(null) noise
+(null) uh
+(null) sil
+(null) laughing
+(null) how about unintelligible
+(null) sil
+(null) do they serve
+(null) noise
+(null) sil
+(null) sil
+(null) unintelligible
+(null) noise
+(null) sil
+(null) noise
+(null) sil
+(null) sil
+(null) background_speech
+(null) unintelligible
+(null) unintelligible
+(null) im
+(null) sil
+(null) unintelligible
+(null) unintelligible
+(null) noise
+(null) noise
+(null) sil
+(null) uh continental
+(null) serves
+(null) unintelligible
+(null) dress
+(null) care
+(null) noise
+(null) sil
+(null) laughing
+(null) sil
+(null) sil
+(null) unintelligible
+(null) sil
+(null) sil
+(null) cough
+(null) unintelligible
+(null) noise
+(null) cough
+(null) unintelligible
+(null) sil
+(null) unintelligible
+(null) unintelligible
+(null) find
+(null) noise
+(null) sil
+(null) is there
+(null) sil
+(null) sil
+(null) sil
+(null) okay
+(null) unintelligible
+(null) what
+(null) cough
+(null) sil
+(null) unintelligible
+(null) unintelligible
+(null) sil
+(null) unintelligible
+(null) unintelligible
+(null) sil
+(null) sil
+(null) sil
+(null) sil
+(null) what is the
+(null) sil
+(null) what is the uh
+(null) inaudible
+(null) um
+(null) none
+(null) noise
+(null) sil
+(null) noise
+(null) unintelligible
+(null) unintelligible
+(null) im looking
+(null) unintelligible
+(null) can i get
+(null) what is it by
+(null) noise
+(null) can you hear me
+(null) noise
+(null) sil
+(null) inaudible
+(null) how about unintelligible
+(null) tape
+(null) nor
+(null) sil
+(null) appleton wisconsin
+(null) unintelligible
+(null) noise
+(null) sil
+(null) noise
+(null) noise
+(null) breathing
+(null) whats the code
+(null) unintelligible
+(null) noise
+(null) i want
+(null) sil
+(null) noise
+(null) sil
+(null) sil
+(null) noise
+(null) noise
+(null) range
+(null) unintelligible
+(null) noise
+(null) oh my god
+(null) 7:30
+(null) unintelligible
+(null) sil
+(null) noise
+(null) sil
+(null) sil
+(null) sil
+(null) noise
+(null) taiwanese
+(null) noise
+(null) unintelligible
+(null) unintelligible
+(null) incorrect
+(null) number
+(null) noise
+(null) laugh
+(null) noise
+(null) unintelligible
+(null) um that serves
+(null) noise
+(null) noise
+(null) show me the next
+(null) noise
+(null) unintelligible
+(null) unintelligible
+(null) modern europene
+(null) noise
+(null) breathing
+(null) unintelligible
+(null) noise
+(null) noise
+(null) i changed my mind
+(null) unintelligible
+(null) unintelligible
+(null) unintelligible
+(null) noise
+(null) noise
+(null) noise
+(null) noise
+(null) range
+(null) noise
+(null) breathing
+(null) is there
+(null) noise
+(null) i want
+(null) sil
+(null) sil
+(null) sil
+(null) unintelligible
+(null) what
+(null) noise
+(null) code
+(null) noise
+(null) medium
+(null) noise
+(null) sil
+(null) noise
+(null) sil
+(null) unintelligible
+(null) noise
+(null) noise
+(null) unintelligible
+(null) any thing else
+(null) sil
+(null) unintelligible
+(null) can i
+(null) how about uh
+(null) noise
+(null) sil
+(null) sil
+(null) inaudible
+(null) unintelligible
+(null) sil
+(null) sil
+(null) just a moment
+(null) what
+(null) cough
+(null) knocking
+(null) unintelligible
+(null) and
+(null) sil
+(null) how about
+(null) noise
+(null) unintelligible
+(null) unintelligible
+(null) noise
+(null) unintelligible
+(null) bad
+(null) static
+(null) unintelligible
+(null) sil
+(null) moder
+(null) sil
+(null) noise
+(null) did you hang up on me
+(null) unintelligible
+(null) oh boy
+(null) sil
+(null) unintelligible
+(null) um
+(null) noise
+(null) what about
+(null) and the
+(null) left
+(null) unintelligible
+(null) unintelligible
+(null) uh
+(null) sil
+(null) what is
+(null) noise
+(null) unintelligible
+(null) unintelligible
+(null) sil
+(null) croatia
+(null) unintelligible
+(null) sil
+(null) noise
+(null) okay
+(null) unintelligible
+(null) unintelligible
+(null) of the venue
+(null) noise
+(null) noise
+(null) noise
+(null) sil
+(null) noise
+(null) noise
+(null) sil
+(null) sil
+(null) unintelligible
+(null) um
+(null) sil
+(null) okay
+(null) unintelligible
+(null) cough
+(null) sil
+(null) sil
+(null) noise
+(null) can i get a
+(null) noise
+(null) sil
+(null) can you
+(null) unintelligible
+(null) unintelligible
+(null) cough
+(null) old
+(null) noise
+(null) sil
+(null) okay
+(null) sil
+(null) tell me number
+(null) inaudible
+(null) noise
+(null) noise
+(null) unintelligible
+(null) noise
+(null) sil
+(null) now
+(null) sil
+(null) how about
+(null) what
+(null) try again
+(null) noise
+(null) what do you recommend
+(null) sil
+(null) noise
+(null) sil
+(null) okay
+(null) give me the least
+(null) wait noise
+(null) sil
+(null) unintelligible
+(null) unintelligible
+(null) what about
+(null) um
+(null) unintelligible
+(null) sil
+(null) okay just regular ecuadorean food
+(null) sil
+(null) do uh
+(null) laughing
+(null) noise
+(null) noise
+(null) noise
+(null) how about one that serves
+(null) now
+(null) sil
+(null) noise
+(null) noise
+(null) um
+(null) noise
+(null) unintelligible
+(null) unintelligible
+(null) noise
+(null) noise
+(null) noise
+(null) noise
+(null) noise
+(null) sil
+(null) sil
+(null) how about
+(null) noise
+(null) unintelligible
+(null) and whats their
+(null) unintelligible
+(null) the addre
+(null) sil
+(null) unintelligible
+(null) unintelligible
+(null) sil
+(null) unintelligible
+(null) unintelligible
+(null) unintelligible
+(null) noise
+(null) unintelligible
+(null) sil
+(null) opean
+(null) sil
+(null) sil
+(null) thats fine
+(null) sil
+(null) static
+(null) unintelligible
+(null) in the
+(null) noise
+(null) unintelligible
+(null) sil
+(null) unintelligible
+(null) sil
+(null) new
+(null) unintelligible
+(null) noise
+(null) incorrect
+(null) noise
+(null) survey
+(null) uh
+(null) okay
+(null) sil
+(null) sil
+(null) may i
+(null) sil
+(null) sil
+(null) noise
+(null) looking for a place that serves whole worl
+(null) im looking
+(null) noise
+(null) what
+(null) what was
+(null) unintelligible
+(null) is there
+(null) sil
+(null) okay
+(null) noise
+(null) uh unintelligible
+(null) noise
+(null) noise
+(null) any thing else
+(null) sil
+(null) than
+(null) noise
+(null) noise
+(null) unintelligible
+(null) unintelligible
+(null) sil
+(null) unintelligible
+(null) okay and um
+(null) unintelligible
+(null) noise
+(null) sil
+(null) sil
+(null) are there any
+(null) noise
+(null) sil
+(null) noise
+(null) noise
+(null) um
+(null) um breath
+(null) i would like
+(null) unintelligible
+(null) noise
+(null) unintelligible
+(null) system
+(null) unintelligible
+(null) sil
+(null) noise
+(null) unintelligible
+(null) sil
+(null) sil
+(null) sil
+(null) what is available in the ar
+(null) sil
+(null) noise
+(null) noise
+(null) sil
+(null) okay
+(null) noise
+(null) unintelligible
+(null) okay is there
+(null) noise
+(null) unintelligible
+(null) noise
+(null) cough
+(null) noise
+(null) unintelligible
+(null) noise
+(null) sigh
+(null) sil
+(null) sil
+(null) noise
+(null) cough
+(null) so
+(null) noise
+(null) sil
+(null) unintelligible
+(null) unintelligible
+(null) or
+(null) sil
+(null) noise
+(null) noise
+(null) sil
+(null) sil
+(null) uh
+(null) noise
+(null) i want to ind
+(null) okay
+(null) sil
+(null) noise
+(null) noise
+(null) noise
+(null) serve
+(null) how about the
+(null) sil
+(null) sil
+(null) sil
+(null) type of foo
+(null) sil
+(null) sil
+(null) unintelligible
+(null) sea
+(null) noise
+(null) noise
+(null) sil
+(null) unintelligible
+(null) noise
+(null) unintelligible
+(null) what
+(null) in appleton wiscon
+(null) sil
+(null) sil
+(null) um
+(null) unintelligible
+(null) unintelligible
+(null) system
+(null) unintelligible
+(null) unintelligible
+(null) s
+(null) noise
+(null) unintelligible
+(null) unintelligible
+(null) what is the
+(null) noise
+(null) and ah
+(null) range that serves cana
+(null) unintelligible
+(null) sil
+(null) noise
+(null) sil
+(null) noise
+(null) noise
+(null) unintelligible
+(null) dress
+(null) unintelligible
+(null) unintelligible
+(null) sil
+(null) noise
+(null) tv_noise
+(null) noise
+(null) noise
+(null) noise
+(null) noise
+(null) noise
+(null) noise
+(null) cough
+(null) unintelligible
+(null) i
+(null) knocking
+(null) noise okay
+(null) sil
+(null) adress
+(null) whats the promo code
+(null) noise
+(null) noise
+(null) unintelligible
+(null) unintelligible
+(null) noise
+(null) unintelligible
+(null) noise
+(null) noise
+(null) um what
+(null) cough
+(null) blow
+(null) sil
+(null) sil
+(null) unintelligible
+(null) sil
+(null) unintelligible
+(null) um
+(null) noise
+(null) okay
+(null) sil
+(null) sil
+(null) what is the
+(null) noise
+(null) unintelligible
+(null) noise
+(null) cough
+(null) noise
+(null) unintelligible
+(null) i want to find a
+(null) medium
+(null) sil
+(null) aristrain
+(null) unintelligible
+(null) unintelligible
+(null) static
+(null) noise
+(null) noise
+(null) inaudible
+(null) breathing
+(null) done
+(null) noise
+(null) sil
+(null) gonville and caius college
+(null) was
+(null) sil
+(null) sil
+(null) i want to find
+(null) unintelligible
+(null) sil
+(null) sil
+(null) sil
+(null) unintelligible
+(null) i would like
+(null) unintelligible
+(null) how about unintelligible
+(null) noise
+(null) does do you know anyone who serves um
+(null) sil
+(null) noise
+(null) sil
+(null) unintelligible
+(null) sil
+(null) id like
+(null) the adra
+(null) there
+(null) sil
+(null) unintelligible
+(null) sil
+(null) how about
+(null) noise
+(null) inaudible
+(null) tv_noise
+(null) unintelligible
+(null) unintelligible
+(null) noise
+(null) system
+(null) unintelligible
+(null) sil
+(null) cough
+(null) unintelligible
+(null) dont
+(null) noise
+(null) chikkis
+(null) unintelligible
+(null) sil
+(null) noise
+(null) sil
+(null) unintelligible
+(null) noise
+(null) noise
+(null) noise
+(null) sil
+(null) unintelligible
+(null) sil
+(null) um hm
+(null) that serves
+(null) sil
+(null) sil
+(null) can
+(null) unintelligible
+(null) sil
+(null) noise
+(null) noise
+(null) whats the
+(null) noise
+(null) unintelligible
+(null) uh
+(null) sil
+(null) sil
+(null) unintelligible
+(null) how about
+(null) sil
+(null) freakin
+(null) sil
+(null) sil
+(null) unintelligible
+(null) unintelligible
+(null) sil
+(null) noise
+(null) noise
+(null) sil
+(null) noise
+(null) sil
+(null) cough
+(null) noise
+(null) how about
+(null) sil
+(null) popular
+(null) noise
+(null) unintelligible
+(null) unintelligible
+(null) sil
+(null) and the one before
+(null) noise
+(null) sil
+(null) noise
+(null) noise
+(null) unintelligible
+(null) noise
+(null) sil
+(null) noise
+(null) okay ital
+(null) unintelligible
+(null) sil
+(null) and can
+(null) cough
+(null) sil
+(null) unintelligible
+(null) adress
+(null) noise
+(null) cough
+(null) sil
+(null) sil
+(null) noise
+(null) noise
+(null) in the ea
+(null) okay
+(null) sil
+(null) noise
+(null) sil
+(null) noise
+(null) sil
+(null) noise
+(null) system
+(null) unintelligible
+(null) unintelligible
+(null) noise
+(null) noise
+(null) unintelligible
+(null) system
+(null) sil
+(null) wait
+(null) sil
+(null) noise
+(null) noise
+(null) um
+(null) noise
+(null) noise
+(null) i would like a
+(null) noise
+(null) sil
+(null) sil
+(null) how about
+(null) cough
+(null) noise
+(null) noise
+(null) fen ditton
+(null) noise
+(null) unintelligible
+(null) sil
+(null) sil
+(null) unintelligible
+(null) now
+(null) unintelligible
+(null) unintelligible
+(null) serving
+(null) noise
+(null) tv_noise
+(null) sil
+(null) sil
+(null) looking for a
+(null) noise
+(null) unintelligible
+(null) noise
+(null) noise
+(null) okay uh what about the other
+(null) sil
+(null) okay
+(null) noise
+(null) okay
+(null) cough
+(null) noise
+(null) okay
+(null) uh
+(null) sil
+(null) noise
+(null) inaudible
+(null) noise
+(null) sigh
+(null) noise
+(null) noise
+(null) sil
+(null) sil
+(null) breathing
+(null) unintelligible
+(null) unintelligible
+(null) noise
+(null) noise
+(null) noise
+(null) sil
+(null) inaudible
+(null) sil
+(null) noise
+(null) sil
+(null) sil
+(null) sil
+(null) cant
+(null) noise
+(null) unintelligible
+(null) inaudible
+(null) sil
+(null) sil
+(null) music
+(null) so
+(null) medium
+(null) sil
+(null) care
+(null) im looking
+(null) okay
+(null) noise
+(null) sil
+(null) the
+(null) cough
+(null) sil
+(null) sil
+(null) whats the unintelligible
+(null) is there
+(null) re
+(null) cough
+(null) sil
+(null) unintelligible
+(null) noise
+(null) noise
+(null) thats all
+(null) sil
+(null) sil
+(null) sil
+(null) and whats the postal code
+(null) noise
+(null) i want
+(null) noise
+(null) sil
+(null) unintelligent
+(null) noise
+(null) sil
+(null) unintelligible
+(null) unintelligible
+(null) unintelligible
+(null) sil
+(null) unintelligible
+(null) noise
+(null) unintelligible
+(null) sil
+(null) cough
+(null) noise
+(null) sil
+(null) unintelligible
+(null) unintelligible
+(null) unintelligible
+(null) unintelligible
+(null) pan
+(null) music
+(null) im looking
+(null) sil
+(null) noise
+(null) unintelligible
+(null) both
+(null) noise
+(null) okay ill be there one sec
+(null) sil
+(null) sil
+(null) noise
+(null) cannabis
+(null) sil
+(null) sil
+(null) unintelligible
+(null) and whats the other one
+(null) sil
+(null) sil
+(null) im loo
+(null) noise
+(null) noise
+(null) noise
+(null) unintelligible
+(null) cough
+(null) is there
+(null) unintelligible
+(null) noise
+(null) noise
+(null) okay
+(null) system
+(null) unintelligible
+(null) okay
+(null) okay um can i have the other
+(null) can i have an
+(null) sil
+(null) breathing
+(null) noise
+(null) noise
+(null) is there
+(null) sil
+(null) noise
+(null) sil
+(null) okay
+(null) cough
+(null) noise
+(null) sil
+(null) noise
+(null) noise
+(null) unintelligible
+(null) sil
+(null) what about us
+(null) unintelligible
+(null) unintelligible
+(null) sil
+(null) unintelligible
+(null) expen
+(null) sil
+(null) sil
+(null) system
+(null) okay
+(null) noise
+(null) sil
+(null) unintelligible
+(null) breathing
+(null) noise
+(null) unintelligible
+(null) can i
+(null) unintelligible
+(null) there
+(null) holy cow
+(null) unintelligible
+(null) system
+(null) sil
+(null) noise
+(null) sil
+(null) noise
+(null) unintelligible
+(null) noise
+(null) okay
+(null) usually
+(null) noise
+(null) noise
+(null) unintelligible
+(null) unintelligible
+(null) noise
+(null) unintelligible
+(null) just a moment
+(null) noise
+(null) unintelligible
+(null) sil
+(null) is there any
+(null) breathing
+(null) noise
+(null) incorrect
+(null) whats
+(null) that serves
+(null) sil
+(null) noise
+(null) okay how about
+(null) noise
+(null) noise
+(null) unintelligible
+(null) noise
+(null) unintelligible
+(null) unintelligible
+(null) noise
+(null) noise
+(null) hm
+(null) noise
+(null) tv_noise
+(null) noise
+(null) noise
+(null) noise
+(null) i would like
+(null) noise
+(null) sil
+(null) noise
+(null) unintelligible
+(null) noise
+(null) any thing else
+(null) unintelligible
+(null) system
+(null) system
+(null) okay
+(null) noise
+(null) unintelligible range
+(null) uh
+(null) unintelligible
+(null) noise
+(null) unintelligible
+(null) unintelligible
+(null) noise
+(null) sil
+(null) sil
+(null) viet
+(null) okay
+(null) that is all
+(null) sil
+(null) unintelligible
+(null) unintelligible
+(null) i know mia
+(null) unintelligible
+(null) noise
+(null) sil
+(null) sil
+(null) noise
+(null) unintelligible
+(null) noise
+(null) noise
+(null) unintelligible
+(null) noise
+(null) sil
+(null) okay
+(null) and
+(null) unintelligible
+(null) id like to find
+(null) noise
+(null) i am
+(null) uh have
+(null) noise
+(null) sil
+(null) noise
+(null) noise
+(null) sil
+(null) noise
+(null) sil
+(null) sil
+(null) town
+(null) sil
+(null) sil
+(null) unintelligible
+(null) breathing
+(null) noise
+(null) noise
+(null) noise
+(null) noise
+(null) unintelligible
+(null) duration
+(null) bout
+(null) sil
+(null) unintelligible
+(null) breathing
+(null) sil
+(null) sil
+(null) sil
+(null) noise
+(null) sigh
+(null) sil
+(null) sil
+(null) noise
+(null) sil
+(null) kish
+(null) type
+(null) sil
+(null) viet
+(null) adress
+(null) sil
+(null) sil
+(null) type
+(null) sil
+(null) unintelligible
+(null) sil
+(null) who is it by
+(null) static
+(null) whats the code
+(null) sil
+(null) noise
+(null) you tell me
+(null) noise
+(null) system saying hello welcome
+(null) for a
+(null) noise
+(null) noise
+(null) noise
+(null) pizza
+(null) noise
+(null) what
+(null) what
+(null) unintelligible
+(null) unintelligible
+(null) unintelligible
+(null) noise
+(null) uh i want to find
+(null) noise
+(null) prise me
+(null) sil
+(null) i want to find
+(null) yea id like a
+(null) sil
+(null) sil
+(null) unintelligible
+(null) sil
+(null) noise
+(null) sil
+(null) carrier
+(null) i want
+(null) sil
+(null) sil
+(null) noise
+(null) im sorry
+(null) noise
+(null) noise
+(null) noise
+(null) noise
+(null) unintelligible
+(null) sil
+(null) noise
+(null) unintelligible
+(null) noise
+(null) noise
+(null) sil
+(null) sil
+(null) unintelligible
+(null) i want
+(null) noise
+(null) sil
+(null) breathing
+(null) sil
+(null) noise
+(null) um hm
+(null) noise
+(null) noise
+(null) unintelligible
+(null) thats all i need
+(null) noise
+(null) noise
+(null) noise
+(null) care
+(null) sil
+(null) how about
+(null) noise
+(null) sil
+(null) sil
+(null) sil
+(null) sil
+(null) sil
+(null) suggestions
+(null) noise
+(null) unintelligible
+(null) noise
+(null) uh
+(null) unintelligible
+(null) sigh
+(null) breathing
+(null) cough
+(null) unintelligible
+(null) noise
+(null) okay
+(null) sil

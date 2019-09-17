@@ -1,0 +1,4297 @@
+(inform) anything
+(bye) thank you good bye
+(thankyou) thank you good bye
+(thankyou) thank you good bye
+(bye) thank you good bye
+(inform) moderate price
+(request) may i have the address and phone number
+(inform) i dont care is there any north part of town
+(null) unintelligible
+(request) yes address
+(thankyou) thank you good bye
+(thankyou) thank you good bye
+(inform) chinese food
+(inform) i dont care
+(request) whats the address
+(inform) thai food
+(bye) thank you good bye
+(inform) american
+(inform) im looking for a restaurant in the west part of town that serves
+(bye) thank you goodbye
+(bye) thank you good bye
+(reqalts) how about indian food
+(reqalts) anything else
+(inform) north part of town
+(inform) moderately priced restaurant that serves fusion food
+(affirm) right
+(request) what is the phone number
+(thankyou) thank you good bye
+(request) whats the phone number
+(request) what is the address
+(inform) south
+(inform) french food
+(inform) cheap restaurant
+(inform) north
+(inform) spanish food anywhere any area
+(inform) jamaican
+(inform) any any part of town
+(bye) thank you good bye
+(inform) turkish food
+(request) what is the address and phone number
+(inform) north american food
+(null) noise
+(request) whats the address and price range
+(bye) thank you good bye
+(bye) thank you good bye
+(thankyou) thank you good bye
+(inform) i dont care
+(inform) thai food
+(inform) vietnamese
+(request) whats the phone number
+(request) what is the phone number
+(inform) i am looking for a moderate priced restaurant
+(null) unintelligible
+(inform) find indian restaurant in north of town
+(null) do they have
+(request) what is the address
+(request) phone number
+(inform) korean food expensive
+(request) address
+(bye) thank you good bye
+(request) what is the phone number
+(thankyou) thank you good bye
+(bye) thank you good bye
+(inform) cheap
+(request) address
+(inform) restaurant
+(bye) thank you good bye
+(thankyou) thank you good bye
+(inform) moderately priced restaurant
+(null) noise
+(inform) british
+(request) phone number
+(request) what is the phone number
+(request) and the phone number
+(inform) north
+(request) price range
+(null) noise
+(request) what are the address and post code
+(bye) thank you good bye
+(null) i would like
+(request) address
+(affirm) yes
+(inform) that serves chinese food
+(request) and what type of food is it
+(request) phone number
+(request) address
+(bye) thank you good bye
+(inform) gastropub food
+(inform) thai food
+(request) phone number
+(inform) im looking for italian food though
+(request) what is the phone number
+(inform) i would like chinese food
+(inform) id like a restaurant that serves asian food
+(inform) spanish
+(thankyou) thank you good bye
+(bye) thank you good bye
+(bye) thank you good bye
+(request) and whats the phone number
+(request) whats the address
+(inform) christmas food
+(inform) im looking for a unintelligible food
+(thankyou) thank you good bye
+(bye) thank you goodbye
+(inform) doesnt matter
+(thankyou) thank you good bye
+(request) price range
+(null) sil
+(affirm) yes
+(bye) thank you good bye
+(thankyou) thank you goodbye
+(inform) south
+(bye) thank you good bye
+(thankyou) thank you good bye
+(request) and what is the price range
+(inform) cheap
+(affirm) yes yes
+(inform) any price range
+(inform) cheap restaurant in th east part of town
+(reqalts) do you have anything else
+(inform) asian restaurant
+(inform) portuguese
+(inform) i dont care
+(inform) cheap
+(reqalts) is there anything else
+(bye) thank you good bye
+(null) unintelligible
+(inform) i dont care
+(inform) im looking for a cheap restaurant in the west part of town
+(request) address
+(thankyou) thank you good bye
+(thankyou) thank you good bye
+(inform) what about modern european
+(thankyou) thank you goodbye
+(inform) turkish food
+(request) phone number
+(inform) polish food
+(bye) thank you good bye
+(request) what food does it serve
+(request) whats the address phone number and area
+(reqalts) how about chinese
+(reqalts) how about british food
+(inform) expensive
+(affirm) right that serves italian food
+(thankyou) thank you good bye
+(request) what is the post code
+(inform) i dont care
+(thankyou) thank you good bye
+(inform) scottish
+(request) price range
+(reqalts) anything else
+(inform) south part of town
+(inform) afghan food
+(inform) thai food
+(null) make a suggestion
+(request) phone number
+(inform) any area
+(request) and the price range
+(inform) south part of town please
+(null) dress
+(request) what food do they serve
+(thankyou) thank you good bye
+(inform) what is there in the north
+(reqalts) how about european food
+(bye) thank you goodbye
+(affirm) yes
+(request) phone number
+(thankyou) thank you good bye
+(thankyou) thank you good bye
+(inform) west
+(null) unintelligible
+(bye) thank you good bye
+(thankyou) thank you good bye
+(request) and the post code
+(thankyou) thank you good bye
+(inform) bistro
+(thankyou) thank you
+(bye) thank you good bye
+(affirm) yes
+(bye) thank you good bye
+(request) whats the phone number
+(inform) i would like indian food
+(bye) thank you good bye
+(thankyou) thank you goodbye
+(request) what is the phone number
+(thankyou) thank you good bye
+(thankyou) thank you good bye
+(inform) indian
+(request) whats the address
+(inform) chinese food
+(inform) indian food
+(inform) south
+(thankyou) thank you good bye
+(null) noise
+(inform) italian
+(request) what is the address
+(inform) it doesnt matter
+(inform) find me a moderately priced restaurant in
+(null) noise
+(reqalts) anything else
+(request) phone number
+(hello) hello im looking for a cheap
+(thankyou) thank you good bye
+(inform) cheap restaurant
+(request) phone number
+(request) whats the phone number and address
+(request) uh can i get the address
+(bye) thank you good bye
+(inform) restaurant in the north part of town that serves hungarian food
+(request) okay ah wha whats the address
+(inform) moderate
+(inform) in the moderately price
+(null) noise
+(bye) see you goodbye
+(inform) moderately priced
+(bye) thank you good bye
+(inform) australasian
+(request) what area
+(thankyou) thank you good bye
+(negate) no
+(inform) italian
+(thankyou) thank you good bye
+(request) and can i have the post code please
+(null) can i get the
+(thankyou) thank you good bye
+(bye) thank you good bye
+(hello) hello and welcome to the cambridge
+(thankyou) okay thank you good bye
+(inform) im looking for a restaurant in the west part of town and it sh
+(thankyou) thank you good bye
+(thankyou) thank you good bye
+(bye) thank you good bye
+(inform) any
+(request) what is the address
+(bye) thank you good bye
+(thankyou) thank you goodbye
+(bye) thank you good bye
+(inform) asian food
+(null) unintelligible
+(affirm) ye
+(null) noise
+(request) what is the area
+(reqalts) how about vietnamese food
+(inform) sea food
+(reqalts) what about in any area
+(inform) looking for a restaurant in the east part of town
+(request) phone
+(negate) no singaporean
+(affirm) yes
+(inform) restaurant in the center
+(inform) i dont care
+(thankyou) thank thank
+(bye) thank you good bye
+(request) what is the address phone number and post code
+(bye) thank you good bye
+(reqalts) how about one with thai food
+(inform) moderate price
+(inform) spanish
+(request) the postcode
+(thankyou) thank you good bye
+(inform) im looking for a restaurant in the south part of town it should serve kosher food
+(negate) no spanish food
+(reqalts) how about thai food
+(request) what area
+(inform) north american
+(inform) north part of town
+(negate) no
+(thankyou) thank you good bye
+(inform) modern european
+(request) may i have the phone number
+(bye) thank you good bye
+(inform) the west part of town
+(bye) thank you good bye
+(thankyou) thank you good bye
+(inform) turkish food
+(inform) i want a restaurant in the moderate price range
+(request) can i have the phone number and address
+(inform) japanese food
+(request) can i have the address and phone number
+(request) address
+(thankyou) thank you good bye
+(inform) i dont care
+(thankyou) thank you good bye
+(thankyou) thank you good bye
+(thankyou) thank you
+(request) what is the address
+(inform) im looking for a restaurant in any area serving unintelligible
+(inform) any part
+(reqalts) how about one that serves british food
+(request) whats the phone number
+(bye) good bye
+(inform) id like an expensive restaurant that serves mediteranean food
+(null) sil
+(bye) thank you good bye
+(inform) doesnt matter
+(inform) noise french food
+(request) whats the address phone number and post code
+(null) im looking
+(request) phone number and post code
+(thankyou) thank you
+(bye) thank you good bye
+(inform) i want to find a cheap restaurant
+(reqalts) dont care is there anything else
+(bye) thank you good bye
+(inform) cuban
+(null) noise
+(bye) thank you good bye
+(bye) thank you good bye
+(request) whats the address
+(request) what is the phone number
+(inform) moderate
+(request) address
+(reqalts) anything else
+(request) can i get the address phone number and price range
+(request) phone number
+(thankyou) great thank you good bye
+(inform) american
+(inform) international food
+(null) unintelligible
+(reqalts) anything else
+(request) area
+(null) unintelligible
+(inform) moderate
+(affirm) yes that sells korean food
+(inform) any
+(inform) i need a restaurant that serves asian oriental food
+(inform) italian
+(inform) german food
+(inform) cheap
+(thankyou) thank you good bye
+(inform) south
+(bye) thank you good bye
+(request) type of food do they serve
+(thankyou) thank you good bye
+(request) whats the addre
+(inform) center
+(bye) thank you good bye
+(reqalts) is there anything else
+(inform) east part of town
+(null) noise
+(reqalts) what about italian food
+(reqalts) what about chinese food
+(reqalts) what about chinese food
+(thankyou) thank you good bye
+(request) phone number
+(request) whats the address
+(bye) thank you good bye
+(null) sil
+(request) address
+(inform) im looking for thai food
+(inform) im looking for a restaurant in the north part of town that serves
+(bye) thank you goodbye
+(inform) it doesnt matter
+(bye) thank you good bye
+(request) what is the address
+(inform) gastropub
+(request) okay i need the address
+(request) price range
+(request) type of food
+(request) whats the address
+(null) noise
+(request) what is the address
+(request) can i get the address
+(inform) restaurant in the south part of town
+(inform) noise cheap restaurant
+(repeat) go back
+(thankyou) thank you good bye
+(inform) polynesian food
+(request) and the price range
+(request) type of food does it serve
+(inform) can i have an expensive restaurant
+(inform) gastropub food
+(request) phone number
+(inform) any food
+(thankyou) thank you good bye
+(inform) restaurant west part of town
+(thankyou) thank you good bye
+(bye) thank you good bye
+(inform) im looking for a moderately priced restaurant serve hungarian food
+(request) an address
+(reqalts) anything else
+(request) what is the phone number and post code
+(bye) thank you good bye
+(bye) thank you good bye
+(request) area
+(thankyou) thank you good bye
+(inform) british
+(inform) cheap restaurant in the south part of town
+(thankyou) thank you good bye
+(request) can i have the phone number
+(inform) im looking for a moderately priced restaurant
+(request) phone number
+(thankyou) thank you good bye
+(reqalts) how about portuguese
+(bye) thank you goodbye
+(thankyou) thank you bye
+(affirm) yes
+(inform) north part of town
+(bye) good bye
+(inform) cheap restaurant
+(bye) thank you good bye
+(inform) i dont care
+(null) sil
+(bye) thank you good bye
+(request) what is the area
+(inform) european food
+(null) unintelligible
+(inform) north part of town
+(inform) persian
+(request) could i get the phone number and
+(bye) thank you good bye
+(inform) im looking for a restaurant in the east part of town serving chinese food
+(inform) i want a moderately priced restaurant in the north part of town
+(bye) thank you good bye
+(inform) austrian food
+(inform) gastropub
+(inform) cheap restaurant uh italian food
+(request) address
+(bye) thank you good bye
+(inform) asian
+(thankyou) thank you good bye
+(null) noise
+(affirm) yes
+(inform) north
+(reqalts) how about canape
+(inform) im looking for a moderately price restaurant that serves halo food
+(affirm) yes
+(inform) alright can i get chinese food
+(inform) is doesnt matter
+(thankyou) thank you good bye
+(request) what is the phone number
+(request) price range
+(inform) any
+(inform) moderately priced restaurant
+(thankyou) thank you good bye
+(bye) thank you good bye
+(request) whats their phone number
+(inform) moderately
+(negate) no caribbean
+(inform) im looking for an expensive restaurant in the south part of town
+(bye) thank you good bye
+(request) could i have the phone number
+(inform) cheap
+(reqalts) anything else
+(thankyou) thank you goodbye
+(request) whats the phone number
+(thankyou) thank you good bye
+(request) telephone number
+(affirm) yes
+(inform) korean
+(request) okay show me the address
+(bye) thank you good bye
+(inform) european food
+(request) what was the phone number for chiquito
+(inform) east
+(inform) any kind
+(bye) thank you good bye
+(reqalts) ok if there is no restaurant serving indonesian food how about a restaurant serving chinese food
+(inform) italian food
+(inform) caribbean food
+(reqalts) what about international food
+(inform) any
+(affirm) yes
+(inform) in the south part of town
+(inform) thai food
+(request) address
+(inform) asian oriental
+(inform) im looking for a restaurant in the north part of town serving malaysian food
+(request) can i have the phone number
+(bye) thank you good bye
+(reqalts) is there anything else
+(inform) any area cuban food
+(inform) im looking for a greek restaurant
+(affirm) yes
+(bye) thank you good bye
+(null) after
+(request) whats the address
+(bye) thank you good bye
+(null) noise
+(bye) thank you good bye
+(inform) is there is no such venue that have asian oriental type of food
+(inform) i want a moderately priced restaurant
+(null) sil
+(inform) i dont care
+(negate) no
+(request) phone number
+(inform) scandinavian food
+(inform) halal food
+(inform) it doesnt matter
+(request) and the post code
+(bye) thank you good bye
+(inform) west
+(bye) thank you good bye
+(inform) south
+(inform) im looking for a restaurant serving chinese food
+(null) can i have the noise
+(inform) im looking for an expensive restaurant that serves asian oriental food
+(inform) korean food
+(request) and the phone number
+(thankyou) thank you good bye
+(confirm) is that a cheap restaurant
+(null) noise
+(thankyou) thank you good bye
+(inform) moderately
+(thankyou) thank you good bye
+(reqalts) how about french
+(bye) thank you good bye
+(thankyou) thank you good bye
+(request) phone number
+(affirm) yes
+(inform) i dont care
+(inform) im looking for a restaurant that serves modern european food
+(bye) thank you good bye
+(thankyou) thank you good bye
+(inform) i need a cheap restaurant in the east part of town
+(request) phone number
+(thankyou) thank you good bye
+(request) and the phone number
+(thankyou) thank you good bye
+(null) cough
+(thankyou) thank you good bye
+(request) whats the phone number
+(request) can i get the phone number
+(null) unintelligible
+(affirm) yes
+(bye) thank you good bye
+(request) and the post code
+(confirm) is it moderately priced
+(bye) thank you good bye
+(negate) no
+(inform) i dont care
+(thankyou) thank you good bye
+(request) and their phone number
+(bye) thank you goodbye
+(request) great whats the phone number
+(inform) west
+(inform) north
+(bye) thank you good bye
+(request) phone number
+(inform) i dont care
+(thankyou) thank you goodbye
+(request) the phone number
+(inform) any area
+(bye) thank you good bye
+(request) price range
+(inform) i dont care
+(thankyou) thank you good bye
+(request) may i have the address
+(inform) im looking for an expensive restaurant in a
+(inform) north
+(inform) i dont care
+(request) phone number
+(negate) no
+(request) oh where is it
+(inform) asian
+(bye) thank you goodbye
+(request) phone number
+(inform) im looking for
+(null) noise
+(inform) in the north part of town
+(thankyou) thank you good bye
+(request) nandos restaurant type of food
+(request) may i have the address and post code
+(hello) hi i want a restaurant
+(reqalts) anything else
+(bye) thank you good bye
+(request) and phone number
+(request) and the post code
+(inform) any area
+(inform) lebanese
+(null) unintelligible
+(affirm) yes
+(request) phone number
+(request) whats the postcode
+(inform) i want a moderately priced restaurant in the south part of town
+(thankyou) thank you good bye
+(affirm) yes
+(inform) italian food
+(inform) any area
+(request) address
+(affirm) yes
+(inform) okay uh how bout british food
+(null) sil
+(request) phone number
+(inform) im looking for a restaurant serving unusual food
+(affirm) yes
+(bye) thank you good bye
+(inform) barbecue
+(bye) thank you goodbye
+(bye) thank you goodbye
+(inform) im looking for a moderately priced restaurant
+(request) address and phone number
+(thankyou) okay thank you good bye
+(inform) im looking for a restaurant that serves
+(request) whats the phone number and address
+(bye) thank you good bye
+(affirm) yes
+(negate) no in any area
+(inform) im looking for gastropub food
+(reqalts) how about modern european food
+(affirm) yes
+(inform) scottish food
+(request) whats the phone number
+(thankyou) thank you good bye
+(request) what is the phone number
+(request) phone number
+(inform) any type
+(inform) korean
+(request) and can i get their address
+(request) price range
+(inform) any
+(reqalts) anything else
+(bye) thank you good bye
+(thankyou) thank you good bye
+(request) post code
+(inform) restaurant moderate price
+(reqalts) how about british food
+(thankyou) thank you good bye
+(inform) im looking for a restaurant in the east part of town
+(thankyou) thank you good bye
+(request) what is the address
+(request) what part of town is it in
+(affirm) uh yes id like an expensive restaurant that serves vegetarian food
+(bye) good bye
+(request) what area of town is it in
+(request) postcode
+(thankyou) thank you
+(inform) im looking for a cheap restaurant in the north part of town
+(inform) mediterranean food
+(reqalts) how about spanish food
+(inform) expensive
+(inform) north
+(inform) the south part of town
+(inform) dont care
+(inform) im looking for a restaurant in any area that serves russian food
+(inform) i dont care
+(inform) moderately priced afghan
+(inform) scottish
+(ack) kay what is the addre
+(null) okay and um
+(request) whats the phone number
+(request) area
+(inform) cuban
+(request) phone number
+(request) and whats the price range
+(inform) south part
+(reqalts) is there anything else
+(bye) thank you good bye
+(thankyou) um thank you good bye
+(request) and the post code
+(thankyou) thank you good bye
+(inform) cantonese
+(inform) im looking for an expensive restaurant that serves european food
+(request) phone number
+(thankyou) thank you good bye
+(inform) portuguese food
+(bye) thank you goodbye
+(inform) looking for a moderately priced restaurant in the west part of town
+(inform) world food
+(inform) doesnt matter
+(reqalts) is there anything else
+(inform) creative food
+(request) what is the address and phone number
+(inform) east
+(inform) a restaurant serving french food
+(inform) im looking for a restaurant in the center serving russian food
+(null) unintelligible
+(bye) thank you good bye
+(inform) i am looking for a moderately priced restaurant in the
+(inform) i need a moderately priced restaurant in the west part of town
+(bye) thank you good bye
+(request) what is the address
+(inform) french food
+(inform) irish food
+(affirm) yes
+(request) whats the phone number
+(request) address
+(request) address
+(thankyou) thank you good bye
+(thankyou) thank you good bye
+(reqalts) how about asian oriental
+(inform) asian
+(request) address
+(thankyou) thank you
+(inform) cheap restaurant
+(confirm) is it in the north part of town
+(reqalts) is there a restaurant that serves european food
+(inform) expensive
+(null) uh
+(request) what is the post code
+(inform) ah can i find a unintelligible restaurant serving scotch food
+(inform) thai food
+(inform) any
+(request) price range
+(confirm) is it moderately priced
+(request) phone number
+(inform) expensive restaurant
+(affirm) yes
+(negate) no north
+(inform) dont care
+(thankyou) okay thank you good bye
+(null) laugh you suck
+(inform) i dont care
+(negate) no i want thai food
+(bye) thank you good bye
+(confirm) does it serve vietnamese food
+(request) okay i need the phone number and address
+(null) i want to know
+(reqalts) how about portuguese
+(bye) thank you good bye
+(inform) i would like afghan food
+(negate) no hungarian food
+(inform) mexican
+(thankyou) thank you good bye
+(bye) thank you good bye
+(negate) no
+(inform) moderately priced
+(deny) that information is not important
+(request) whats the phone number
+(affirm) yes
+(inform) im looking for a restaurant that serves unusual food
+(inform) asian oriental food
+(bye) alright thank you good bye
+(inform) expensive restaurant
+(inform) im looking for a cheap restaurant in the east part of town
+(reqalts) is there a restaurant that has british food
+(request) can i have the phone number and the area
+(inform) is there one in the cheap price range
+(request) may i have the address
+(request) and what is the area
+(inform) im looking for a moderately priced restaurant
+(bye) thank you good bye
+(inform) i dont care
+(null) unintelligible
+(request) whats the price range
+(inform) dont care
+(null) unintelligible
+(inform) downtown
+(inform) south part of town
+(null) sil
+(inform) thai food
+(request) phone number
+(bye) thank you good bye
+(inform) im looking for a restaurant in the west part of town that serves danish food
+(reqalts) is there anything else
+(inform) expensive
+(inform) moderate
+(request) what is the address
+(inform) im looking for asian oriental
+(thankyou) thank you good bye
+(request) phone number
+(affirm) right
+(request) the address and phone number
+(inform) afghan
+(request) area
+(request) whats the address
+(reqalts) what about asian oriental food
+(request) whats the phone number
+(null) i need cant
+(null) unintelligible
+(reqalts) how about chinese restaurants
+(inform) moderately priced west part of town
+(inform) asian oriental
+(reqalts) noice how about european
+(request) what is the address
+(inform) im looking for a restaurant in the south part of town that serves
+(thankyou) thank you
+(bye) thank you goodbye
+(inform) im looking for a moderately priced restaurant in the west part of town
+(bye) thank you goodbye
+(thankyou) thank you good bye
+(thankyou) thank you
+(request) area
+(affirm) right
+(inform) indian food in the south part of town
+(inform) world food
+(inform) i dont care
+(thankyou) can i okay thank you
+(request) address
+(request) whats the price range again
+(request) address
+(inform) iam looking for a restaurant in the center
+(inform) moderate
+(reqalts) how about thai
+(inform) uh i dont care
+(reqalts) how about indian food
+(inform) european
+(request) phone number
+(inform) im looking for a restaurant that serves scandinavian food
+(affirm) yes expensive
+(request) what is the address
+(thankyou) thank you good bye
+(reqalts) how about indian food
+(affirm) yes
+(request) whats the address
+(inform) indian food
+(inform) im looking for an expensive restaurant in the south part of town
+(thankyou) thank you good bye
+(negate) no
+(request) what is the phone number
+(request) and their phone number
+(inform) a cheap restaurant
+(inform) dont care
+(thankyou) thank you good bye
+(request) what kind of food
+(affirm) yes
+(inform) vietnamese food
+(request) address
+(reqalts) anything else
+(request) phone number
+(inform) looking for a restaurant in the south part of town that serves australian food
+(request) whats the phone number
+(bye) thank you good bye
+(inform) spanish
+(thankyou) thank you good bye
+(bye) thank you good bye
+(thankyou) okay thank you good bye
+(reqalts) how about italian type of food
+(inform) a restaurant in the south part of town that serves italian food
+(inform) any part of town
+(inform) bistro
+(request) whats the phone number
+(inform) italian food
+(bye) great thank you good bye
+(thankyou) thank you good bye
+(request) can i have the address of that
+(request) uh phone number
+(bye) thank you good bye
+(null) sil
+(inform) doesnt matter
+(bye) thank you good bye
+(thankyou) thank you goodbye
+(inform) indian food
+(thankyou) thank you good bye
+(inform) im looking for a cheap restaurant in the south part of town
+(negate) no
+(inform) it doesnt matter
+(null) sil
+(thankyou) thank you good bye
+(thankyou) thank you good bye
+(inform) portuguese
+(inform) romanian food
+(thankyou) thank you good bye
+(request) part of town the address and postal code please
+(thankyou) thank you good bye
+(request) address
+(inform) what about indian foods
+(inform) australian
+(affirm) yes
+(inform) moderate
+(request) whats the address
+(inform) any price range
+(request) whats the phone number
+(inform) dont care
+(request) address
+(inform) european food
+(request) could i get the phone number please
+(inform) im looking for a restaurant that serves french food
+(thankyou) thank you good bye
+(request) address
+(request) type of food
+(request) whats the phone number
+(inform) christmas food
+(inform) spanish
+(affirm) right
+(request) address
+(inform) steak house
+(request) part of town
+(inform) tuscan food
+(affirm) yes
+(reqalts) is there anything else
+(inform) italian
+(request) address
+(bye) thank you good bye
+(inform) catalan food north part of town
+(thankyou) thank you good bye
+(inform) i dont care
+(inform) cheap restaurant
+(inform) halo food
+(request) whats the phone number
+(request) what type of food
+(inform) russian food
+(bye) good bye
+(request) the post code as well please
+(inform) test food
+(confirm) does it serve korean food
+(inform) italian food in the center
+(bye) thank you good bye
+(thankyou) thank you good bye
+(bye) thank you good bye
+(reqalts) is there anything else
+(request) post code
+(thankyou) okay thank you
+(inform) i am looking for a restaurant in the south part of town
+(thankyou) thank you good bye
+(bye) thank you good bye
+(request) what is the address
+(bye) okay thats all
+(thankyou) thank you good bye
+(bye) thank you good bye
+(inform) restaurant north
+(reqalts) is there anything
+(request) may i have the phone number and post code please
+(request) address and phone number
+(affirm) yes
+(affirm) yes
+(inform) german food
+(inform) i need thai food
+(bye) thank you good bye
+(inform) any
+(thankyou) thank you good bye
+(request) type of food
+(bye) thank you good bye
+(bye) thank you goodbye
+(inform) thai
+(bye) thank you good bye
+(inform) im looking for a restaurant in the north part of town serving indian food
+(reqalts) what are my other options
+(affirm) yes
+(reqalts) how about cantonese food
+(thankyou) thank you good bye
+(reqalts) is there anything else
+(request) whats the phone number
+(inform) im looking for a moderately priced in the south
+(thankyou) thank you good bye
+(thankyou) thank you good bye
+(request) okay and what kind of food do they serve
+(thankyou) thank you good bye
+(request) the price range
+(thankyou) thank you good bye
+(thankyou) thank you good bye
+(inform) i want an expensive restaurant in the east part of town
+(bye) thank you good bye
+(request) and the phone number
+(reqalts) is there anything else
+(request) and the phone number
+(inform) could i have a restaurant in the center
+(request) what type of food do they ser
+(request) what kind of food do they serve
+(request) can i have the phone number and the type of food
+(inform) christmas food
+(thankyou) thank you good bye
+(request) phone number
+(thankyou) thank you goodbye
+(inform) north
+(bye) thank you good bye
+(inform) any
+(thankyou) thank you good bye
+(request) address
+(reqalts) okay how about any part of town
+(request) what is the address and price range
+(inform) any
+(inform) vietnamese food
+(affirm) yes
+(request) how about the phone number
+(request) phone number
+(affirm) yes
+(confirm) is there a thai restaurant in the west of town
+(affirm) yes
+(thankyou) thank you good bye
+(bye) thank you good bye
+(inform) cheap price range
+(request) phone number
+(inform) any
+(request) whats the address
+(thankyou) thank you good bye
+(request) type of food
+(null) noise
+(reqalts) what about portuguese food
+(thankyou) thank you good bye
+(inform) danish
+(reqalts) is there something else
+(thankyou) thank you good bye
+(request) id like to know the address phone number and post code
+(inform) id like to find a moderately priced restaurant in the east part of town
+(inform) i dont care
+(bye) thank you good bye
+(null) sil
+(request) may i have the address and phone number
+(inform) the north
+(request) address
+(thankyou) thank you good bye
+(request) how about the phone number
+(inform) mexican
+(thankyou) okay thank you good bye
+(inform) west
+(null) i need
+(null) can i
+(request) may i get the address phone number
+(reqalts) is there anything that serves north american
+(inform) north
+(request) can i have the phone number and post code please
+(inform) indian
+(null) okay
+(null) sil
+(reqalts) what about earatree food
+(inform) im looking for an expensive restaurant in the east part of town
+(inform) west part of town
+(inform) restaurant in the east part of town japanese
+(inform) jamaican
+(inform) im looking for a cheap restaurant in the north part of town
+(request) whats the phone number
+(bye) thank you good bye
+(inform) looking for a moderately priced restaurant in the south part of
+(thankyou) thank you good bye
+(request) what is the phone number
+(negate) no hungarian
+(bye) thank you good bye
+(inform) south of town
+(inform) catalan food
+(affirm) yes
+(thankyou) okay thank you goodbye
+(inform) cheap
+(request) area
+(inform) barbecue food
+(confirm) is it expensive
+(inform) thai
+(thankyou) thank you good bye
+(thankyou) thank you good bye
+(request) what is the phone number
+(request) whats the phone number
+(inform) i need a cheap restaurant
+(request) whats the post code
+(request) what is the address
+(negate) no
+(request) phone number
+(request) whats the address
+(inform) east part of town
+(reqalts) how about an indian restaurant in the north part of town
+(thankyou) thank you good bye
+(inform) im looking for a cheap restaurant in the north part of town
+(request) phone number
+(reqalts) how about thai food
+(inform) im looking for a moderately priced restaurant in the north part of town
+(request) whats the phone number
+(inform) im looking for a restaurant that serves chinese food
+(affirm) yes
+(affirm) right
+(inform) uh restaurant in the west part of town with scottish food
+(null) sil
+(bye) thank you good bye
+(thankyou) thank you good bye
+(negate) no
+(bye) thank you goodbye
+(thankyou) thank you goodbye
+(request) address
+(thankyou) thank you good bye
+(bye) thank you good bye
+(inform) i need to find a restaurant in the west part of town that serves chinese food
+(request) breath price range
+(inform) dont care
+(request) and type of food
+(bye) goodbye
+(request) what is the address
+(inform) north
+(request) can i have the address
+(bye) thank you good bye
+(bye) good bye
+(inform) im looking for a moderately priced restaurant
+(null) unintelligible
+(bye) thank you good bye
+(reqalts) anything else
+(affirm) yes
+(thankyou) thank you good b
+(request) can i have the phone number and the price range
+(bye) thank you good bye
+(bye) thank you good bye
+(affirm) right on good bye peace
+(inform) north
+(thankyou) okay thank you good bye
+(inform) spanish
+(thankyou) thank you good bye
+(inform) i want to find a cheap restaurant in the north part of town
+(request) what is the phone number
+(request) could i have the address
+(request) phone number
+(request) whats their address
+(inform) any kind
+(request) phone number
+(inform) im looking for an expensive restaurant and it should serve vietnamese food
+(thankyou) thank you good bye
+(inform) dont care
+(request) do you have the address
+(inform) im looking for an expensive restaurant in the east
+(inform) im looking for a restaurant in the north part of town and it should african food
+(inform) im looking for a restaurant that serves polynesian food
+(request) phone number
+(inform) north
+(reqalts) no there is no such venue how about portuguese type of food
+(request) phone number
+(request) what type of food does it serve
+(inform) cheap
+(inform) im looking for a moderately priced restaurant in the north part of town
+(null) okay
+(negate) no
+(thankyou) okay thank you
+(request) whats the address
+(null) noise
+(bye) thank you good bye
+(request) what type of food does it serve
+(inform) doesnt matter
+(reqalts) is there anything else
+(null) noise
+(thankyou) thank you good bye
+(inform) any area
+(request) phone number
+(inform) restaurant
+(bye) thank you good bye
+(bye) thank you good bye
+(thankyou) thank you good bye
+(bye) thank you good bye
+(inform) looking for a restaurant in the center that serves vegetarian food
+(request) what is the address
+(inform) im looking for a restaurant in the west part of town with
+(request) address
+(reqalts) do you have a restaurant that serves turkish food
+(affirm) yes
+(inform) im looking for
+(request) could you repeat the name
+(affirm) yes
+(bye) okay thank you good bye
+(thankyou) thank you goodbye
+(bye) alright good bye thank you
+(request) whats the address
+(thankyou) thank you good bye
+(inform) im looking for a restaurant that serves german food
+(inform) cheap
+(inform) north american food
+(request) address
+(request) whats the address
+(inform) im looking for a moderately prices restaurant
+(bye) thank you good bye
+(reqalts) uh anything else
+(request) and for good luck what is the post code
+(reqalts) is there anything else
+(request) where
+(request) address
+(request) what is the address
+(bye) thank you good bye
+(thankyou) thank you goodbye
+(inform) i dont care
+(bye) thank you good bye
+(thankyou) thank you
+(request) their price range
+(reqalts) how about indian type of food
+(inform) moderate
+(request) what type of food does it serve
+(request) where is it located
+(inform) looking for a sea food restaurant
+(request) whats its phone number
+(inform) i need a moderately priced restaurant that serves world food
+(affirm) yea
+(inform) east
+(null) unintelligible
+(inform) south
+(request) and the phone number
+(request) the phone numeber
+(bye) thank you good bye
+(bye) thank you bye
+(inform) im looking for a restaurant in the south part of town that serves pan asian food
+(thankyou) thank you good bye
+(request) can i have an address
+(request) address
+(bye) thank you good bye
+(inform) im looking for a restaurant in the east part of town that serves chinese
+(affirm) yes do you have one with chinese
+(reqalts) is there anything else
+(bye) thank you good bye
+(null) noise
+(inform) korean
+(inform) scandinavian food
+(request) phone number
+(bye) good bye
+(inform) looking for a moderately priced restaurant
+(bye) thank you goodbye
+(inform) west
+(inform) cheap
+(inform) i dont care
+(request) and phone number
+(affirm) yes
+(negate) no
+(inform) can i have a restaurant in the center with spanish food
+(inform) is there greek food
+(confirm) does it serve canapes food
+(inform) doesnt matter
+(inform) i do not care
+(negate) no thank you
+(inform) i dont care
+(bye) thank you goodbye
+(inform) dont care
+(inform) im looking for a cheap restaurant serving international food
+(request) address
+(thankyou) thank you good bye
+(request) whats the signature dish
+(request) what is the post code
+(thankyou) thank you good bye
+(negate) no in the south
+(inform) im looking for a restaurant cheap restaurant serving romanian food
+(inform) i dont care
+(request) what type of food
+(inform) the south part
+(bye) thank you good bye
+(inform) im looking for an expensive restaurant that serves thai food
+(request) phone number
+(inform) any kind
+(bye) thank you good bye
+(bye) thank you good bye
+(inform) noise french food
+(inform) moderately priced swedish food
+(request) whats the price range
+(inform) doesnt matter
+(bye) good bye
+(request) phone number phone number
+(bye) thank you good bye
+(inform) um im trying to find a restaurant in the unintelligible of town
+(bye) thank you good bye
+(inform) caribbean
+(inform) any type
+(bye) thank you goodbye
+(thankyou) thank you good bye
+(request) phone number
+(inform) cheap restaurant in the west part of town
+(inform) is there an expensive restaurant serving thai food
+(inform) south part
+(thankyou) thank you good bye
+(null) noise
+(thankyou) thank you good bye
+(bye) thank you good bye
+(inform) american
+(inform) barbecue
+(affirm) yes
+(inform) indian type of food
+(inform) any area
+(inform) moderate
+(request) address
+(reqalts) what about indian food
+(reqalts) how about canapes
+(thankyou) thank you
+(request) i need a phone number
+(reqalts) is there anything else
+(null) noise
+(inform) vietnamese food
+(null) noise
+(request) what is the address
+(request) phone number
+(thankyou) thank you good bye
+(null) sil
+(thankyou) thank you goodbye
+(bye) thank you good bye
+(inform) any
+(reqalts) is there anything else
+(request) address
+(request) and the phone number
+(inform) i dont care
+(thankyou) thank you good bye
+(bye) thank you good bye
+(thankyou) thank you good bye
+(thankyou) thank you good bye
+(request) what is the phone number
+(reqalts) how about asian oriental
+(null) unintelligible
+(request) ah whats the address
+(null) noise
+(affirm) yes
+(null) sorry
+(bye) thank you good bye
+(thankyou) thank you good bye
+(request) what type of food
+(request) whats the address
+(affirm) yes
+(request) can i get address
+(inform) cheap
+(request) and type of food
+(request) type of food
+(inform) italian
+(request) telephone number
+(null) sil
+(request) and the post code
+(inform) italian food
+(inform) i dont care
+(null) um
+(inform) asian oriental type of food
+(inform) uh it doesnt matter
+(thankyou) thank you
+(bye) thank you good bye
+(request) whats the address
+(inform) korean food
+(request) no thats post code
+(request) whats the address
+(bye) thank you goodbye
+(inform) a cheap
+(inform) im looking for a moderately priced restaurant in the east part of town
+(request) what is the phone number
+(bye) thank you good bye
+(request) can i get the address
+(request) phone number
+(request) the phone number
+(request) whats the phone number
+(inform) indian
+(hello) unintelligible hello
+(bye) thank you good bye
+(inform) indian
+(bye) thank you good bye
+(request) can i have their address and phone number please
+(request) address
+(null) okay
+(inform) turkish
+(null) noise
+(bye) uh thank you and good bye
+(bye) thank you good bye
+(thankyou) thank you
+(request) can i have the price range
+(request) whats the address
+(reqalts) how about korean
+(null) noise
+(bye) thank you good bye
+(bye) thank you good bye
+(reqalts) what about european
+(bye) thank you good bye
+(reqalts) is there anything else
+(inform) cheap
+(inform) any kind
+(request) the address and post code
+(request) address
+(thankyou) okay thank you
+(inform) sea food
+(null) noise
+(request) post code
+(thankyou) okay thank you good bye
+(thankyou) thank you good bye
+(inform) what about modern european type food
+(affirm) uh yes can i get a moderate moderately priced restaurant in the west part of town
+(thankyou) thank you goodbye
+(affirm) yes
+(request) phone number
+(bye) thank you goodbye
+(reqalts) how about vietnamese
+(null) whats the ph
+(reqalts) how about thai food
+(inform) im looking for a chinese restaurant
+(inform) portuguese
+(request) what is the phone number and post code
+(bye) thank you good bye
+(inform) im looking for a moderately priced restaurant in the south
+(request) phone number and address
+(affirm) yes
+(inform) any price range
+(inform) i dont care
+(thankyou) thank you good bye
+(reqalts) how about a different restaurant
+(null) unintelligible
+(inform) north part of town
+(inform) is there any place that serves italian food
+(inform) can i have an expensive restaurant
+(request) what is the address
+(inform) spanish
+(inform) im looking for a moderately priced restaurant that serves
+(inform) spanish
+(bye) thank you good bye
+(inform) indonesian food
+(inform) any kind
+(inform) im looking for a restaurant that serves tuscan food
+(thankyou) thank you goodbye
+(inform) im looking for a restaurant in the south part of town
+(request) what is the phone number
+(affirm) yes
+(reqalts) what about korean food
+(bye) thank you good bye
+(inform) dont care
+(affirm) yea
+(inform) any price range
+(request) what area of town
+(request) address phone number and post code
+(inform) north
+(inform) im looking for bistro food
+(inform) i need a restaurant that serves
+(inform) center
+(request) phone number
+(request) what is the address
+(inform) in the east part of town
+(inform) west part of town
+(inform) looking for mediterranean food uh west side of town
+(request) address and post code
+(inform) cheap
+(inform) dont care
+(inform) center
+(bye) thank you good bye
+(thankyou) thank you good bye
+(request) whats the address
+(thankyou) thank you goodbye
+(inform) moderately priced in south part
+(thankyou) thank you good bye
+(inform) moderate
+(thankyou) thank you good bye
+(thankyou) thank you good bye
+(request) address
+(inform) the west
+(thankyou) thank you good bye
+(inform) any area
+(request) may i have the address and phone number please
+(request) and what is the post code again
+(bye) thank you good bye
+(inform) cheap restaurant east part of town
+(request) address
+(inform) south
+(negate) no
+(inform) east
+(request) whats the address
+(request) unintelligible part of town
+(bye) thank you good bye
+(inform) north part of town
+(request) what kind of food does it serve
+(inform) i am looking for gastropub food
+(request) and the post code
+(thankyou) thank you good bye
+(affirm) yes
+(null) spice
+(inform) chinese food
+(inform) mexican food
+(request) uh whats the phone number and address please
+(inform) i want to find a moderately
+(request) okay could you give me the phone number
+(thankyou) thank you goodbye
+(bye) thank you good bye
+(request) whats the address
+(thankyou) alright thank you very much food bye
+(request) may i have the phone number
+(bye) thank you good bye
+(affirm) yes
+(inform) i dont care
+(request) whats the address
+(inform) im looking for russian food in the center of town
+(bye) thank you good bye
+(request) and the phone number
+(inform) any
+(request) phone number
+(inform) moroccan
+(request) and the post code
+(request) whats the post code
+(request) address and price range
+(inform) vietnamese food
+(bye) thank you good bye
+(inform) portuguese food
+(bye) thank you good bye
+(inform) modern european food
+(inform) im looking for polynesian food
+(reqalts) is there anything else
+(bye) thank you good bye
+(request) can i have the phone number and type of food please
+(inform) canapes food
+(request) okay can i get the address
+(inform) asian oriental
+(inform) im looking for a cheap restaurant that serves international
+(thankyou) thank you good bye
+(inform) fusion food
+(thankyou) thank you good bye
+(affirm) uh yes that serves mediterranean food
+(inform) cheap restaurant mediterranean food
+(request) phone number
+(null) sil
+(request) address
+(inform) breath i dont care
+(thankyou) thank you good bye
+(inform) i dont care thank you good bye
+(inform) spanish food
+(request) can i have the address of it
+(request) what is the type of food
+(request) may i have the address and phone number
+(request) area
+(inform) not korean
+(negate) no
+(reqalts) next
+(affirm) yes
+(request) phone number
+(inform) in the east
+(inform) im looking for a cheap chinese restaurant
+(request) can i have the address of the phone number of the venue
+(inform) tuscan
+(bye) thank you good bye
+(thankyou) thank you good bye
+(inform) greek food
+(inform) turkish food
+(thankyou) thank you good bye
+(inform) um i dont know
+(null) how about
+(request) and the phone number
+(thankyou) thank you good bye
+(inform) in the center
+(affirm) yes
+(bye) thank you good bye
+(null) okay
+(inform) i wanna find a moderately priced restaurant in the east part of t
+(inform) chinese
+(inform) i want to find a cheap restaurant and it should be in the east part of town
+(bye) thank you good bye
+(confirm) do they serve korean food
+(thankyou) thank you good bye
+(inform) im looking for an expensive restaurant
+(inform) asian oriental
+(inform) vegetarian food
+(inform) i want a restaurant that serves portuguese food
+(request) what is the phone number
+(request) and what area is it
+(null) unintelligible
+(inform) looking for a restaurant in any area that serves irish food
+(inform) um dont care
+(affirm) yes
+(reqalts) what about indian food
+(null) sil
+(bye) thank you good bye
+(inform) korean food
+(reqalts) how about a turkish restaurant
+(bye) thank you goodbye noise
+(inform) that serves turkish food
+(bye) thank you good bye
+(request) what is the address and phone number
+(request) part of town
+(inform) dont care
+(request) what type of food
+(inform) does not matter
+(inform) singaporean food
+(request) whats the address
+(inform) serving cuban food
+(request) phone number
+(thankyou) thank you good bye
+(request) what is the address
+(request) whats the address
+(request) postcode
+(request) the phone number
+(inform) moroccan
+(inform) the center
+(reqalts) is there anything else
+(reqalts) what about in the west side of town
+(request) phone number
+(reqalts) how about indian type of food
+(null) sil
+(bye) good bye
+(inform) moderate
+(inform) i dont care
+(inform) belgian food
+(bye) thank you goodbye
+(request) phone number
+(request) phone number
+(request) address
+(negate) no
+(bye) thank you good bye
+(bye) thank you good bye
+(inform) center
+(inform) cantonese
+(request) and the address
+(reqalts) how about italian
+(inform) i would like international food please
+(inform) i dont care
+(bye) thank you good bye
+(bye) thank you good bye
+(reqalts) how about european
+(thankyou) thank you good bye
+(bye) thank you good bye
+(request) and their address
+(inform) chinese food
+(inform) a restaurant
+(bye) thank you goodbye
+(inform) eritrean food in the east part of town
+(null) noise
+(reqalts) there any other
+(request) whats the address
+(bye) thank you good bye
+(inform) north part of town
+(bye) thank you good bye
+(request) phone number
+(reqalts) how about indian food
+(request) what is the address
+(thankyou) thank you good bye
+(request) what is the phone number
+(inform) south
+(bye) thank you good bye
+(reqalts) is there a restaurant in the north part of town that serves indian food
+(inform) i want a restaurant that serves creative food
+(thankyou) thank you goodbye
+(inform) i dont care
+(affirm) yes
+(inform) any price range
+(bye) thank you good bye
+(reqalts) is there anything else
+(inform) thai food
+(thankyou) thank you good bye
+(affirm) yes
+(request) okay might i have the address
+(negate) no
+(inform) spanish food
+(bye) good bye
+(reqalts) how about one that serves asian oriental food
+(thankyou) thank you good bye
+(inform) middle
+(bye) okay thank you and goodbye
+(inform) i want to find a restaurant in the center
+(request) phone number
+(bye) thank you good bye
+(inform) i want to find chinese food
+(request) what type of food is it
+(inform) irish food
+(bye) thank you good bye
+(inform) african
+(inform) i dont care
+(request) price range
+(inform) im looking for a restaurant that serves chinese food
+(bye) thank you good bye
+(request) whats the address
+(inform) i need a restaurant that serves canape
+(thankyou) thank you good bye
+(request) can i have the area of the restaurant
+(thankyou) thank you good bye
+(inform) im looking for a restaurant in any area that serves persian food
+(inform) spanish
+(null) unintelligible
+(reqalts) how about indian food
+(thankyou) thank you good bye
+(affirm) yes
+(inform) cuban
+(inform) japanese food
+(request) type of food
+(reqalts) how about north american
+(thankyou) thank you good bye
+(inform) spanish restaurant
+(request) can i have the address
+(inform) european
+(thankyou) thank you good bye
+(inform) british food
+(thankyou) thank you good bye
+(request) what area is it in
+(inform) spanish food
+(inform) in the center
+(request) address
+(inform) expensive
+(inform) any area
+(inform) what about vietnamese
+(reqalts) i want something else
+(request) what kind of food do they serve
+(inform) cheap
+(request) address
+(inform) any
+(reqalts) anything else
+(bye) thank you good bye
+(request) uh address and price range
+(request) can i have their address and phone number
+(inform) im looking for eritrean food
+(inform) im looking for a moderate priced restaurant that serves indian food
+(inform) corsica food
+(inform) crossover food
+(inform) dont care
+(reqalts) anything else
+(request) whats the phone number
+(bye) thank you good bye
+(thankyou) thank you good bye
+(request) price range
+(confirm) is it moderately priced
+(inform) um im looking for an expensive restaurant
+(inform) is there a venue in the west part of town
+(inform) i dont care
+(null) noise
+(bye) thank you good bye
+(reqalts) how about any price range
+(request) what is the phone number and address
+(null) sil
+(request) the address
+(inform) chinese
+(bye) thank you good bye
+(request) phone number
+(inform) south part of town
+(affirm) yes
+(affirm) right
+(bye) thank you good bye
+(inform) asian oriental
+(reqalts) how about british food
+(bye) thank you good bye
+(inform) i dont care
+(bye) okay thank you and good bye
+(inform) japanese
+(inform) south part of town
+(affirm) yes
+(inform) vietnamese food
+(request) what price range
+(bye) thank you good bye
+(hello) hello
+(hello) hi im looking for an expensive restaurant in south part of town
+(request) what is the phone number and address
+(request) what kind of food do they have there
+(inform) east part of town
+(thankyou) thank you good bye
+(request) what is the address
+(inform) im looking for a restaurant that serves thai food
+(request) type of food
+(thankyou) thank you good bye
+(inform) i dont care
+(inform) um modern european food
+(request) what is the price range
+(affirm) yes
+(inform) indian
+(request) can i have the address
+(bye) thank you good bye
+(inform) i dont care
+(inform) expensive fish restaurant
+(bye) thank you good bye
+(inform) east
+(bye) thank you good bye
+(inform) can i find an expensive russian food restaurant
+(bye) thank you goodbye
+(inform) do you have any asian oriental food
+(inform) moderately priced restaurant in the north part of town
+(inform) italian food
+(inform) asian oriental food
+(request) what unintelligible the price range
+(inform) east
+(inform) im moderate priced restaurant in the north part of town
+(request) price range
+(inform) cheap
+(thankyou) thank you good bye
+(thankyou) thank you good bye
+(inform) moderately priced restaurant
+(affirm) yeah
+(inform) vietnamese food
+(bye) thank you good bye
+(negate) no im looking for pan asian
+(inform) im looking for a cheap restaurant in the north of town
+(inform) spanish
+(inform) west
+(affirm) yes
+(inform) polynesian food
+(bye) thank you good bye
+(request) what is the phone number
+(request) phone number
+(inform) cheap restaurant
+(thankyou) thank you good bye
+(request) can i have the phone number
+(thankyou) thank you goodbye
+(bye) thank you good bye
+(inform) indian
+(request) kay can i get the phone number
+(inform) im looking for a moderately priced restaurant in the south part of town
+(request) address
+(hello) halo
+(inform) spanish
+(thankyou) thank you goodbye
+(thankyou) thank you good bye
+(inform) danish
+(inform) im looking for a moderately priced restaurant serving fusion food
+(inform) i dont care
+(inform) i dont care
+(inform) i want a moderately priced restaurant in the north part of town
+(thankyou) thank you good bye
+(null) town
+(request) can you give me the phone number
+(inform) dont care
+(request) and the phone number
+(request) phone number
+(reqalts) how about mediterranean food
+(inform) east
+(inform) italian
+(request) address
+(inform) it should serve fusion food
+(negate) no
+(request) what is the type of food
+(thankyou) thank you and good bye
+(inform) i want to find a cheap restaurant and it should serve portuguese food
+(null) unintelligible
+(affirm) right
+(inform) any
+(inform) european food
+(request) address
+(request) can i get the post code
+(restart) start over
+(request) whats the phone number
+(request) what is the address and the type of food
+(inform) any
+(request) can i get the address and phone number
+(inform) dont care
+(thankyou) thank you goodbye
+(request) phone number
+(bye) thank you good bye
+(reqalts) anything else
+(bye) thank you good bye
+(bye) thank you good bye
+(null) unintelligible
+(affirm) yeah im in the west part of town and im looking for some vietnamese
+(inform) i want a polynesian restaurant in the north part of town
+(inform) i dont care
+(thankyou) thank you good bye
+(bye) good bye
+(thankyou) thank you
+(inform) portuguese
+(inform) i need a restaurant in the east part of town that serves canape food
+(bye) thank you good bye
+(inform) just chinese food in the north part of town
+(inform) im looking for a restaurant in the north part of town
+(thankyou) thank you goodbye
+(null) sil
+(inform) i dont care about the price range
+(bye) thank you good bye
+(request) type of food
+(inform) it has to serve unusual
+(thankyou) thank you good bye
+(inform) moderately priced
+(affirm) yes
+(request) address
+(inform) moderate
+(request) uh whats the address
+(request) okay what is the phone number
+(inform) center
+(affirm) yes
+(request) can i have the phone number
+(request) what area
+(thankyou) thank you goodbye
+(thankyou) thank you good bye
+(thankyou) thank you goodbye
+(inform) spanish food
+(inform) swedish
+(thankyou) thank you good bye
+(bye) thank you good bye
+(inform) east
+(thankyou) thank you
+(reqalts) anything else
+(inform) french
+(inform) north
+(bye) thank you goodbye
+(inform) food
+(request) what is the address
+(inform) i dont care
+(request) i want to know the phone number
+(inform) can i find a restaurant in the south that is moderately priced
+(reqalts) anything else
+(inform) i dont care
+(reqalts) what about portugese
+(request) good whats the address
+(request) and the phone number
+(inform) i do not care
+(inform) any part
+(inform) im looking for a moderately priced restaurant
+(inform) can you tell me about an expensive restaurant in the south
+(request) what is the address
+(thankyou) thank you good bye
+(inform) i do not care
+(bye) thank you good bye
+(inform) korean food in the north part of town
+(thankyou) thank you goodbye
+(bye) thank you good bye
+(inform) seafood
+(bye) thank you good bye
+(affirm) correct
+(inform) i dont care
+(request) whats the address
+(bye) thank you good bye
+(request) can i get the phone number and price range
+(null) im l
+(inform) the east part
+(affirm) yes please can i have the address and the price range of the restaurant please
+(inform) barbecue food
+(inform) i dont care
+(request) what is the phone number
+(inform) im looking for an expensive restaurant in the south part of town
+(null) sil
+(affirm) yes
+(thankyou) thank you good bye
+(null) sil
+(request) what type of food is it
+(inform) indonesian food
+(inform) im looking for a moderately priced restaurant
+(request) may i have the address and price range
+(inform) british
+(bye) water cherries thank you good bye
+(bye) thank you good bye
+(inform) id like a moderately priced restaurant in the south part of town
+(request) phone number
+(bye) thank you good bye
+(affirm) right
+(null) noise
+(inform) i need a restaurant serving modern european food
+(null) care
+(request) whats the post code
+(null) im done
+(request) address
+(request) may i have the phone number
+(request) what is the area
+(request) what is the address
+(inform) restaurant in the north part of
+(inform) indonesian food
+(request) postcode
+(inform) i dont care
+(bye) goodbye
+(bye) thank you good bye
+(request) what food is available in the south part of town
+(inform) the south
+(inform) modern european food
+(inform) i want a restaurant in the center of town
+(null) noise
+(inform) id like to find a restaurant in the north part of town and it should serve greek food
+(inform) gastropub
+(inform) it doesnt matter
+(negate) no
+(thankyou) thank you good bye
+(affirm) yes
+(inform) i dont care
+(inform) i want a restaurant in the north
+(inform) italian food
+(inform) i need an expensive restaurant serving british food
+(affirm) yes
+(bye) thank you good bye
+(inform) um chinese food
+(request) can i get the phone number
+(thankyou) thank you good bye
+(reqalts) anything else
+(thankyou) thank you good bye
+(request) what is the address
+(null) unintelligible
+(request) what is the phone number
+(inform) dont care
+(null) unintelligible
+(bye) thank you goodbye
+(inform) im looking for a restaurant that serves seafood
+(bye) okay thank you good bye
+(bye) okay thank you bye
+(inform) west
+(inform) moderate
+(bye) thank you good bye
+(bye) thank you good bye
+(inform) cheap
+(inform) cheap
+(thankyou) thank you good bye
+(inform) im looking for a restaurant in the north part of town
+(request) okay and what about the address
+(thankyou) thank you good bye
+(request) phone number please
+(inform) irish food
+(request) and their address
+(inform) indian
+(confirm) does it serve canapes food
+(thankyou) thank you good bye
+(inform) moderate
+(request) and the phone number
+(inform) looking for a moderately priced restaurant and it needs to be in the south part of town
+(inform) south of the town
+(bye) thank you good bye
+(inform) im looking for an expensive restaurant
+(thankyou) okay thank you good bye
+(thankyou) thank you good bye
+(request) address
+(thankyou) thank you
+(request) phone number
+(thankyou) thank you good bye
+(request) phone number
+(affirm) yes
+(inform) doesnt matter
+(inform) im looking for an expensive restaurant
+(request) phone number and post code
+(request) type of food do they serve
+(request) address
+(inform) how bout one that serves portuguese food and is cheap
+(inform) moderately priced
+(inform) any
+(reqalts) um how about chinese food
+(inform) expensive
+(inform) moderately priced
+(request) address
+(request) phone number
+(reqalts) how about mediterranean food
+(inform) moderate price
+(request) address
+(reqalts) is there anything else
+(thankyou) thank you good bye
+(bye) thank you good bye
+(bye) thank you good bye
+(inform) i want a cheap restaurant in the south part of town
+(request) phone number
+(request) whats the post code
+(null) sil
+(inform) yes and i dont care about the price range
+(request) what is the address
+(inform) i dont care
+(null) aw give me the damn code
+(affirm) yes
+(bye) thank you good bye
+(request) address
+(request) and what price range is that or nevermind
+(null) ring
+(thankyou) thank you goodbye
+(inform) west
+(affirm) yes
+(inform) portuguese food any price
+(request) and the phone number
+(inform) moderately priced restaurant north part of town
+(bye) thank you goodbye
+(inform) belgian food
+(thankyou) thank you good bye
+(inform) spanish
+(thankyou) okay thank you good bye
+(request) and the post code
+(bye) thank you good bye
+(thankyou) thank you goodbye
+(inform) chinese chinese
+(bye) thank you good bye
+(reqalts) how about chinese food
+(bye) thank you good bye
+(reqalts) is there anything else
+(inform) im looking for a moderately priced restaurant
+(inform) thai food
+(request) what part of town
+(inform) brazilian
+(null) unintelligible
+(inform) korean
+(inform) romanian food
+(inform) expensive restaurant south part of town
+(bye) thank you good bye
+(inform) any part of town
+(reqalts) is there anything else
+(request) can i get the address
+(request) area
+(inform) looking for a moderately priced restaurant in the north of town
+(inform) im looking for an expensive restaurant and it should
+(request) what is the price range
+(inform) jamaican
+(request) what is the phone number
+(bye) very good thank you good bye
+(request) address phone number
+(inform) international food
+(inform) im looking for a restaurant in the center part of town that serves european food
+(inform) vietnamese food
+(inform) i do not care
+(thankyou) thank you good bye
+(request) what is the phone number
+(reqalts) is there anything else
+(request) phone number
+(null) unintelligible
+(inform) cantonese
+(bye) thank you good bye
+(bye) thank you good bye
+(reqalts) another place
+(inform) caribbean food
+(bye) thank you good bye
+(request) what is the phone number
+(inform) i dont care
+(request) what is the address
+(reqalts) is there anything else
+(inform) portuguese food
+(null) noise
+(reqalts) is there anything else
+(request) may i have the address of the venue
+(thankyou) thank you good bye
+(bye) thank you good bye
+(reqalts) another
+(reqalts) anything else
+(affirm) yes
+(request) could i get the phone number and price range
+(request) address
+(null) noise
+(bye) thank you good bye
+(request) may i have the address
+(inform) uh north
+(inform) im looking for an expensive restaurant serving turkish food
+(inform) italian
+(inform) cuban food cheap restaurant
+(request) can i have the address and phone number
+(thankyou) thank you good bye
+(null) system
+(inform) doesnt matter
+(request) post code
+(inform) turkish food
+(request) what is the address
+(request) the address
+(thankyou) thank you goodbye
+(bye) okay good bye
+(inform) expensive
+(request) what is the price range
+(request) may i have the address
+(bye) thank you good bye
+(bye) thank you good bye
+(inform) i dont care
+(thankyou) thank you goodbye
+(inform) asian food
+(request) whats the address
+(thankyou) thank you good bye
+(null) sil
+(request) what is the address and phone number
+(inform) spanish food
+(inform) moderately priced
+(thankyou) thank you good bye
+(request) phone number
+(inform) looking for a cheap restaurant that serves creative food
+(inform) uh it doesnt matter
+(request) whats the phone number
+(request) what type of food
+(bye) thank you good bye
+(request) can i get the post code
+(reqalts) what about swedish
+(affirm) yes
+(bye) thanks good bye
+(bye) thank you good bye
+(hello) hi im looking for a restaurant
+(request) and can i have the address
+(inform) asian oriental food
+(request) address please
+(thankyou) thank you good bye
+(bye) thank you good bye
+(inform) cheap restaurant
+(null) noise
+(inform) in the center that serves unintelligible asian
+(thankyou) thank you good bye
+(inform) i would like one thats moderately priced
+(bye) thank you good bye
+(thankyou) thank you good bye
+(confirm) does it serve african food
+(inform) any
+(inform) moderate price
+(bye) thank you good bye
+(reqalts) anything else
+(inform) uh expensive
+(inform) hungarian
+(request) phone number
+(request) can i have the phone number
+(bye) thank you good bye
+(request) type of food
+(thankyou) thank you good bye
+(request) address
+(thankyou) thank you good bye
+(thankyou) thank you good bye
+(inform) im looking for a korean restaurant in the expensive price range
+(inform) any
+(inform) im looking for restaurant that serves chinese food
+(inform) east part of town
+(inform) russian food
+(request) what type of food
+(null) sil
+(thankyou) thank you good bye
+(request) whats the address
+(inform) any type
+(request) what type of food
+(inform) a restaurant
+(bye) thank you good bye
+(inform) west
+(request) and the phone number
+(request) address
+(bye) thank you good bye
+(confirm) is it moderate
+(null) sil
+(inform) uh any part of town
+(thankyou) thank you good bye
+(hello) hi im looking for a moderately priced restaurant in the south part of town
+(inform) south
+(null) unintelligible
+(request) phone number
+(thankyou) thank you good bye
+(request) and whats their address
+(repeat) can you repeat that
+(bye) thank you good bye
+(null) sil
+(thankyou) thank you good bye
+(bye) thank you good bye
+(inform) thai food
+(inform) i dont care
+(affirm) yes
+(inform) missing sock
+(null) noise
+(inform) italian food
+(request) can i have the address
+(inform) i dont care
+(inform) any noise
+(reqalts) how about british food
+(inform) any
+(thankyou) thank you good bye
+(inform) russian food
+(thankyou) thank you bye
+(inform) cheap
+(affirm) yea
+(bye) thank you good bye
+(request) address
+(inform) moderate
+(request) whats the post code
+(request) what is the address and phone number
+(affirm) uh yes
+(bye) thank you good bye
+(request) the price range
+(reqalts) is there anything else
+(request) phone number
+(request) can i get the address
+(null) noise
+(inform) any
+(inform) moderate restaurant seafood
+(null) sorry
+(affirm) uh huh
+(confirm) do they serve unusual food
+(confirm) is it chinese food
+(request) whats the address phone number and area of the venue
+(request) okay what kind of food
+(inform) belgium
+(thankyou) tv_noise thank you goodbye
+(inform) north
+(inform) dont care
+(affirm) uh yes i would like a restaurant in the south
+(request) what type of food is this
+(bye) thank you good bye
+(inform) im looking for a restaurant serving asian oriental food
+(inform) any
+(inform) it doesnt matter
+(thankyou) thank you good bye
+(bye) thank you good bye
+(inform) irish food
+(inform) find me an expensive restaurant in the south part of town
+(thankyou) thank you good bye
+(bye) thank you good bye
+(request) address
+(request) and whats the price range
+(affirm) yes a restaurant in the east of town unintelligible serving canap
+(request) where is it
+(request) what is the address
+(reqalts) okay do you have any restaurant that serves italian food
+(inform) id like a restaurant in the center with russian food
+(inform) im looking for an expensive restaurant in the south part of town
+(inform) i dont care
+(inform) im looking for an expensive restaurant in the east part of town
+(thankyou) thank you good bye
+(null) serve
+(inform) im looking for a moderately priced restaurant and it should serve
+(reqalts) is there a restaurant that serves indian food
+(inform) that serves in the moderate food price
+(inform) im looking an expensive dr expensive restaurant that serves canapes food
+(reqalts) how about european food
+(inform) i want an expensive restaurant serving european food
+(bye) thank you good bye
+(reqalts) how about indian
+(null) unintelligible
+(bye) thank you good bye
+(inform) im looking for world food
+(inform) im looking for a moderately priced restaurant in the west part of town
+(inform) id like a moderately priced restaurant in the east part of town
+(reqalts) how about a moderately priced
+(bye) thank you good bye
+(inform) i would like a cheap restaurant in the north part of town
+(inform) any
+(request) and their phone number
+(affirm) yes
+(affirm) yes
+(inform) italian food
+(inform) noise i am looking for a restaurant
+(request) post code
+(request) phone number
+(reqalts) what about italian food
+(inform) south part of town
+(request) phone number
+(request) can i have the phone number please
+(request) address
+(request) can i have its phone number
+(thankyou) thank you
+(inform) the west
+(inform) asian oriental
+(request) what is the address
+(inform) i am looking
+(null) noise
+(bye) thank you good bye
+(null) sil
+(inform) im looking for eritrean food
+(thankyou) thank you good bye
+(request) what is the address
+(request) the address
+(inform) italian
+(null) sil
+(reqalts) how about vietnamese
+(thankyou) thank you good bye
+(bye) thank you good bye
+(null) arts town
+(inform) i want a singaporean food restaurant
+(inform) im looking for a restaurant in the south part of town that serves french food
+(thankyou) thank you
+(request) and the phone number
+(inform) im looking for a restaurant in the south part of town that serves vietnamese food
+(inform) turkish
+(bye) thank you good bye
+(request) may i have the phone number
+(bye) thank you good bye
+(bye) and i think thatll do it thank you good bye
+(request) whats the address
+(inform) a moderately priced restaurant in the south part of town
+(bye) thank you good bye
+(affirm) correct
+(request) alright give me the address
+(bye) thank you good bye
+(reqalts) anything else
+(reqalts) how about vietnamese food
+(reqalts) anything else
+(request) how about the phone number
+(reqalts) how about the north part
+(request) what area
+(request) how about the post code
+(inform) turkish
+(request) phone number
+(reqalts) is there anything else
+(null) unintelligible
+(inform) restaurant south
+(null) unintelligible
+(request) what is the phone number
+(inform) any
+(inform) austrian
+(bye) thank you goodbye
+(request) what is the address
+(request) ok whats the phone number
+(bye) thank you good bye
+(request) phone number
+(inform) vietnamese
+(thankyou) thank you good bye
+(inform) dont care
+(affirm) yes
+(inform) vietnamese food
+(inform) japanese
+(bye) thank you good bye
+(reqalts) next
+(affirm) yes
+(inform) east
+(request) phone number
+(bye) thank you good bye
+(inform) portuguese food
+(thankyou) thank you good bye
+(bye) thank you good bye
+(reqalts) how about indian food
+(thankyou) thank you good bye
+(thankyou) thank you good bye
+(thankyou) thank you good bye
+(request) uh whats the price range
+(null) sil
+(request) phone number
+(inform) portuguese food
+(inform) asian
+(inform) north
+(thankyou) thank you
+(bye) okay forget it goodbye
+(request) what is the phone number
+(inform) im looking for a restaurant that serves european food
+(inform) south
+(inform) im looking for a moderately priced restaurant that serves endonesian
+(null) okay
+(inform) any kind
+(null) noise
+(thankyou) thank you
+(inform) i dont care
+(request) price range
+(request) noise address
+(null) laugh
+(thankyou) thank you good bye
+(inform) any
+(request) price range
+(null) noise
+(bye) good bye
+(inform) im looking for korean food any price range
+(inform) vietnamese food
+(request) can i get the phone number
+(bye) thank you goodbye
+(affirm) ye
+(inform) chinese
+(inform) in the east part
+(request) and whats the address
+(inform) expensive
+(request) can i have the address and phone number please
+(reqalts) next one
+(thankyou) thank you good bye
+(thankyou) thank you goodbye
+(inform) it doesnt matter in the south part of town
+(inform) catalan
+(inform) expensive restaurant breath
+(request) phone number
+(inform) expensive
+(reqalts) what about thai
+(request) address
+(request) what type of food
+(inform) restaurant in any area international food
+(reqalts) what about indian
+(request) price range
+(request) what is the phone number and post code
+(inform) it doesnt matter
+(bye) thank you good bye
+(request) phone number
+(affirm) yes
+(inform) thai
+(inform) like to find a moderately priced restaurant in the west part of town
+(reqalts) how about portuguese food
+(reqalts) how about asian oriental
+(inform) im looking for a moderately priced restaurant
+(request) post code
+(inform) thai food
+(request) and what type of food is that
+(inform) dont care
+(request) and phone number
+(request) whats the address
+(request) what is the phone number
+(request) address
+(request) can i have the phone number of the venue
+(bye) bye
+(reqalts) okay fine what about asian food
+(inform) south part of town
+(request) whats the phone number and address
+(thankyou) thanks goodbye
+(inform) im looking for european food
+(bye) thank you good bye
+(inform) british food
+(bye) uh thank you good bye
+(affirm) yes
+(request) may i have the phone number
+(inform) south
+(affirm) yes
+(request) uh whats the phone number and post code
+(inform) german food
+(thankyou) thank you good bye
+(null) unintelligible
+(inform) cheap
+(inform) i dont care
+(request) phone number
+(request) whats the address
+(bye) thank you good bye
+(request) may i have the phone number
+(request) and the phone number
+(inform) i dont care
+(inform) im looking for an expensive restaurant in the east part of town
+(affirm) right
+(negate) no
+(negate) no thank you good bye
+(request) the address
+(inform) korean
+(request) post code
+(thankyou) thank you good bye
+(thankyou) thank you goodbye
+(reqalts) anything else
+(reqalts) is there anything else
+(inform) cheap
+(inform) eartrain
+(request) may i have the phone number please
+(request) what is the address
+(inform) venetian
+(request) thank you what is the address and phone number
+(inform) afghan
+(inform) doesnt matter
+(thankyou) good bye thank you
+(request) and the phone number
+(bye) thank you good bye
+(negate) no
+(request) address and post code
+(null) child
+(affirm) yes
+(inform) im looking for a restaurant with irish food
+(inform) barbecue
+(reqalts) how about cantonese food
+(thankyou) thank you good bye
+(inform) any
+(bye) thank you good bye
+(reqalts) how bout asian
+(inform) im looking for a restaurant in the east part of town that serves international
+(inform) i want a modern european
+(inform) i dont care
+(inform) eritrean
+(reqalts) how about italian food
+(reqalts) is there anything else
+(inform) west
+(request) whats the address
+(request) phone number
+(inform) a restaurant in the west part of town that serves hungarian food
+(bye) good bye
+(inform) cross over food
+(inform) that should be in the east part of town
+(inform) food
+(bye) thank you good bye
+(request) and the phone number
+(inform) modern european food
+(request) phone number
+(bye) thank you goodbye
+(null) noise
+(inform) i dont care noise
+(inform) it doesnt matter salad
+(inform) moderate
+(affirm) yes
+(inform) dont care
+(thankyou) thank you good bye
+(inform) it doesnt matter
+(bye) thank you good bye
+(inform) im looking for singaporean food
+(inform) doesnt matter
+(request) what is the address
+(thankyou) thank you good bye
+(inform) mediterranean
+(inform) moderately price
+(request) and the phone number
+(inform) cheap restaurant
+(inform) jamaican food
+(bye) thank you good bye
+(null) unintelligible
+(reqalts) how about chinese
+(inform) i would like to find a moderately priced restaurant and it should be in the east
+(inform) center part of town
+(affirm) yes
+(inform) ah centre
+(bye) thank you good bye
+(bye) thank you goodbye
+(reqalts) how about portuguese food
+(request) expensive price restaurant
+(null) what is the
+(request) address
+(null) that serves
+(request) could i have the address please
+(inform) any
+(request) phone number
+(affirm) yes
+(bye) thank you good bye
+(request) where is it
+(null) sil
+(inform) help me decide what venues are available in the west part of town serving any ty
+(thankyou) thank you good bye
+(affirm) yes
+(negate) no i want
+(bye) thank you good bye
+(affirm) yes
+(null) noise
+(reqalts) how about italian
+(thankyou) thank you good bye
+(bye) thank you goodbye
+(inform) a cheap restaurant east part of town
+(request) and can i have the phone number and ah the area where it is
+(inform) chinese food
+(bye) thank you good bye
+(inform) a restaurant in the south part of town hungarian food
+(inform) i want a restaurant that serves british food
+(null) for
+(thankyou) thank you good bye
+(inform) russian
+(bye) thank you good bye
+(request) phone number
+(inform) korean
+(null) i want to find
+(request) can i get the phone number
+(affirm) yes
+(inform) im looking for a restaurant in the north part
+(request) and the type of food at gourmet burger kitchen
+(null) sil
+(bye) thank you good bye
+(thankyou) thank you good bye
+(bye) thank you good bye
+(request) may i have the phone number
+(negate) no
+(inform) moderate
+(inform) im looking for a restaurant in the center that serves romanian food
+(affirm) yes
+(reqalts) are there any restaurants that serve english food
+(confirm) is there a moderately priced restaurant that serves british food
+(thankyou) thank you good bye
+(thankyou) thank you good bye
+(bye) thank you good bye
+(inform) doesnt matter
+(inform) i dont care
+(bye) good bye
+(confirm) is it in the west part of town
+(bye) thank you good bye
+(confirm) is that in the north part of town
+(inform) african
+(inform) im looking for a cheap restaurant in the north of
+(inform) south
+(affirm) yes
+(inform) id like thai food
+(bye) thank you good bye
+(reqalts) how about vietnamese
+(request) what kind of food is it
+(inform) cheap restaurant east of town
+(thankyou) thank you good bye
+(request) and the address
+(confirm) is there a jamaican restaurant
+(inform) north
+(inform) west
+(null) sil
+(negate) no
+(request) okay can you give me the address there
+(null) im looking
+(thankyou) thank you good bye
+(affirm) yes
+(inform) what about other areas
+(reqalts) how about spanish food
+(null) uh
+(request) what is the address phone number price range
+(inform) i dont care
+(bye) thank you good bye
+(inform) any
+(null) dress
+(inform) that serves gastropub
+(inform) indian
+(inform) im looking for a restaurant in the north part of town that serves french
+(null) ad
+(reqalts) is there anything else
+(request) what kind of food is that
+(request) what is the phone number
+(bye) thank you good bye
+(thankyou) thank you good bye
+(reqalts) is there anything else
+(request) and the phone number
+(null) sil
+(request) phone number
+(bye) thank you good bye
+(bye) thank you goodbye
+(bye) thank you good bye
+(inform) food
+(request) phone
+(reqalts) is there anything else
+(negate) no
+(inform) indian food
+(thankyou) thank you good bye
+(inform) any
+(reqalts) how about european
+(inform) i want to find international food
+(request) post code
+(affirm) yes
+(negate) no
+(null) okay what was the first one
+(request) can i have the phone number of the venue
+(reqalts) how about british
+(inform) im looking for barbecue food
+(request) could i have the phone number please
+(request) whats the address
+(request) and may i have the post code
+(thankyou) thank you good bye
+(bye) thank you good bye
+(null) noise
+(request) can i get the address
+(affirm) yes
+(affirm) yes
+(inform) scottish
+(thankyou) thank you good bye
+(request) type of food
+(inform) north part of town
+(inform) cheap restaurant south part of town
+(thankyou) thank you good bye
+(affirm) yes
+(inform) im looking for a restaurant that serves african food
+(reqalts) next
+(inform) any cheap food
+(inform) south
+(affirm) right
+(request) yes please can i have the address and the price range of the restaurant please
+(request) whats the address
+(inform) i want to find a moderately priced restaurant that serves vietnamese food
+(bye) thank you good bye
+(inform) im looking for irish food in any price range
+(request) what is the phone number
+(thankyou) thank you good bye
+(inform) moderate west
+(request) address
+(inform) indian food
+(thankyou) thank you good bye
+(inform) i dont care
+(bye) thank you good bye
+(bye) thank you good bye
+(reqalts) how about asian oriental
+(request) what is the address
+(bye) thank you good bye
+(request) the address please
+(reqalts) what about gastropub
+(affirm) yeah
+(null) unintelligible
+(request) area
+(thankyou) thank you good bye
+(thankyou) thank you good bye
+(inform) it doesnt matter
+(affirm) yes can i have an expensive restaurant in the east
+(thankyou) thank you good bye
+(request) and the phone number
+(reqalts) what about gastropub
+(inform) id like a moderately priced restaurant that serves
+(inform) i want spanish food
+(inform) any
+(thankyou) thank you good bye
+(inform) any
+(inform) south
+(thankyou) thank you good bye
+(affirm) yes
+(bye) thank you good bye
+(thankyou) thank you goodbye
+(inform) expensive food
+(bye) thank you good bye
+(inform) chinese food
+(request) noise phone number
+(inform) mediterranean
+(null) sil
+(bye) thank you good bye
+(null) knocking
+(request) can i have the phone number
+(request) phone number
+(thankyou) thank you good bye
+(inform) cheap restaurant in the north part of town
+(reqalts) how about british food
+(reqalts) how about italian
+(null) noise
+(negate) no
+(null) im looking
+(request) phone number
+(request) whats the address
+(inform) any kind in the north part of town
+(thankyou) thank you good bye
+(inform) any
+(inform) moderately priced
+(request) address
+(bye) thank you good bye
+(bye) thank you good bye
+(bye) thank you good bye
+(null) noise
+(inform) any
+(inform) asian oriental
+(inform) asian
+(request) what area is it in
+(reqalts) anything else
+(bye) thank you good bye
+(inform) any
+(thankyou) thank you good bye
+(bye) thank you good bye
+(request) phone number
+(bye) thank you good bye
+(inform) the east part of town
+(thankyou) thank you good bye
+(null) unintelligible
+(inform) any
+(reqalts) anything else
+(bye) thank you good bye
+(inform) i am looking for a restaurant in the center that serves korean food
+(request) can i have the address please
+(inform) african food
+(bye) thank you good bye
+(thankyou) thank you good bye
+(inform) any
+(inform) i want a moderately priced restaurant in the east part of town
+(reqalts) what about korean food
+(inform) i dont care
+(inform) i dont care
+(inform) center
+(request) what is the address and phone number worth
+(request) what is the address
+(hello) hello
+(request) area
+(inform) food
+(request) address
+(request) id like the address and area
+(affirm) yes
+(repeat) repeat that
+(inform) asian
+(bye) thank you good bye
+(bye) thank you goodbye
+(inform) expensive restaurant east part of town
+(request) can i have the phone number
+(inform) moderate
+(request) what is the phone number
+(reqalts) how about cheap
+(inform) chinese food
+(reqalts) is there a restaurant serving italian food
+(thankyou) thank you good bye
+(request) type of food
+(inform) any
+(request) type of food does it serve
+(affirm) uh yes restaurant that serves danish food
+(bye) thank you good bye
+(thankyou) thank you good bye
+(thankyou) thank you good bye
+(request) phone number
+(inform) any
+(null) nt care
+(thankyou) thank you good bye
+(request) phone number
+(ack) okay just pick one for me then
+(inform) im looking for a restaurant in the center of town
+(inform) thai
+(inform) uh just pick a restaurant
+(inform) i dont care
+(inform) any
+(affirm) uh yes im looking for a cheap restaurant in the west part of town
+(inform) catalan
+(negate) no
+(null) unintelligible
+(inform) im searching for mediterranean food
+(inform) west part of town
+(inform) center
+(bye) goodbye
+(inform) malaysian food
+(negate) no noise
+(inform) restaurant in the west part of town
+(thankyou) thank you good bye
+(bye) thank you good bye
+(request) area
+(thankyou) thank you good bye
+(request) what is the address
+(inform) i dont care
+(inform) i dont care
+(inform) moderate
+(inform) the south
+(request) what type of food
+(thankyou) thank you good bye
+(inform) im looking for a restaurant in the east part of town that serves belgium food
+(bye) thank you good bye
+(request) may i have the address and post code
+(request) what part of town is it in
+(inform) italian
+(request) and type of food
+(affirm) yeah
+(inform) anything
+(reqalts) another one
+(inform) id like a restaurant that serves thai food
+(request) phone number and post code
+(request) what kind of food do they serve
+(request) whats the phone number
+(inform) i dont care
+(request) where is it
+(bye) thank you good bye
+(inform) south
+(inform) i need a cheap restaurant in the east part of town
+(request) whats the post code
+(null) unintelligible
+(request) address
+(request) what type of food is it
+(reqalts) is there anything else
+(confirm) is that mexican food
+(inform) moroccan food
+(reqalts) how about indian food
+(request) where is it
+(request) address
+(bye) thank you goodbye
+(inform) west
+(thankyou) thank you good bye
+(request) whats their phone number
+(reqalts) anything else
+(request) post code
+(inform) im looking for a cheap restaurant in the west part of town
+(thankyou) thank you good bye
+(inform) pan asian
+(confirm) do they serve chinese food
+(reqalts) anything else
+(bye) thank you good bye
+(thankyou) thank you good bye
+(thankyou) thank you good bye
+(bye) good bye
+(inform) any area
+(reqalts) are there any other cheap restaurants in the west part of town
+(thankyou) thank you good bye
+(bye) thank you good bye
+(inform) dont care
+(request) whats their address
+(hello) hello
+(request) whats the address
+(reqalts) any more
+(thankyou) thank you good bye
+(reqalts) is there another restaurant
+(thankyou) thank you good bye
+(bye) good bye
+(bye) thank you good bye
+(inform) it doesnt matter
+(inform) i dont care
+(request) what area is it in
+(request) what about your signa
+(request) address
+(reqalts) anything else
+(bye) thank you bye
+(request) post code
+(request) whats the address and phone number
+(reqalts) okay give me another option
+(thankyou) thank you
+(inform) i dont care
+(inform) serving portuguese food
+(inform) any
+(inform) portuguese food
+(thankyou) thank you good bye
+(reqalts) anything else
+(inform) indian food west part of town
+(thankyou) thank you goodbye
+(bye) thank you good bye
+(bye) thank you good bye
+(thankyou) thank you good bye
+(request) can i get the phone number and area
+(request) what is the phone number
+(affirm) yes
+(inform) doesnt matter
+(thankyou) thank you
+(reqalts) how about mediterranean food
+(request) phone number
+(request) phone number
+(request) can i have the address please
+(inform) and asian food
+(bye) thank you good bye
+(inform) any part of town
+(request) okay whats the phone number
+(inform) any
+(inform) the south part of town
+(inform) im looking for a restaurant in the north
+(request) phone number
+(inform) european
+(bye) um thank you goodbye
+(inform) looking for an expensive restaurant that serves
+(thankyou) thank you goodbye
+(request) phone number
+(request) phone number
+(inform) restaurant in the south part of town
+(inform) vietnamese food
+(request) whats the phone number
+(affirm) yes
+(bye) thank you goodbye
+(inform) moderate
+(thankyou) thank you good bye
+(request) what kind of food does you garden serve
+(request) phone number
+(bye) thank you good bye
+(negate) no
+(inform) any
+(null) sil
+(request) what is the phone number
+(request) what is the phone number
+(inform) dont care
+(request) whats the address
+(inform) i want a restaurant serving persian food
+(bye) thank you goodbye
+(inform) south
+(bye) thank you good bye
+(reqalts) how about chinese food
+(inform) any
+(bye) thank you good bye
+(inform) im looking for a restaurant serving european food
+(reqalts) what about thai
+(request) address
+(thankyou) thank you good bye
+(bye) thank you good bye
+(request) i can have the address the phone number and the post code of the
+(reqalts) how about korean food
+(null) unintelligible
+(bye) okay good bye
+(inform) in the south part
+(reqalts) um how about spanish food
+(thankyou) thank you goodbye
+(affirm) yes
+(inform) expensive
+(reqalts) how about chinese food
+(inform) looking for a moderately priced restaurant in the east part of town
+(inform) mexican
+(bye) thank you good bye
+(inform) im looking for eritrean food
+(request) what is the phone number
+(thankyou) thank you good bye
+(request) whats the address
+(request) what type of food do they serve
+(inform) italian food
+(thankyou) thank you good bye
+(reqalts) anything else
+(inform) chinese
+(bye) thank you good bye
+(reqalts) how about italian food
+(affirm) yes
+(request) whats the address
+(inform) expensive restaurant in the south
+(request) yes part of town
+(thankyou) thank you goodbye
+(thankyou) thank you good bye
+(request) what is the phone number
+(request) address
+(inform) any area
+(affirm) yes
+(inform) im looking for an expensive restaurant in the east part of town
+(reqalts) anything else
+(request) price range
+(inform) gastropub
+(inform) south
+(negate) no eritrean
+(request) whats the address
+(request) phone number
+(thankyou) thank you good bye
+(inform) i am looking for
+(inform) uh cheap moderate
+(bye) thank you good bye
+(request) what is the price range
+(inform) asian oriental
+(inform) any
+(inform) expensive expensive
+(thankyou) thank you goodbye
+(inform) are there any that serve vietnamese food
+(inform) pan asian
+(null) noise
+(thankyou) thank you good bye
+(inform) south
+(inform) do you have jamaican restaurant
+(confirm) does it serve thai food
+(bye) thank you good bye
+(inform) eartrain
+(request) what is the post code
+(inform) the type of food is lebanese
+(inform) s e a f o o d
+(request) phone number
+(reqalts) how about chinese food
+(affirm) yes
+(inform) italian food
+(inform) expensive
+(bye) thank you good bye
+(inform) doesnt matter
+(bye) thank you good bye
+(thankyou) thank you
+(bye) thank you goodbye
+(request) whats the address
+(request) what is the address
+(inform) im looking for scandinavian food
+(inform) center
+(bye) thank you good bye
+(thankyou) thank you good bye
+(request) address
+(inform) i need a cheap restaurant
+(bye) thank you good bye
+(null) noise
+(bye) thank you good bye
+(reqalts) how about mediterranean
+(thankyou) thank you good bye
+(affirm) yes
+(null) unintelligible
+(inform) moderate
+(reqalts) what about british food
+(thankyou) thank you good bye
+(affirm) yes
+(inform) expensive
+(thankyou) thank you good bye
+(thankyou) thank you good bye
+(bye) okay good bye
+(request) phone number
+(inform) uh any
+(request) address
+(affirm) yes
+(request) may i have the address
+(thankyou) thank you goodbye
+(inform) steak house food noise steak house food
+(reqmore) more
+(request) post code
+(request) phone number
+(inform) im looking for a restaurant in the center serving greek food
+(affirm) yes
+(inform) cuban food
+(null) sil
+(request) address
+(bye) thank you good bye
+(confirm) is it expensive
+(request) what is the area
+(inform) the south part of town
+(request) phone number
+(request) whats the address
+(null) sil
+(request) what kind of food
+(inform) portuguese food
+(inform) okay um well how bout portuguese
+(bye) thank you good bye
+(inform) it doesnt matter
+(inform) indonesian food
+(repeat) again please
+(request) post code
+(inform) and the food type
+(request) what area of town
+(bye) thank you good bye
+(request) whats the address and phone number
+(null) serve
+(inform) unusual
+(reqalts) is there anything else
+(inform) moderately priced
+(inform) system european food
+(inform) british food
+(inform) australian food
+(reqalts) what about turkey food
+(thankyou) thank you good bye
+(inform) moderately priced
+(inform) noise ease part of town east
+(inform) turkish food
+(inform) russian
+(bye) thank you good bye
+(inform) pan asian
+(thankyou) thank you good bye
+(inform) jamaican food
+(request) what kind of food does it serve
+(request) what is the phone numbere
+(request) phone number
+(inform) i want a restaurant in the south part of town that serves moroccan food
+(bye) thank you good bye
+(inform) any area
+(inform) asian food
+(inform) any
+(inform) thai
+(affirm) yes
+(inform) doesnt matter
+(reqalts) is there anything else
+(thankyou) thank you good bye
+(reqalts) i dont want that one whats another one
+(thankyou) thank you goodbye
+(thankyou) thank you good bye
+(null) noise
+(inform) vietnamese
+(thankyou) thank you good bye
+(request) uh no i need the phone number
+(reqalts) anything else
+(bye) thank you good bye
+(request) address
+(inform) in the north part of town
+(inform) i would like to find a cheap restaurant and it should be in the south
+(request) address
+(inform) cheap restaurant serving unintellgible food
+(bye) thank you good bye
+(reqalts) how about italian
+(inform) expensive
+(thankyou) thank you good bye
+(bye) thank you good bye
+(inform) moderately
+(inform) indian
+(request) whats the address
+(thankyou) thank you goodbye
+(reqalts) how about modern european food
+(inform) italian food
+(thankyou) thank you good bye
+(request) and their phone number
+(inform) moderately priced restaurant
+(request) phone number
+(inform) vietnamese food
+(null) that serves viet
+(thankyou) thank you good bye
+(request) whats the phone number
+(bye) thank you good bye
+(request) can i have the address of the venue
+(thankyou) thank you good bye
+(thankyou) thank you good bye
+(request) phone number
+(inform) cuban
+(thankyou) thank you good bye
+(null) free
+(inform) any area
+(inform) im looking for a cheap restaurant
+(inform) the turkiesh
+(thankyou) thank you good bye
+(request) what is the post code
+(inform) any price range is fine
+(null) noise
+(reqalts) how about chinese food
+(inform) im looking for an expensive restaurant in the south part of town
+(inform) canapes
+(inform) expensive
+(request) whats the address
+(reqalts) how about chinese type of food
+(thankyou) thank you good bye
+(inform) korean food
+(request) what is the address
+(reqalts) is there anything else
+(inform) west
+(negate) no danish food
+(inform) italian food
+(reqalts) how about italian
+(reqalts) is there any restaurant
+(null) sil
+(thankyou) thank you good bye
+(inform) im looking for a restaurant on the east part of town
+(inform) i am looking for persian food please
+(request) post code
+(thankyou) thank you good bye
+(request) whats the address
+(request) what is the address
+(reqalts) thats great what else is there
+(request) price range
+(inform) korean
+(inform) north american food
+(request) post code
+(request) whats the phone number
+(inform) im looking for a korean restaurant
+(bye) good bye
+(thankyou) thank you good bye
+(affirm) yes
+(inform) traditional food
+(inform) vietnamese food
+(inform) any price range
+(request) noise address and the post code of the venue
+(inform) i would like an expensive restaurant in the south part of town
+(inform) i want to find a cheap restaurant
+(bye) thank you good bye
+(request) address and phone number
+(inform) moderate
+(thankyou) thank you good bye
+(reqalts) how about british type of food
+(null) care
+(inform) any price range
+(reqalts) what about a moderately priced restaurant in the south part of town
+(reqalts) anything else
+(request) address
+(reqalts) is there anything else
+(bye) thank you good bye
+(inform) expensive restaurant
+(bye) thank you good bye
+(inform) any part of town
+(inform) im looking for an expensive restaurant in the
+(inform) danish food
+(inform) gastropub
+(request) what is the phone number
+(inform) that serves takes out food
+(request) phone number
+(request) price range
+(request) do you have the address
+(request) what is their address
+(null) thats fine
+(inform) im looking for a restaurant in the east part of town that serves indonesian food
+(request) whats the address
+(inform) im looking for an expensive restaurant
+(null) unintelligible
+(deny) wrong
+(reqalts) how about british food
+(affirm) yes
+(bye) thank you good bye
+(request) what type of food does it serve
+(inform) im looking for a restaurant in the east part of town
+(bye) thank you good bye
+(bye) thank you good bye
+(request) post code
+(thankyou) thank you
+(inform) moderately priced restaurant
+(inform) i need a restaurant in the center of town
+(inform) south
+(inform) caribbean food
+(affirm) yes
+(affirm) yes
+(bye) thank you good bye
+(request) and the post code
+(bye) thank you good bye
+(reqalts) what about vietnamese food
+(inform) european food
+(request) post code
+(thankyou) thank you good bye
+(inform) a restaurant in the west part of town
+(bye) thank you good bye
+(null) sil
+(reqalts) how about indian food
+(inform) center
+(request) what area
+(inform) korean
+(request) um whats the phone number
+(null) how about tha
+(confirm) does it serve canapes
+(reqalts) how about asian oriental
+(request) phone number
+(request) whats the phone number
+(bye) thank you good bye
+(inform) any
+(null) sil
+(bye) thank you good bye
+(bye) thank you goodbye
+(bye) thank you good bye
+(request) what kind of food does it
+(inform) asian oriental food
+(thankyou) thank you good bye
+(inform) expensive
+(inform) asian oriental
+(bye) thank you good bye
+(request) what is the post code
+(thankyou) thank you good bye
+(thankyou) thank you goodbye
+(request) address
+(request) whats the address
+(reqalts) how about uh gastropub
+(inform) noise i want to find a restaurant that serve french food
+(bye) thank you good bye
+(inform) west
+(request) phone number
+(inform) north
+(inform) mexican
+(bye) thank you good bye
+(bye) thank you good bye
+(inform) i dont care
+(bye) thank you good bye
+(hello) hello
+(reqalts) what about asian oriental food
+(inform) malaysian
+(inform) cheap restaurant in the north
+(bye) thank you good bye
+(inform) west
+(reqalts) is there anything else
+(inform) south part of town
+(thankyou) thank you good bye
+(request) whats the address
+(request) may i have the address and postcode
+(thankyou) thank you good bye
+(reqmore) more
+(request) what is the address
+(inform) moderately priced
+(inform) i dont care
+(request) can i get the address
+(request) address
+(inform) south
+(request) the address
+(null) sil
+(inform) i dont know
+(inform) chinese foo
+(request) what type of food do they serve
+(inform) moderate
+(request) whats the address
+(request) type of food
+(inform) east part of town
+(inform) asian oriental
+(request) and the area
+(reqalts) is there anything else
+(request) address phone number post code
+(thankyou) thank you good bye
+(reqalts) is there a restaurant that serves modern european
+(affirm) yes
+(request) phone number
+(thankyou) thank you good bye
+(request) could i have the address please
+(inform) east part
+(request) can i have the address and phone number
+(inform) uh scandinavian food
+(null) noise
+(inform) moderately priced restaurant serving moroccan food
+(affirm) yes
+(bye) thank you good bye
+(bye) thank you good bye
+(inform) im looking for a restaurant that serves chinese food
+(null) noise
+(thankyou) thank you goodbye
+(inform) french food
+(thankyou) thank you good bye
+(inform) mediterranean
+(request) can i get the address
+(thankyou) thank you good bye
+(inform) any area
+(thankyou) thank you goodbye
+(request) tell me the phone number
+(request) post code
+(inform) chinese food
+(inform) how bout asian oriental
+(inform) im looking for something in the west side
+(bye) thank you good bye
+(inform) id like a moderately priced restaurant that serves thai food
+(thankyou) thank you goodbye
+(thankyou) thank you goodbye
+(inform) south
+(bye) thank you good bye
+(inform) creative food
+(inform) im looking for a restaurant in the south part of town
+(null) noise
+(request) what is the phone number
+(null) unintelligible
+(null) can i get a
+(request) address
+(request) address
+(null) okay and um
+(bye) thank you good bye
+(inform) south part of town
+(thankyou) thank you good bye
+(inform) vietnamese
+(request) phone number
+(inform) im looking for a restaurant in the north part of town
+(null) unintelligible
+(inform) you know thai thai food
+(inform) west part of town
+(request) what type of food do they serve
+(request) address
+(inform) center
+(bye) thank you good bye
+(request) whats the address
+(thankyou) thank you good bye
+(bye) thank you good bye
+(inform) spanish
+(inform) vietnamese
+(request) what is the type of food
+(inform) im looking for a restaurant in the center of town that serves lebanese food
+(request) what type of food
+(bye) thank you good bye
+(inform) expensive restaurant
+(inform) any
+(bye) thank you good bye
+(bye) thank you good bye
+(thankyou) thank you good bye
+(inform) it doesnt matter
+(request) whats the address phone number and post code
+(inform) any
+(inform) it doesnt matter
+(inform) im looking for portuguese food
+(inform) south part of town
+(thankyou) thank you good bye
+(negate) no thank you good bye
+(bye) thank you good bye
+(inform) dont care
+(thankyou) thank you good bye
+(inform) do you have cuban food
+(null) noise
+(thankyou) thank you good bye
+(inform) i would like a moderately priced restaurant in the west part of town
+(reqalts) how about italian food
+(affirm) yes
+(null) what is the
+(request) phone number
+(inform) north
+(request) whats the address and phone number
+(reqalts) how about chinese food
+(request) phone number
+(affirm) yes
+(null) unintelligible
+(thankyou) thank you good bye
+(bye) thank you good bye
+(affirm) right in the south part of town
+(null) unintelligible
+(request) post code
+(null) system
+(request) address
+(inform) west part of town
+(affirm) uh yes mexican please
+(request) whats their address
+(inform) im looking for a cheap restaurant in the west part of town
+(reqalts) how about italian food
+(request) uh okay how about the address
+(inform) looking for caribbean food
+(bye) thank you good bye
+(inform) west
+(request) whats the phone number
+(inform) okay ah how bout portuguese food
+(null) sil
+(inform) spanish
+(inform) indian
+(reqalts) how about indian food
+(null) sil
+(inform) find moderately priced restaurant in the west part of town
+(request) phone number
+(reqalts) how about european food
+(bye) thank you good bye
+(inform) find moderately priced brazilian restaurant
+(thankyou) thank you
+(inform) portugese
+(bye) thank you good bye thank you good bye
+(affirm) yes
+(negate) no caribbean
+(bye) thank you good bye
+(null) not sure
+(bye) thank you good bye
+(reqalts) what about european food
+(reqalts) what about asian oriental food
+(bye) thank you good bye
+(inform) moroccan
+(thankyou) thank you good bye
+(reqalts) how about chinese food
+(request) whats the phone number and address
+(inform) im looking for a restaurant in the north part of town
+(inform) i want to find a cheap restaurant that serves
+(inform) belgium food
+(inform) singaporean food
+(request) what is the phone number
+(inform) vietnamese food
+(request) address
+(request) whats the post code
+(request) noise what is the area
+(inform) turkiesh food
+(inform) id like a cheap restaurant on the south of town
+(affirm) yes
+(thankyou) thank you good bye
+(request) whats the phone number
+(thankyou) uh thank you and good bye
+(inform) spanish
+(thankyou) thank you good bye
+(inform) i dont care
+(thankyou) thank you good bye
+(request) is it what price range
+(negate) no lebanese how do you say it
+(thankyou) thank you good bye
+(inform) any part
+(bye) thank you goodbye
+(inform) im looking for a restaurant
+(bye) thank you good bye
+(thankyou) thank you good bye
+(request) phone number
+(bye) thank you good bye
+(inform) i dont care
+(request) phone number and area
+(request) and whats the phone number
+(null) noise
+(request) what is the phone number
+(affirm) yes
+(inform) an expensive restaurant
+(inform) expensive
+(inform) south
+(request) what is the phone number
+(inform) north
+(request) phone number
+(inform) cheap restaurant
+(request) what is the address please
+(null) noise
+(inform) belgium
+(request) phone number
+(thankyou) thank you good bye
+(affirm) yes
+(inform) south
+(bye) thank you good bye
+(bye) thank you good bye
+(affirm) right
+(inform) east
+(inform) north
+(inform) bask food
+(request) and whats the phone number
+(confirm) does it serve canapes food
+(request) and the phone number
+(request) phone number
+(inform) russian food
+(thankyou) thank you good bye
+(inform) british food
+(thankyou) thank you goodbye
+(inform) i want a moderate priced restaurant in the north part of town
+(request) address
+(affirm) right
+(inform) indian food west part of town
+(inform) british
+(inform) italian food
+(request) price range
+(inform) i dont care
+(affirm) yes
+(inform) moderate priced
+(request) whats the phone number
+(null) sorry
+(bye) thank you good bye
+(thankyou) thank you good bye
+(request) what is the address
+(request) and the post code
+(reqalts) how about cantonese food
+(inform) cheap
+(inform) does not matter
+(inform) im looking for thai food
+(inform) im looking for an expensive restaurant in the east part of town
+(bye) thank you good bye
+(inform) east
+(inform) moderately priced restaurant halal food
+(thankyou) thank you goodbye
+(request) what type of food is it
+(confirm) does it serve steakhouse food
+(bye) thank you good bye
+(affirm) yes
+(thankyou) thank you good bye
+(bye) thank you goodbye
+(request) could i have the address and phone number
+(request) yea you can give me the address
+(null) noise
+(negate) no canapes
+(affirm) yes
+(request) what is la margheritas address
+(affirm) uh yes im looking for a cheap restaurant that serves medetanian food
+(negate) no
+(reqalts) how about korean type food
+(request) area
+(inform) spanish food
+(inform) uh i want a cheap restaurant and it should be in the north part of town
+(inform) im looking for a restaurant in the center
+(inform) moderately priced restaurant south part of town
+(thankyou) thank you good bye
+(bye) thank you good bye
+(inform) id like to find an expensive restaurant in the east side of town
+(inform) european food
+(request) address
+(null) unintelligible
+(reqalts) is their anything else
+(request) may i have the phone number talking
+(affirm) yes
+(bye) thank you good bye
+(reqalts) anything else
+(inform) japanese food
+(inform) asian oriental
+(thankyou) thank you good bye
+(request) whats the address
+(inform) im looking for expensive welsh food
+(request) can i have the phone number
+(request) and the post code
+(inform) cantonese
+(inform) belgium food
+(inform) i dont care
+(inform) afghan
+(request) may i have the address
+(inform) singaporean
+(inform) east
+(inform) expensive food in the south of town
+(bye) thank you good bye
+(request) phone number
+(inform) north
+(request) phone number
+(inform) moderately priced restaurant
+(inform) asian oriental
+(request) okay whats the phone number
+(thankyou) thank you goodbye
+(inform) id like an expensive thai restaurant
+(bye) thank you good bye
+(inform) im looking for a cheap restaurant in the north part of town
+(request) what is the phone number and address
+(inform) cheap
+(reqalts) is there anything else
+(inform) in the north part of town
+(inform) gastropub food
+(inform) i dont care
+(reqalts) how about chinese
+(inform) moderate restaurant south part of town
+(inform) i want a restaurant
+(null) oh
+(inform) food
+(thankyou) thank you good bye
+(inform) restaurant the serves english food
+(inform) im looking for a cheap restaurant in the south part of town
+(reqalts) what about thai food
+(thankyou) thank you good bye
+(request) what is the price range
+(request) i need an address
+(inform) chinese food
+(inform) danish
+(thankyou) thank you good bye
+(bye) thank you good bye
+(bye) thank you goodbye
+(bye) thank you good bye
+(request) what is the address
+(request) phone number
+(bye) thank you good bye
+(bye) thank you goodbye
+(inform) uh im looking for a moderately priced restaurant
+(request) whats the address
+(inform) gastropub
+(thankyou) thank you
+(inform) im looking for a cheap restaurant that serves austrian food
+(request) can i have the address
+(thankyou) thank you goodbye
+(request) phone number
+(inform) serving modern european type of food
+(inform) south
+(thankyou) breath thank you goodbye
+(inform) cuban food
+(inform) anything
+(inform) crossover food
+(inform) i need a restaurant serving turkish food
+(bye) okay um thank you good bye
+(reqalts) is there another
+(inform) any
+(null) unintelligible
+(request) what is the address and phone number
+(thankyou) good bye thank you
+(null) noise
+(thankyou) thank you good bye
+(request) what is the address
+(request) what is the price range
+(affirm) yes
+(thankyou) thank you good bye
+(bye) thank you good bye
+(inform) basque
+(inform) indonesian food
+(request) what area is that
+(thankyou) thank you good bye
+(inform) i would like a cheap restaurant in the west part of town
+(bye) thank you goodbye
+(inform) on the south part of town
+(request) what type of food is it
+(request) whats the post code
+(request) phone number
+(inform) asian oriental
+(inform) seafood
+(inform) thai food
+(bye) okay thank you good bye
+(reqalts) how about chinese
+(inform) im looking for a moderately priced restaurant that serves sea food
+(inform) greek
+(null) inaudible
+(request) whats the phone number
+(hello) hello im looking for a moderately priced restaurant in thr
+(inform) i want to find a cheap restaurant
+(inform) mediterranean food
+(reqalts) how about asian oriental type of food
+(request) can i have their phone number
+(inform) any
+(inform) moderate
+(inform) find me an expensive portuguese restaurant
+(request) whats the post code
+(inform) portugese
+(inform) im looking for a restaurant in the center that serves bistro food
+(bye) goodbye
+(bye) thank you good bye crosstalk
+(null) sil
+(request) okay phone number
+(null) noise
+(thankyou) thank you good bye
+(request) what is the price range of this venue
+(thankyou) okay thank you good bye
+(inform) japanese food
+(reqalts) how about modern europone
+(inform) im looking for a moderately priced restaurant in the west part of town
+(thankyou) great thank you good bye
+(request) phone number and address
+(request) phone number
+(inform) unusual food
+(thankyou) thank you good bye
+(inform) um i dont care about the price
+(null) noise
+(inform) i dont care
+(thankyou) thank you good bye
+(request) area
+(inform) im looking for a moderately priced restaurant and it should be in the north of town
+(bye) thank you good bye
+(negate) no north
+(inform) i need a restaurant that serves halal food
+(inform) thai food
+(request) id like the address and phone number please
+(null) unintelligible
+(bye) thank you good bye
+(null) unintelligible
+(reqalts) anything else
+(request) can i get the phone number
+(inform) the south part
+(reqalts) anything else
+(hello) hello
+(request) type of food
+(inform) moderately priced
+(thankyou) thank you good bye
+(thankyou) thank you goodbye
+(inform) im looking for a moderately priced restaurant
+(thankyou) thank you good bye
+(inform) im looking chineese food
+(inform) belgium
+(request) how much does it cost
+(reqalts) anything else
+(inform) a restaurant serving thai food
+(request) address
+(request) address
+(request) phone number
+(inform) looking for a restaurant in the east part of town
+(inform) british food
+(reqalts) how about portuguese food
+(null) unintelligible
+(inform) spanish food
+(request) phone number
+(reqalts) how about british
+(reqalts) um how about chinese food in the south part of town
+(negate) no
+(reqalts) is there anything else
+(inform) i do i dont care
+(inform) gastropub
+(request) whats the address and phone number
+(null) sil
+(bye) thank you good bye
+(inform) moderately priced
+(thankyou) thank you good bye
+(negate) no
+(inform) expensive
+(thankyou) thank you good bye
+(inform) north
+(inform) vietnamese
+(bye) breath thank you goodbye
+(request) phone number
+(request) what is the phone number
+(bye) thank you good bye
+(thankyou) thank you good bye
+(thankyou) thank you good bye
+(reqalts) how about chinese food
+(affirm) yes
+(inform) is the one that serves indian food
+(inform) im looking for an expensive restaurant serving international food
+(reqalts) are there any other expensive restaurants in the east part of town
+(request) may i have the address
+(request) can i get the address
+(request) what is the address
+(inform) any price range
+(bye) thank you good bye
+(inform) expensive
+(bye) thank you goodbye
+(null) unintelligible
+(inform) the south part of town
+(inform) cantonese
+(inform) if there is no such venue how about european type of
+(null) noise
+(request) phone number
+(thankyou) thank you good bye
+(request) okay whats the address
+(inform) i dont care
+(request) and phone number
+(bye) thank you good bye
+(negate) no
+(inform) any
+(inform) any kind of food
+(inform) moderately priced danish food
+(inform) it doesnt matter
+(request) whats the phone number
+(inform) um medium price range
+(null) sil
+(reqalts) okay how about european food
+(inform) i would like to find a cheap restaurant in the west part of t
+(inform) any
+(thankyou) thank you goodbye
+(affirm) right
+(inform) west
+(inform) veitnamese
+(request) address and phone number
+(inform) moderate
+(reqalts) is that the only one with indian food
+(inform) expensive
+(bye) thank you good bye
+(request) a phone number please
+(inform) moderate price range
+(inform) im looking for
+(inform) modern european
+(inform) portuguese
+(reqalts) how about italian
+(thankyou) thank you good bye
+(thankyou) thank you good bye
+(request) address
+(thankyou) thank you good bye
+(inform) id like a restaurant in the north part of town serving indian food
+(request) whats the address and phone number
+(inform) expensive
+(bye) thank you good bye
+(request) post code
+(request) address
+(null) unintelligible
+(bye) thank you good bye
+(inform) moderate
+(inform) restaurant in any area
+(inform) spanish food
+(thankyou) thank you good bye
+(inform) a restaurant in the north part of town
+(request) what food is available
+(inform) south part of town
+(inform) cantonese food
+(inform) expensive restaurant
+(null) unintelligible
+(request) what is the address
+(inform) i dont care
+(inform) im looking for a restaurant that serves indian food
+(inform) korean food
+(negate) no the south part
+(hello) hello welcome
+(request) phone number
+(reqalts) what about british
+(inform) moderately priced
+(request) what is the phone number
+(inform) yea im looking for a restaurant in the moderate price range serving vietnamese food
+(reqalts) is there anything else
+(thankyou) thank you good bye
+(request) can i have their address please
+(request) address phone number and area
+(inform) any
+(inform) i dont care
+(bye) thank you goodbye
+(inform) any kind
+(bye) thank you good bye
+(inform) north
+(bye) good bye
+(inform) italian food
+(reqalts) next one
+(thankyou) uh thank you good bye
+(inform) i want spanish food
+(bye) okay thank you good bye
+(thankyou) thank you good bye
+(inform) moderate
+(request) and whats their price range
+(request) what is the address and phone number
+(affirm) yes
+(request) phone number
+(bye) thank you good bye
+(inform) are there any that serves portuguese food
+(thankyou) thank you good bye
+(thankyou) thank you good bye
+(inform) any kind
+(reqalts) how about asian oriental
+(thankyou) thank you good bye
+(bye) thank you good bye
+(reqalts) is there anything else
+(null) sil
+(request) address
+(inform) any
+(inform) cheap restaurant spani
+(bye) thank you good bye
+(thankyou) thank you goodbye
+(thankyou) thank you good bye
+(inform) caribbean food
+(reqalts) what about portuguese
+(request) and price range
+(bye) thank you good bye
+(inform) spanish food
+(bye) thank you good bye
+(thankyou) thank you good bye
+(request) phone number
+(reqalts) thank you is there anything else
+(negate) no
+(inform) irish food on the east part of town
+(request) address
+(inform) jamaican food
+(inform) expensive
+(inform) im looking for a restaurant in any area that
+(affirm) yes
+(request) what area
+(inform) jamaican
+(affirm) yes
+(affirm) yes
+(inform) creative
+(inform) the east part of town
+(bye) thank you good bye
+(inform) italian food
+(request) may i have the phone number and post code
+(request) adddress
+(inform) malaysian
+(request) what about the post code
+(inform) i want a french restaurant that serves expensive food
+(bye) thank you good bye
+(affirm) yes
+(inform) it doesnt matter
+(bye) thank you goodbye
+(inform) expensive
+(null) tv_noise
+(bye) thank you good bye
+(inform) the east part of town
+(affirm) yea
+(null) cough
+(request) may i have the address
+(reqalts) how about asian oriental
+(negate) no african
+(inform) moderately priced in the west part of town
+(null) sil
+(request) whats the address and phone number
+(inform) i need an expensive restaurant in the east part of town
+(null) noise
+(affirm) yes
+(inform) i dont care
+(inform) north
+(affirm) yes
+(request) what is the address
+(affirm) yes
+(request) signature dish
+(bye) thank you good bye
+(null) sil
+(inform) i dont care
+(bye) um thank you good bye
+(inform) i want a moderately priced restaurant that serves
+(inform) cheap restaurant in the south part of town
+(thankyou) thank you good bye
+(affirm) yes
+(reqalts) is there a restaurant serving modern european food
+(request) post code
+(reqalts) how about mediterranean
+(inform) i would like to find an expensive restaurant in the south part of town
+(inform) um anything else please
+(null) okay
+(inform) west
+(bye) thank you good bye
+(request) can i have the address and post code
+(inform) i am looking for a restaurant in the west part of town
+(thankyou) thank you good bye
+(reqalts) is there anything else
+(reqalts) is there anything else
+(thankyou) thank you good bye
+(request) and the post code please
+(inform) unusual food
+(inform) any type of food
+(request) whats the address
+(thankyou) thank you good bye
+(inform) cheap
+(negate) no moderately priced
+(inform) asian oriental food
+(bye) thank you goodbye
+(inform) greek restauran
+(request) whats their price range
+(thankyou) thank you good bye
+(inform) any
+(thankyou) thank you good bye
+(null) unintelligible
+(inform) any
+(inform) cheap
+(bye) thank you good bye
+(null) sil
+(inform) kosher food
+(affirm) yes
+(request) can i get an address and phone number
+(null) the addre
+(inform) noise taquita restaurant
+(null) sil
+(thankyou) thank you good bye
+(inform) south
+(request) whats the address
+(inform) cuban
+(inform) id like it to be in the south part of town
+(inform) restaurant in the south part of town serving turkish food
+(thankyou) thank you good bye
+(inform) cheap gastropub
+(inform) any part of town
+(bye) okay thank you goodbye
+(bye) thank you good bye
+(request) what part of town
+(request) address
+(inform) south bart
+(bye) thank you goodbye
+(request) what type of food
+(bye) thank you good bye
+(request) can i have the phone number
+(request) whats the address
+(affirm) ye
+(null) unintelligible
+(thankyou) thank you good bye
+(request) can i get the address
+(bye) thank you good bye
+(thankyou) thank you good bye
+(bye) thank you good bye
+(reqalts) how about international
+(inform) italian
+(bye) thank you good bye
+(affirm) yes
+(thankyou) thank you good bye
+(thankyou) thank you
+(thankyou) thank you goodbye
+(null) that serves
+(thankyou) thank you good bye
+(affirm) yes
+(bye) thank you good bye
+(request) what is the phone number
+(thankyou) thank you good bye
+(null) sil
+(inform) european food
+(inform) yea id like a cheap restaurant in the north part of town
+(null) noise
+(inform) im looking for african food
+(request) what is the address
+(inform) korean
+(bye) thank you good bye
+(request) can i have the phone number
+(inform) any
+(inform) expensive
+(thankyou) thank you
+(request) what is the phone number
+(confirm) does it serve vietnamese type of food
+(inform) asian oriental
+(request) whats the phone number
+(request) okay may i get the address
+(request) what kind of food does it serve
+(inform) steak house
+(null) uh
+(thankyou) thank you goodbye
+(bye) thank you good bye
+(request) what is the phone number
+(inform) asian oriental food
+(request) address
+(thankyou) thank you good bye
+(inform) expensive restaurant
+(inform) im looking for korean food
+(bye) good bye
+(inform) the west part of town
+(inform) noise im looking for a restaurant serving vegetarian food
+(inform) mexican
+(bye) thank you good bye
+(request) address
+(inform) i do not care
+(inform) i need restaurant serves spanish food
+(thankyou) thank you good bye
+(inform) chinese
+(request) may i have the address please
+(bye) thank you good bye
+(thankyou) thank you good bye
+(bye) thank you good bye
+(thankyou) thank you good bye
+(bye) thank you good bye
+(inform) it doesnt matter
+(inform) i dont care
+(request) address
+(inform) east
+(request) can i get the address phone number and post code
+(inform) does anyone serve eritrean food
+(null) viet
+(thankyou) thank you good bye
+(affirm) yes
+(request) okay and can i get their address
+(inform) dont care
+(request) can i have the phone
+(inform) tuscan food south part of town
+(request) what type of food
+(reqalts) anything else
+(thankyou) thank you good bye
+(reqalts) anything else
+(thankyou) thank you good bye
+(inform) welsh food
+(request) could you give me the phone number and post code
+(thankyou) thank you good bye
+(inform) any
+(bye) thank you good bye
+(thankyou) thank you good bye
+(inform) it doesnt matter
+(thankyou) thank you good bye
+(affirm) yes
+(thankyou) thank you good bye
+(thankyou) thank you goodbye
+(inform) im looking for a restaurant that serves european food
+(inform) east
+(request) okay can i get the address
+(thankyou) thank you good bye
+(bye) thank you good bye
+(affirm) yes
+(request) phone number
+(inform) italian food
+(thankyou) thank you good bye
+(thankyou) thank you good bye
+(request) what is the address
+(request) what type of food do they serve
+(inform) european
+(inform) doesnt matter
+(inform) dont care
+(reqalts) what about european
+(inform) dont care
+(inform) i would like modern european food
+(bye) thank you good bye
+(thankyou) thank you good bye
+(bye) thank you goodbye
+(null) the addre
+(inform) i want a restaurant in the center
+(thankyou) thank you good bye
+(inform) doesnt matter
+(inform) noise i would like to find a moderately priced restaurant in the south of town
+(request) what is the postcode
+(request) what is their phone number
+(inform) im looking for um
+(inform) im looking for a moderately priced restaurant in the south part of town
+(bye) thank you good bye
+(bye) thank you good bye
+(bye) thank you good bye
+(inform) doesnt matter
+(null) noise
+(inform) expensive restaurant scottish food
+(reqalts) how about moroccan food
+(reqalts) is there another one
+(thankyou) thank you good bye
+(request) and the post code
+(reqalts) is there anything else
+(reqalts) is there anything else
+(inform) dont care
+(bye) thank you good bye
+(inform) moderate
+(reqalts) what about mediterranean
+(inform) expensive italian
+(inform) east
+(affirm) yes good afternoon im looking for a restaurant in the north
+(thankyou) thank you good bye
+(request) what is the address
+(bye) okay thank you good bye
+(request) whats the address
+(request) phone number
+(bye) good bye
+(reqalts) anything else
+(reqalts) what about portuguese food
+(request) what is the phone number
+(negate) no
+(inform) im searching for turkish food
+(request) and the price range
+(inform) restaurant in center
+(thankyou) thank you goodbye
+(request) address
+(inform) portuguese food
+(inform) and the north
+(inform) cantonese food
+(request) could i have the area please
+(bye) thank you good bye
+(inform) im looking for a restaurant in the north part of town that serves korean food
+(request) address
+(affirm) yes
+(inform) indian food west part of town
+(thankyou) thank you good bye
+(bye) thank you good bye
+(inform) i dont care
+(request) the address
+(inform) i dont care
+(reqalts) is there anything else
+(bye) thank you goodbye
+(request) phone number
+(thankyou) thank you good bye
+(inform) im looking for a restaurant in the cheap price range that serves asian oriental food
+(inform) christmas food west of town
+(inform) australasian food
+(inform) im looking for vegetarian food on the east part of town
+(thankyou) thank you and good bye
+(inform) south
+(bye) thank you goodbye
+(inform) im looking for a restaurant in the west part of town that serves canapes food
+(null) sil
+(inform) uh gastropub food
+(affirm) ah yes can i get a restaurant that serves french food
+(inform) in cheap restaurant
+(inform) i dont care
+(inform) im looking for a moderately priced restaurant in the north
+(thankyou) thank you good bye
+(request) phone number
+(thankyou) thank you good bye
+(thankyou) thank you good bye
+(thankyou) thank you good bye
+(inform) i am looking for a moderately priced restaurant in the south
+(negate) no thank you goodbye
+(bye) thank you good bye
+(request) what is the post code
+(inform) looking for a cheap restaurant east part of town
+(inform) id like to find a restaurant serving french food
+(inform) european
+(inform) i dont care
+(thankyou) thank you good bye
+(hello) hello im looking for a cheap restaurant in the west part of town
+(reqalts) how about portuguese
+(affirm) yea you can give me the address
+(request) can i have the address and phone number of the venue
+(inform) serve kosher food
+(reqalts) is there a restaurant in the north part of town that serves indian food
+(reqalts) is there anything else
+(request) post code
+(inform) the south
+(inform) moderately priced
+(inform) i dont care
+(request) can i have the address
+(request) phone number
+(inform) um i want to find a restaurant that serves fusion food
+(request) what type of food is it
+(request) what type of food do they serve
+(request) can i have the address
+(inform) im looking for a restaurant in the center of town that serves romanian food
+(inform) moderate price
+(bye) thank you goodbye
+(thankyou) thank you good bye
+(inform) i dont care
+(inform) i need an expensive restaurant that serves french food
+(request) whats the phone number for noise
+(inform) im looking for a cheap restaurant in the
+(inform) moderate price
+(request) what is the price range
+(inform) i dont care
+(request) address
+(null) unintelligible
+(inform) i dont care about the price range
+(bye) bye
+(inform) south
+(request) whats the address
+(request) could you repeat the restaurant name
+(inform) hindi food is okay
+(bye) okay thank you good bye
+(bye) thank you good bye
+(inform) dont care
+(inform) doesnt matter
+(inform) swedish
+(request) in the area
+(inform) im looking for a restaurant that serves expensive food or expensive
+(affirm) yeah
+(inform) italian food
+(inform) vegitarian
+(request) address
+(request) can i have the phone number please
+(inform) indian
+(bye) thank you good bye
+(request) whats their phone number
+(bye) thank you good bye
+(request) and the address
+(affirm) uh yes can i find a cheap restaurant in the north part of town
+(request) what is the address
+(inform) im looking for a cheap restaurant in the west part of town
+(bye) thank you good bye
+(deny) wrong
+(request) phone number
+(request) what kind of food
+(inform) im looking for a restaurant in the center and it should serve traditional food
+(inform) is their korean food
+(inform) moderate european food
+(ack) okay um
+(inform) dont care
+(inform) chinese food
+(request) post code
+(null) sil
+(request) what type of food is it
+(thankyou) okay thank you good bye
+(request) ah thank you phone number
+(request) phone number
+(inform) dont care
+(inform) expensive
+(affirm) yes
+(request) address
+(thankyou) okay thank you good bye
+(inform) any price range
+(request) address
+(affirm) yes
+(inform) im looking for a restaurant in the west part of town that serves caribbean
+(reqalts) how about indian food
+(inform) japanese
+(thankyou) thank you good bye
+(inform) any
+(affirm) yes
+(inform) im looking for a moderately priced restaurant in the north part of town
+(inform) moderate
+(thankyou) thank you good bye
+(inform) turkish
+(inform) cheap restaurant
+(inform) east
+(request) the area
+(affirm) yes
+(reqalts) how about caribbean food
+(request) what is the phone number and post code
+(inform) north
+(negate) no
+(request) phone number
+(request) what is the address
+(inform) spanish
+(thankyou) thank you good bye
+(inform) dont care
+(inform) gastropub
+(bye) thank you good bye
+(request) what is the address
+(thankyou) thank you goodbye
+(bye) goodbye
+(inform) center
+(affirm) yes and in french please
+(negate) no spanish
+(request) address
+(request) could i get the address
+(reqalts) anything else
