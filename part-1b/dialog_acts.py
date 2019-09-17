@@ -1,23 +1,35 @@
-import os, json, re
+import os, json, random
 
-def displayAllDialogs(path):
-
+def prepareDataSet(from_dir, to_dir):
     """
-    Read the source data and display the dialogs one by one in human-readable format.
-    Use the Enter key to proceed to the next dialog.
-    Input parameter 'path' is a string for the absolute path of the input root directory 'dstc2_traindev/data/'.
+    Prepare the dataset in the format 'dialog_act utterance_content'
+
+    The dataset (i.e., the original training and test set combined) is split in a training part of 85% and a test part of 15%.
+
+    'from_dir' is a string for the absolute path of the input directory, e.g., the parent folder of 'dstc2_test' and 'dstc2_traindev'
+    'to_dir' is a string for the absolute path of the output directory
     """
 
     logs = []
     labels = []
 
-    for r, d, f in os.walk(path):
+    for r, d, f in os.walk(from_dir):
         for file in f:
             if 'log.json' in file:
                 logs.append(os.path.join(r, file))
             if 'label.json' in file:
                 labels.append(os.path.join(r, file))
 
+    train_file = open(os.path.join(to_dir, 'train_dialogs.txt'), "w+")
+    test_file = open(os.path.join(to_dir, 'test_dialogs.txt'), "w+")
+
+    split = int(len(logs) * 0.85)
+
+    __generateDataSet(logs[:split], labels[:split], train_file)
+    __generateDataSet(logs[split:], labels[split:], test_file)
+
+
+def __generateDataSet(logs, labels, f):
     for i in range(len(logs)):
         log = json.loads(open(logs[i]).read())
         label = json.loads(open(labels[i]).read())
@@ -28,71 +40,22 @@ def displayAllDialogs(path):
             log_transcript_string = log["turns"][j]["output"]["transcript"]
 
             for log_act in log_acts_set:
-                print("System: (" + log_act.lower() + ") " + log_transcript_string.lower())
+                f.write(log_act.lower() + " " + log_transcript_string.lower() + "\n")
 
             label_acts_string = label["turns"][j]["semantics"]["cam"]
             label_acts_set = {"%s" % k[:k.index('(')] for k in label_acts_string.split('|')}
             label_transcription_string = label["turns"][j]["transcription"]
 
             for label_act in label_acts_set:
-                print("User: (" + label_act.lower() + ") " + label_transcription_string.lower())
-
-        print()
-        not input("Press enter to continue")
-
-
-def saveAllDialogs(params):
-
-    """
-    Read the source data and write all dialogs in human readable format to a file named "dialogs.txt"
-    Input parameter 'params' is a dictionary of the format {'from': '/...', 'to': '/...'}
-    'from' is a string for the absolute path of the input root directory 'dstc2_traindev/data/'
-    'to' is a string for the absolute path of the output file 'dialogs.txt'
-    """
-
-    logs = []
-    labels = []
-
-    for r, d, f in os.walk(params["from"]):
-        for file in f:
-            if 'log.json' in file:
-                logs.append(os.path.join(r, file))
-            if 'label.json' in file:
-                labels.append(os.path.join(r, file))
-
-    f = open(params["to"], "w+")
-
-    for i in range(len(logs)):
-        log = json.loads(open(logs[i]).read())
-        label = json.loads(open(labels[i]).read())
-
-        for j in range(len(log["turns"])):
-            log_acts_array = log["turns"][j]["output"]["dialog-acts"]
-            log_acts_set = {"%s" % log_acts_array[k]["act"] for k in range(len(log_acts_array))}
-            log_transcript_string = log["turns"][j]["output"]["transcript"]
-
-            for log_act in log_acts_set:
-                f.write("System: (" + log_act.lower() + ") " + log_transcript_string.lower() + "\n")
-
-            label_acts_string = label["turns"][j]["semantics"]["cam"]
-            label_acts_set = {"%s" % k[:k.index('(')] for k in label_acts_string.split('|')}
-            label_transcription_string = label["turns"][j]["transcription"]
-
-            for label_act in label_acts_set:
-                f.write("User: (" + label_act.lower() + ") " + label_transcription_string.lower() + "\n")
+                f.write(label_act.lower() + " " + label_transcription_string.lower() + "\n")
 
         f.write("\n")
 
     f.close()
 
 if __name__ == "__main__":
-    myPath = '/Users/zhaoshu/Documents/courses/Methods_of_AI_Research/lab-assignments/'
 
-    # Display All Dialogs
-    # displayAllDialogs(myPath)
+    from_dir = '/Users/zhaoshu/Documents/courses/Methods_of_AI_Research/lab-assignments/'
+    to_dir = '/Users/zhaoshu/Documents/courses/Methods_of_AI_Research/lab-assignments/part-1b/'
 
-
-    # Save All Dialogs
-    params = {"from": "/Users/zhaoshu/Documents/courses/Methods_of_AI_Research/lab-assignments/",
-              "to": "/Users/zhaoshu/Documents/courses/Methods_of_AI_Research/lab-assignments/part-1b/dialog_acts.txt"}
-    saveAllDialogs(params)
+    prepareDataSet(from_dir, to_dir)
