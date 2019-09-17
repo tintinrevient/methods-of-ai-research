@@ -8,8 +8,8 @@ def utter(fileName):
 
     try:
         while True:
-            sentence = input()
-            print(numpy.random.choice(list(model.keys()), 1, p=list(model.values())))
+            utterance = input()
+            print(numpy.random.choice(list(model.keys()), 1, p=list(model.values()))[0])
 
     except KeyboardInterrupt:
         pass
