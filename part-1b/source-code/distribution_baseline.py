@@ -21,8 +21,6 @@ def __initModel(fileNames):
         with open(fileName) as f:
             lines = lines + f.readlines()
 
-    print("total = ", len(lines))
-
     model = {
         'ack': 0,
         'affirm': 0,
