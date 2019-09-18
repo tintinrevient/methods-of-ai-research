@@ -1,8 +1,8 @@
 import numpy
 
-def utter(fileName):
+def utter(fileNames):
 
-    model = __initModel(fileName)
+    model = __initModel(fileNames)
 
     print("Please enter your sentence...")
 
@@ -14,10 +14,14 @@ def utter(fileName):
     except KeyboardInterrupt:
         pass
 
-def __initModel(fileName):
+def __initModel(fileNames):
 
-    with open(fileName) as f:
-        lines = f.readlines()
+    lines = []
+    for fileName in fileNames:
+        with open(fileName) as f:
+            lines = lines + f.readlines()
+
+    print("total = ", len(lines))
 
     model = {
         'ack': 0,
@@ -59,5 +63,6 @@ def __initModel(fileName):
 
 if __name__ == "__main__":
 
-    fileName = '/Users/zhaoshu/Documents/courses/Methods_of_AI_Research/lab-assignments/part-1b/train_dialogs.txt'
-    utter(fileName)
+    fileNames = ['/Users/zhaoshu/Documents/courses/Methods_of_AI_Research/lab-assignments/part-1b/label_train_dialogs.txt',
+                '/Users/zhaoshu/Documents/courses/Methods_of_AI_Research/lab-assignments/part-1b/label_test_dialogs.txt']
+    utter(fileNames)

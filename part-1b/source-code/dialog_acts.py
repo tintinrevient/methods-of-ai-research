@@ -20,8 +20,8 @@ def prepareDataSet(from_dir, to_dir):
             if 'label.json' in file:
                 labels.append(os.path.join(r, file))
 
-    train_file = open(os.path.join(to_dir, 'train_dialogs.txt'), "w+")
-    test_file = open(os.path.join(to_dir, 'test_dialogs.txt'), "w+")
+    train_file = open(os.path.join(to_dir, 'label_train_dialogs.txt'), "w+")
+    test_file = open(os.path.join(to_dir, 'label_test_dialogs.txt'), "w+")
 
     split = int(len(logs) * 0.85)
 
@@ -35,14 +35,17 @@ def __generateDataSet(logs, labels, f):
         label = json.loads(open(labels[i]).read())
 
         for j in range(len(log["turns"])):
-            log_acts_array = log["turns"][j]["output"]["dialog-acts"]
-            log_acts_set = {"%s" % log_acts_array[k]["act"] for k in range(len(log_acts_array))}
-            log_transcript_string = log["turns"][j]["output"]["transcript"]
+            # log_acts_array = log["turns"][j]["output"]["dialog-acts"]
+            # log_acts_set = {"%s" % log_acts_array[k]["act"] for k in range(len(log_acts_array))}
+            # log_transcript_string = log["turns"][j]["output"]["transcript"]
+            #
+            # for log_act in log_acts_set:
+            #     f.write(log_act.lower() + " " + log_transcript_string.lower() + "\n")
 
-            for log_act in log_acts_set:
-                f.write(log_act.lower() + " " + log_transcript_string.lower() + "\n")
-
+            # Only generate the dataset of user's dialog acts, as it is the dataset to be used in the training phase
             label_acts_string = label["turns"][j]["semantics"]["cam"]
+
+            # Remove the duplicates filtered from list to set
             label_acts_set = {"%s" % k[:k.index('(')] for k in label_acts_string.split('|')}
             label_transcription_string = label["turns"][j]["transcription"]
 
