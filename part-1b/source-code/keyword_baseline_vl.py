@@ -15,7 +15,7 @@ import collections
 def __keywordMatching(utterance, repetition = False):
 
     dialog_acts = {}
-    # Dialog acts keywords arrys
+    # Dialog acts keywords arrays
     ack_keywords = ["ackn", "ack"]
     affirm_keywords = ["affirm"]
     bye_keywords = ["bye"]
