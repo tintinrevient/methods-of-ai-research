@@ -1,6 +1,14 @@
 import numpy
 
 def utter(fileNames):
+    """
+    User types in random sentences, and the system will predict the user's act, a.k.a. intent.
+
+    The prediction is based on the act distribution from the training and test files.
+
+    :param fileNames:
+    :return:
+    """
 
     model = __initModel(fileNames)
 
@@ -14,7 +22,14 @@ def utter(fileNames):
     except KeyboardInterrupt:
         pass
 
+
 def __initModel(fileNames):
+    """
+    Initialise the model based on the act distribution from the training and test files.
+
+    :param fileNames:
+    :return:
+    """
 
     lines = []
     for fileName in fileNames:
@@ -61,6 +76,6 @@ def __initModel(fileNames):
 
 if __name__ == "__main__":
 
-    fileNames = ['/Users/zhaoshu/Documents/courses/Methods_of_AI_Research/lab-assignments/part-1b/label_train_dialogs.txt',
-                '/Users/zhaoshu/Documents/courses/Methods_of_AI_Research/lab-assignments/part-1b/label_test_dialogs.txt']
+    fileNames = ['../dataset-txt/label_train_dialogs.txt',
+                '../dataset-txt/label_test_dialogs.txt']
     utter(fileNames)

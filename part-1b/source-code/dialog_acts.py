@@ -30,6 +30,16 @@ def prepareDataSet(from_dir, to_dir):
 
 
 def __generateDataSet(labels, f):
+    """
+    Generate the training file in the format: dialog_act utterance_content.
+
+    There also exist multiple dialog_acts for one utterance_content, so the sentence is split into multiple lines of dialog_act utterance_content.
+
+    :param labels:
+    :param f:
+    :return:
+    """
+
     for i in range(len(labels)):
 
         label = json.loads(open(labels[i]).read())
@@ -51,7 +61,7 @@ def __generateDataSet(labels, f):
 
 if __name__ == "__main__":
 
-    from_dir = '/Users/zhaoshu/Documents/courses/Methods_of_AI_Research/lab-assignments/'
-    to_dir = '/Users/zhaoshu/Documents/courses/Methods_of_AI_Research/lab-assignments/part-1b/'
+    from_dir = '../dstc2/'
+    to_dir = '../label_dialogs/'
 
     prepareDataSet(from_dir, to_dir)

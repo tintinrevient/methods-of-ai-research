@@ -3,18 +3,60 @@ from keras.layers.core import Activation, Dropout, Dense
 from keras.preprocessing.text import Tokenizer
 from sklearn.preprocessing import LabelEncoder
 import numpy as np
-from keras import utils
+from keras.utils import to_categorical
 from keras.models import load_model
 
+# maximum words to use as a dictionary
 max_words = 1000
 
+def utter(modelFile, trainFileName):
+    """
+    User types in random sentences, and the system will predict the user's act, a.k.a. intent.
+
+    This method can only be successfully called by the already-trained DCNN model.
+
+    :param modelFile:
+    :param trainFileName:
+    :return:
+    """
+
+    model = load_model(modelFile)
+
+    print("Please enter your sentence...")
+
+    try:
+        while True:
+            utterance = input()
+
+            tokenizer, encoder = __loadTokenizerAndEncoder(trainFileName)
+            prediction = model.predict(np.array(tokenizer.texts_to_matrix([utterance], mode='count')))
+
+            print(encoder.classes_[np.argmax(prediction[0])])
+
+    except KeyboardInterrupt:
+        pass
+
+
 def trainModel(trainFileName, testFileName, modelFile):
+    """
+    This method can train the DCNN model based on the train file, and validate its accuracy by the test file.
+
+    The model will be dumped to a model file, which can be imported and used during the utter() method.
+
+    One-hot encoding is used for the word encoding.
+
+    :param trainFileName:
+    :param testFileName:
+    :param modelFile:
+    :return:
+    """
 
     tokenizer, encoder = __loadTokenizerAndEncoder(trainFileName)
 
     train_labels, train_utterances = __prepareDataSet(trainFileName)
     test_labels, test_utterances = __prepareDataSet(testFileName)
 
+    # one-hot encoding
     x_train = tokenizer.texts_to_matrix(train_utterances, mode="count")
     x_test = tokenizer.texts_to_matrix(test_utterances)
 
@@ -23,8 +65,8 @@ def trainModel(trainFileName, testFileName, modelFile):
 
     num_classes = np.max(y_train) + 1
 
-    y_train = utils.to_categorical(y_train, num_classes)
-    y_test = utils.to_categorical(y_test, num_classes)
+    y_train = to_categorical(y_train, num_classes)
+    y_test = to_categorical(y_test, num_classes)
 
     batch_size = 32
     epochs = 10
@@ -54,26 +96,13 @@ def trainModel(trainFileName, testFileName, modelFile):
     model.save(modelFile)
 
 
-def utter(modelFile, trainFileName):
-
-    model = load_model(modelFile)
-
-    print("Please enter your sentence...")
-
-    try:
-        while True:
-            utterance = input()
-
-            tokenizer, encoder = __loadTokenizerAndEncoder(trainFileName)
-            prediction = model.predict(np.array(tokenizer.texts_to_matrix([utterance], mode='count')))
-
-            print(encoder.classes_[np.argmax(prediction[0])])
-
-    except KeyboardInterrupt:
-        pass
-
-
 def __prepareDataSet(fileName):
+    """
+    Load the dataset into labels and utterances.
+
+    :param fileName:
+    :return:
+    """
 
     labels = []
     utterances = []
@@ -100,6 +129,12 @@ def __prepareDataSet(fileName):
 
 
 def __loadTokenizerAndEncoder(fileName):
+    """
+    Load the tokenizer for the utterances and the encoder for the labels.
+
+    :param fileName:
+    :return:
+    """
 
     y, x = __prepareDataSet(fileName)
 
@@ -115,9 +150,9 @@ def __loadTokenizerAndEncoder(fileName):
 
 if __name__ == "__main__":
 
-    trainFileName = '/Users/zhaoshu/Documents/courses/Methods_of_AI_Research/lab-assignments/part-1b/label_train_dialogs.txt'
-    testFileName = '/Users/zhaoshu/Documents/courses/Methods_of_AI_Research/lab-assignments/part-1b/label_test_dialogs.txt'
-    modelFile = '/Users/zhaoshu/Documents/courses/Methods_of_AI_Research/lab-assignments/part-1b/dcnn_model.h5'
+    trainFileName = '../dataset-txt/label_train_dialogs.txt'
+    testFileName = '../dataset-txt/label_test_dialogs.txt'
+    modelFile = '../model/dcnn_model.h5'
 
     # Train the model as the first step
     # trainModel(trainFileName, testFileName, modelFile)
