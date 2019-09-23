@@ -11,7 +11,7 @@ def keywordMatching(utterance):
     negate_keywords = ["no"]
     affirm_keywords = ["yes"]
 
-    utterance = utterance.split(" ", 1)
+    utterance = utterance.split(" ",)
 
     if len(set(bye_keywords).intersection(utterance)) >= 1:
         dialog_act = "bye"
