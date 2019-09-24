@@ -16,6 +16,10 @@ git push
 * http://ciml.info/
 * https://www.interaction-design.org/literature
 * https://plato.stanford.edu/entries/artificial-intelligence/
+* https://www.discoveringstatistics.com/
+* https://www.discoveringstatistics.com/statistics-hell-p/
+* http://www.statsflowchart.co.uk/
+* https://utrechtuniversity.on.worldcat.org/discovery
 
 ## Articles
 * https://www.interaction-design.org/literature/book/the-encyclopedia-of-human-computer-interaction-2nd-ed/experimental-methods-in-human-computer-interaction
