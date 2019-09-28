@@ -14,6 +14,7 @@ git push
 ## Useful Links
 * https://web.stanford.edu/~jurafsky/slp3/
 * http://ciml.info/
+* https://developers.google.com/machine-learning/crash-course
 * https://www.interaction-design.org/literature
 * https://plato.stanford.edu/entries/artificial-intelligence/
 * https://www.discoveringstatistics.com/
