@@ -6,6 +6,7 @@ import json
 from Levenshtein import distance
 import operator
 import csv
+import random
 
 # -*- coding: utf-8 -*-
 
@@ -372,7 +373,7 @@ g_selected_restaurant = ""
 def preferences_not_set():
     not_set = []
     for parameter in g_preferences:
-        if g_preferences[parameter] == "":
+        if g_preferences[parameter] == " ":
             not_set.extend(parameter)
     return not_set
 # Restart preferences
@@ -380,9 +381,9 @@ def reset_preferences():
     global g_preferences
     dump_restaurants_list()
     g_preferences = {
-        "food":"",
-        "area":"",
-        "price":""
+        "food":" ",
+        "area":" ",
+        "price":" "
     }
     return
 # Overwrite a preference. 
@@ -416,7 +417,7 @@ def welcome():
     return "Welcome to the restaurant selection assistant. Please enter your preferences."
 # TODO
 def inform_no_matches():
-    if len(restaurants) == 0:
+    if len(g_available_restaurants) == 0:
         no_matches = "There aren't restaurants matching those preferences"
     return no_matches
 # Deleted, no point in having this dialog state
@@ -425,37 +426,43 @@ def inform_no_matches():
 # TODO
 def request_missing_preferences():
     missing = []
-    if g_preferences["food_type"] == " ":
-        missing.append("food type")
-    if g_preferences["location"] == " ":
-        missing.append("location")
-    if g_preferences["price_range"] == " ":
-        missing.append("price range")
-    if len(missing) == 2:
+    if g_preferences["food"] == " ":
+        missing.append("food")
+    if g_preferences["area"] == " ":
+        missing.append("area")
+    if g_preferences["price"] == " ":
+        missing.append("price")
+    if len(missing) == 1:
+        request_preferences = "Please introduce your preferences for %s" % (missing[0])
+    elif len(missing) == 2:
         request_preferences = "Please introduce your preferences for %s and %s" % (missing[0], missing[1])
     elif len(missing) == 3:
         request_preferences = "Please introduce your preferences for %s, %s and %s" % (
             missing[0], missing[1], missing[2])
     else:
-        request_preferences = "Please introduce your preferences for %s" % (missing[0])
+        request_preferences = "This shouldn't be possible :("
 
     return request_preferences
 # TODO
 def suggest_restaurant():
-    ran_restaurant = random.randint(0, len(restaurants))
-    selected_restaurant = restaurants[ran_restaurant]
-    print(selected_restaurant)
-    suggest = "%s is a %s restaurant in the %s of the city and the prices are in the %s range" % (
-        selected_restaurant[0], selected_restaurant[3], selected_restaurant[2], selected_restaurant[1])
+    if len(g_available_restaurants) == 0:
+        print("There is no matches")
+    else:
+        ran_restaurant = random.randint(1, len(g_available_restaurants)) - 1
+        selected_restaurant = g_available_restaurants[ran_restaurant]
+        print(selected_restaurant)
+        suggest = "%s is a %s restaurant in the %s of the city and the prices are in the %s range" % (
+            selected_restaurant[0], selected_restaurant[3], selected_restaurant[2], selected_restaurant[1])
+        return suggest, selected_restaurant
 
-    return suggest, selected_restaurant
+
 # TODO
 def provide_description():
     description = []
     descriptionname = []
 
     for d in request_description:
-        if d == "price rnage":
+        if d == "price range":
             description.append(selected_restaurant[1])
             descriptionname.append(d)
         if d == "location":
@@ -535,6 +542,7 @@ def dialog_transition(current_state, current_input):
 
     if current_act in INFORMING_ACTS:
         g_updates = manage_info(current_input)
+    print("preferences: ", g_preferences)
     next_dialog_state = next_state(current_state, current_act)
     next_system_utterance = generate_utterance(next_dialog_state)
     return next_dialog_state, next_system_utterance
@@ -677,9 +685,15 @@ def find_possible_restaurants():
     with open('/Users/zhaoshu/Documents/workspace/methods-of-ai-research/part-1c/restaurantinfo.csv') as csvfile:
         readcsv = csv.reader(csvfile, delimiter=',')
 
+        print(g_preferences["food"])
+        print(g_preferences["area"])
+        print(g_preferences["price"])
+
         for row in readcsv:
-            if g_preferences["food"] in row or g_preferences["area"] in row or g_preferences["price"] in row:
+
+            if g_preferences["food"][0] in row or g_preferences["area"][0] in row or g_preferences["price"][0] in row:
                 restaurant.append(row)
+    print(restaurant)
     return restaurant
 
 # Decide what the next state should be based on current state and dialog act
