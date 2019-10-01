@@ -410,7 +410,7 @@ def dump_restaurants_list():
 # Output: <str> next system utterance
 #TODO
 def welcome():
-    return "welcome message"
+    return "Welcome to the restaurant selection assistant. Please enter your preferences."
 # TODO
 def inform_no_matches():
     if len(restaurants) == 0:
@@ -498,7 +498,7 @@ def provide_details(request_detail):
     return details
 # TODO
 def closure():
-    return "closure message"
+    return "Good bye"
 # TODO
 def invalidstate():
     return "invalid state"
