@@ -356,9 +356,9 @@ INFORMING_ACTS = [
 
 # User preferences
 g_preferences = {
-        "food_type":"",
-        "location":"",
-        "price_range":""
+        "food_type":" ",
+        "location":" ",
+        "price_range":" "
 }
 # Flag that checks updates on preferences
 g_updates = False
@@ -605,9 +605,14 @@ def extract_information(utterance):
 
 # Lookup possible restaurants with the given contraints in the preferences
 def find_possible_restaurants():
-    #TODO
-    restaurants = []
-    return restaurants
+    restaurant = []
+    with open('/Users/Asun/Desktop/restaurantinfo.csv') as csvfile:
+        readcsv = csv.reader(csvfile, delimiter=',')
+
+        for row in readcsv:
+            if g_preferences["food_type"] in row or g_preferences["location"] in row or g_preferences["price_range"] in row:
+                restaurant.append(row)
+    return restaurant
 
 # Decide what the next state should be based on current state and dialog act
 # Input
