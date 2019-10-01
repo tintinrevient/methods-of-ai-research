@@ -5,6 +5,7 @@ from keras.models import load_model
 import json
 from Levenshtein import distance
 import operator
+import csv
 
 # -*- coding: utf-8 -*-
 
@@ -145,7 +146,7 @@ def deny(current_state):
             # Perform the lookup of restaurants in the db
             g_available_restaurants = find_possible_restaurants()
             # Check for availability
-            if len(g_available_restaurants==0):
+            if len(g_available_restaurants)==0 :
                 next_state = INFORM_NO_MATCHES_STATE
             else:
                 next_state = SUGGEST_RESTAURANT_STATE
@@ -182,7 +183,7 @@ def inform(current_state):
             # Perform the lookup of restaurants in the db
             g_available_restaurants = find_possible_restaurants()
             # Check for availability
-            if len(g_available_restaurants==0):
+            if len(g_available_restaurants) ==0 :
                 next_state = INFORM_NO_MATCHES_STATE
             else:
                 next_state = SUGGEST_RESTAURANT_STATE
@@ -356,9 +357,9 @@ INFORMING_ACTS = [
 
 # User preferences
 g_preferences = {
-        "food_type":" ",
-        "location":" ",
-        "price_range":" "
+        "food":" ",
+        "area":" ",
+        "price":" "
 }
 # Flag that checks updates on preferences
 g_updates = False
@@ -392,6 +393,8 @@ def reset_preferences():
 def set_preference(preference, value):
     dump_restaurants_list()
     setting = False
+    if value == []:
+        return setting
     if preference in g_preferences:
         g_preferences[preference] = value
         setting = True
@@ -477,7 +480,7 @@ def manage_info(current_input):
     extracted_info = extract_information(current_input)
     l_updates = False
     for preference in extracted_info:
-        l_updates = l_updates and set_preference(preference, extracted_info[preference])
+        l_updates = set_preference(preference, extracted_info[preference]) or l_updates
     return l_updates
 
 
@@ -598,19 +601,17 @@ def extract_information(utterance):
             break
         elif area[1] == 0:
             extracted["area"].append(area[0])
-    
-    print(extracted)
 
     return extracted
 
 # Lookup possible restaurants with the given contraints in the preferences
 def find_possible_restaurants():
     restaurant = []
-    with open('/Users/Asun/Desktop/restaurantinfo.csv') as csvfile:
+    with open('/Users/zhaoshu/Documents/workspace/methods-of-ai-research/part-1c/restaurantinfo.csv') as csvfile:
         readcsv = csv.reader(csvfile, delimiter=',')
 
         for row in readcsv:
-            if g_preferences["food_type"] in row or g_preferences["location"] in row or g_preferences["price_range"] in row:
+            if g_preferences["food"] in row or g_preferences["area"] in row or g_preferences["price"] in row:
                 restaurant.append(row)
     return restaurant
 
