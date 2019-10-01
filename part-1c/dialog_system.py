@@ -413,22 +413,89 @@ def welcome():
     return "welcome message"
 # TODO
 def inform_no_matches():
-    return "inform_no_matchesmessage"
+    if len(restaurants) == 0:
+        no_matches = "There aren't restaurants matching those preferences"
+    return no_matches
 # Deleted, no point in having this dialog state
 #def change_preferences():
 #    return "change_preferences message"
 # TODO
 def request_missing_preferences():
-    return "request_missing_preferences message"
+    missing = []
+    if g_preferences["food_type"] == " ":
+        missing.append("food type")
+    if g_preferences["location"] == " ":
+        missing.append("location")
+    if g_preferences["price_range"] == " ":
+        missing.append("price range")
+    if len(missing) == 2:
+        request_preferences = "Please introduce your preferences for %s and %s" % (missing[0], missing[1])
+    elif len(missing) == 3:
+        request_preferences = "Please introduce your preferences for %s, %s and %s" % (
+            missing[0], missing[1], missing[2])
+    else:
+        request_preferences = "Please introduce your preferences for %s" % (missing[0])
+
+    return request_preferences
 # TODO
 def suggest_restaurant():
-    return "suggest_restaurant message"
+    ran_restaurant = random.randint(0, len(restaurants))
+    selected_restaurant = restaurants[ran_restaurant]
+    print(selected_restaurant)
+    suggest = "%s is a %s restaurant in the %s of the city and the prices are in the %s range" % (
+        selected_restaurant[0], selected_restaurant[3], selected_restaurant[2], selected_restaurant[1])
+
+    return suggest, selected_restaurant
 # TODO
 def provide_description():
-    return "provide_description message"
+    description = []
+    descriptionname = []
+
+    for d in request_description:
+        if d == "price rnage":
+            description.append(selected_restaurant[1])
+            descriptionname.append(d)
+        if d == "location":
+            description.append(selected_restaurant[2])
+            descriptionname.append(d)
+        if d == "food type":
+            description.append(selected_restaurant[3])
+            descriptionname.append(d)
+
+    if len(description) == 2:
+        descriptions = "The %s is %s and the %s is %s" % (
+        descriptionname[0], description[0], descriptionname[1], description[1])
+    elif len(description) == 3:
+        descriptions = "The %s is %s, the %s is %s and the %s is %s" % (
+            descriptionname[0], description[0], descriptionname[1], description[1], description[2], description[2])
+    else:
+        descriptions = "The %s is %s" % (descriptionname[0], description[0])
+    return descriptions
 # TODO
-def provide_details():
-    return "provide_details message"
+def provide_details(request_detail):
+    detail = []
+    detailname = []
+
+    for d in request_detail:
+        if d == "phone number":
+            detail.append(selected_restaurant[4])
+            detailname.append(d)
+        if d == "address":
+            detail.append(selected_restaurant[5])
+            detailname.append(d)
+        if d == "post code":
+            detail.append(selected_restaurant[6])
+            detailname.append(d)
+
+    if len(detail) == 2:
+        details = "The %s is %s and the %s is %s" % (detailname[0], detail[0], detailname[1], detail[1])
+    elif len(detail) == 3:
+        details = "The %s is %s, the %s is %s and the %s is %s" % (
+        detailname[0], detail[0], detailname[1], detail[1], detail[2], detailname[2])
+    else:
+        details = "The %s is %s" % (detailname[0], detail[0])
+
+    return details
 # TODO
 def closure():
     return "closure message"
