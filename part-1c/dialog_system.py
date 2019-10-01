@@ -1,3 +1,11 @@
+from keras.preprocessing.text import Tokenizer
+from sklearn.preprocessing import LabelEncoder
+import numpy as np
+from keras.models import load_model
+import json
+from Levenshtein import distance
+import operator
+
 # -*- coding: utf-8 -*-
 
 
@@ -371,9 +379,9 @@ def reset_preferences():
     global g_preferences
     dump_restaurants_list()
     g_preferences = {
-        "food_type":"",
-        "location":"",
-        "price_range":""
+        "food":"",
+        "area":"",
+        "price":""
     }
     return
 # Overwrite a preference. 
@@ -454,7 +462,8 @@ def dialog_transition(current_state, current_input):
     next_system_utterance = ""
     
     current_act = get_act(current_input)
-    if current_act == INFORMING_ACTS: 
+
+    if current_act in INFORMING_ACTS:
         g_updates = manage_info(current_input)
     next_dialog_state = next_state(current_state, current_act)
     next_system_utterance = generate_utterance(next_dialog_state)
@@ -471,22 +480,127 @@ def manage_info(current_input):
         l_updates = l_updates and set_preference(preference, extracted_info[preference])
     return l_updates
 
+
+def __prepareDataSet(fileName):
+    """
+    Load the dataset into labels and utterances.
+
+    :param fileName:
+    :return:
+    """
+
+    labels = []
+    utterances = []
+
+    with open(fileName) as f:
+        lines = f.readlines()
+
+    for line in lines:
+        try:
+            act = line[:line.index(" ")]
+            utterance = line[line.index(" "):line.index("\n")]
+
+            try:
+                labels.append(act.strip())
+                utterances.append(utterance.strip())
+
+            except KeyError:
+                pass
+
+        except ValueError:
+            pass
+
+    return labels, utterances
+
+
+def __loadTokenizerAndEncoder(fileName):
+
+    y, x = __prepareDataSet(fileName)
+
+    tokenizer = Tokenizer(num_words=max_words)
+    tokenizer.fit_on_texts(x)
+
+    encoder = LabelEncoder()
+    encoder.fit(y)
+
+    return tokenizer, encoder
+
+
 # Extract the dialog act from the user utterance
 # Input: 
 # utterance: current user utterance
 # Output: <str> dialog act identified
 def get_act(utterance):
-    #TODO
-    act = ""
-    return act
+
+    tokenizer, encoder = __loadTokenizerAndEncoder(g_trainFileName)
+    act = g_model.predict(np.array(tokenizer.texts_to_matrix([utterance], mode='count')))
+
+    return encoder.classes_[np.argmax(act[0])]
 
 # Extract the relevant information from the current input
 # Input:
 # utterance: <str> current user utterance classified as inform
 # Output: dictionary with <preference,value> pairs for g_preferences
 def extract_information(utterance):
-    #TODO
-    extracted = {}
+
+    ontology = json.loads(open(g_ontologyFile).read())
+
+    food_list = ontology["informable"]["food"]
+    pricerange_list = ontology["informable"]["pricerange"]
+    area_list = ontology["informable"]["area"]
+
+    words = utterance.split(" ")
+    food_match = {}
+    pricerange_match = {}
+    area_match = {}
+    threshold = 3
+    for word in words:
+        for food in food_list:
+            temp_score = distance(word, food)
+            if temp_score < threshold:
+                food_match[food] = temp_score
+
+        for pricerange in pricerange_list:
+            temp_score = distance(word, pricerange)
+            if temp_score < threshold:
+                pricerange_match[pricerange] = temp_score
+
+        for area in area_list:
+            temp_score = distance(word, area)
+            if temp_score < threshold:
+                area_match[area] = temp_score
+
+    food_match = sorted(food_match.items(), key=operator.itemgetter(1))
+    pricerange_match = sorted(pricerange_match.items(), key=operator.itemgetter(1))
+    area_match = sorted(area_match.items(), key=operator.itemgetter(1))
+
+    extracted = {
+        "food": [],
+        "price": [],
+        "area": []
+    }
+    for food in food_match:
+        if food[1] > 0:
+            break
+        elif food[1] == 0:
+            extracted["food"].append(food[0])
+        else:
+            g_distant["food"].append(food[0])
+
+    for price in pricerange_match:
+        if price[1] > 0:
+            break
+        elif price[1] == 0:
+            extracted["price"].append(price[0])
+
+    for area in area_match:
+        if area[1] > 0:
+            break
+        elif area[1] == 0:
+            extracted["area"].append(area[0])
+    
+    print(extracted)
+
     return extracted
 
 # Lookup possible restaurants with the given contraints in the preferences
@@ -508,7 +622,7 @@ def next_state(current_state, current_act):
         print("Something went terribly wrong. We shouldn't have reached here!")
         next_state = CLOSURE_STATE # report bug
     else:
-        next_state = handler(current_act)
+        next_state = handler(current_state)
     return next_state
 
 # Build the next utterance based on the current state of the dialog
@@ -526,14 +640,25 @@ def generate_utterance(current_state):
         utterance = handler()
     return utterance
 
+g_model = ""
+g_trainFileName = ""
+g_ontologyFile = ""
+# maximum words to use as a dictionary
+max_words = 1000
 
 # Start a dialog
-def init_dialog():
+def init_dialog(modelFile, trainFile, ontologyFile):
+    global g_model
+    global g_trainFileName
+    global g_ontologyFile
     reset_preferences()
     print("Welcome to the restaurant selection assistant. Please enter your preferences.")
     current_state = WELCOME_STATE
     next_state = ""
     next_system_utterance = ""
+    g_model = load_model(modelFile)
+    g_trainFileName = trainFile
+    g_ontologyFile = ontologyFile
     try:
         while True:
             current_input = input()
@@ -543,3 +668,11 @@ def init_dialog():
 
     except KeyboardInterrupt:
         pass
+
+if __name__ == "__main__":
+
+    modelFile = '/Users/zhaoshu/Documents/workspace/methods-of-ai-research/part-1b/model/dcnn_model.h5'
+    trainFileName = '/Users/zhaoshu/Documents/workspace/methods-of-ai-research/part-1b/dataset-txt/label_train_dialogs.txt'
+    ontologyFile = '/Users/zhaoshu/Documents/workspace/methods-of-ai-research/part-1c/ontology_dstc2.json'
+
+    init_dialog(modelFile, trainFileName, ontologyFile)
