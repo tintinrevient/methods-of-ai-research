@@ -3,7 +3,7 @@ from sklearn.preprocessing import LabelEncoder
 from keras.models import load_model
 from Levenshtein import distance
 import numpy as np
-import json, csv, operator, random
+import json, csv, operator, random, re
 
 class Dialog:
     ############################
@@ -56,7 +56,40 @@ class Dialog:
     PROVIDE_DETAILS_STATE = "provide_details"
     CLOSURE_STATE = "closure"
     INVALIDSTATE_STATE = "invalid_state"  # fall back dialog state in case something weird happens
-
+    
+    # Details expressions
+    PHONENUMBER = "phonenumber"
+    ADDRESS = "address"
+    POSTCODE = "postcode"
+    DETAILS_EXPRESSIONS = {
+    		PHONENUMBER: ["telephone", "phone", "number", "contact"],
+    		ADDRESS: ["location", "direction", "directions", "where"],
+    		POSTCODE: ["post", "post-code"]
+    }    
+    
+    # Patterns for pattern matching
+    PATTERNS_INFORM = [
+    		r"[I|i]'m looking for ([\w+\s]+)food",
+    		r"[I|i] want a restaurant that serves ([\w+\s]+)[food]?",
+    		r"[I|i] want a restaurant serving ([\w+\s]+)[food]?",
+    		r"[I|i]'m looking for a restaurant in the (\w+)",
+    		r"[I|i] would like a[n]? ([\w+\s]+)restaurant in the (\w+) [part]? of town",
+    		r"[I|i]'m looking for a[n]? (\w+) [priced]? restaurant in the (\w+) [part]? of town",
+    		r"[I|i]'m looking for a restaurant in (\w)+ [area|part]? that serves ([\w+\s]+)[food]?",
+    		r"[C|c]an [I|i] have a[n]? ([\w+\s]+)restaurant",
+    		r"[I|i]'m looking for a[n]? ([\w+\s]+)restaurant and it should serve ([\w+\s]+)food",
+    		r"[I|i] need a[n]? ([\w+\s]+)restaurant that is (\w+) priced",
+    		r"[I|i]'m looking for a[n]? (\w+) priced restaurant with (\w+) food",
+    		r"[W|w]hat is a[n]? ([\w+\s]+)restaurant in the (\w+) [part|area] of town",
+    		r"[W|w]hat about (\w+) food",
+    		r"[I|i] wanna find a[n]? (\w+) restaurant",
+    		r"[I|i]'m looking for ([\w+\s]+)food please",
+    		r"[F|f]ind a[n]? ([\w+\s]+)restaurant in the (\w+)"
+    ]
+    # Compilations of the patterns above
+    PATTERNS_INFORM_COMPILED = []
+    for i in range(len(PATTERNS_INFORM)):
+    	PATTERNS_INFORM_COMPILED.append(re.compile(PATTERNS_INFORM[i]))
 
     def __init__(self, config):
 
@@ -66,7 +99,7 @@ class Dialog:
         self.restaurantInfoFile = config['restaurantInfoFile']
         self.levenshteinEditDistance = config["levenshteinEditDistance"]
         self.lowerCase = config["lowerCase"]
-        self.baseline = config["baseline"]
+#        self.baseline = config["baseline"]
 
         # User preferences
         self.g_preferences = {
@@ -126,7 +159,6 @@ class Dialog:
             self.PROVIDE_DETAILS_STATE: self.provide_details,
             self.CLOSURE_STATE: self.closure
         }
-
     # -*- coding: utf-8 -*-
     #############################################################
     #### NEXT STATE DETERMINING FUNCTIONS (FROM DIALOG ACTS) ####
@@ -150,9 +182,9 @@ class Dialog:
         elif (current_state == self.PROVIDE_DESCRIPTION_STATE):
             # Don't transition
             next_state = self.PROVIDE_DESCRIPTION_STATE
-        elif (current_state == self.PROVIDE_DETAILS_STATE):
-            # Don't transition
-            next_state = self.PROVIDE_DETAILS_STATE
+#        elif (current_state == self.PROVIDE_DETAILS_STATE):
+#            # Don't transition
+#            next_state = self.PROVIDE_DETAILS_STATE
         elif (current_state == self.CLOSURE_STATE):
             # Don't transition
             next_state = self.CLOSURE_STATE
@@ -194,9 +226,9 @@ class Dialog:
         elif (current_state == self.PROVIDE_DESCRIPTION_STATE):
             # Don't transition
             next_state = self.PROVIDE_DESCRIPTION_STATE
-        elif (current_state == self.PROVIDE_DETAILS_STATE):
-            # Don't transition
-            next_state = self.PROVIDE_DETAILS_STATE
+    #    elif (current_state == self.PROVIDE_DETAILS_STATE):
+    #        # Don't transition
+    #        next_state = self.PROVIDE_DETAILS_STATE
         elif (current_state == self.CLOSURE_STATE):
             # Don't transition
             next_state = self.CLOSURE_STATE
@@ -223,13 +255,13 @@ class Dialog:
             next_state = self.REQUEST_MISSING_PREFERENCES_STATE
         elif (current_state == self.SUGGEST_RESTAURANT_STATE):
             # Query description of the restaurant
-            next_state = PROVIDE_DESCRIPTION_STATE
+            next_state = self.PROVIDE_DESCRIPTION_STATE
         elif (current_state == self.PROVIDE_DESCRIPTION_STATE):
-            # Don't transition
-            next_state = PROVIDE_DESCRIPTION_STATE
-        elif (current_state == self.PROVIDE_DETAILS_STATE):
-            # Don't transition
-            next_state = self.PROVIDE_DETAILS_STATE
+            # Query description of the restaurant
+            next_state = self.PROVIDE_DESCRIPTION_STATE
+    #    elif (current_state == self.PROVIDE_DETAILS_STATE):
+    #        # Don't transition
+    #        next_state = self.PROVIDE_DETAILS_STATE
         elif (current_state == self.CLOSURE_STATE):
             # Don't transition(?)
             next_state = self.CLOSURE_STATE
@@ -269,9 +301,9 @@ class Dialog:
         elif (current_state == self.PROVIDE_DESCRIPTION_STATE):
             # TODO like SUGGEST_RESTAURANT_STATE?
             next_state = self.PROVIDE_DESCRIPTION_STATE
-        elif (current_state == self.PROVIDE_DETAILS_STATE):
-            # TODO like SUGGEST_RESTAURANT_STATE?
-            next_state = self.PROVIDE_DETAILS_STATE
+    #    elif (current_state == self.PROVIDE_DETAILS_STATE):
+    #        # TODO like SUGGEST_RESTAURANT_STATE?
+    #        next_state = self.PROVIDE_DETAILS_STATE
         elif (current_state == self.CLOSURE_STATE):
             # Don't transition(?)
             next_state = self.CLOSURE_STATE
@@ -318,8 +350,8 @@ class Dialog:
             next_state = self.INFORM_NO_MATCHES_STATE
         elif (current_state == self.REQUEST_MISSING_PREFERENCES_STATE):
             # User is answering a question on possible mistakes
-            g_mistake = []
-            g_preference_at_stake = ""
+            self.g_mistake = []
+            self.g_preference_at_stake = ""
             next_state = self.REQUEST_MISSING_PREFERENCES_STATE
         elif (current_state == self.SUGGEST_RESTAURANT_STATE):
             # TODO This is actually reqalts
@@ -327,9 +359,9 @@ class Dialog:
         elif (current_state == self.PROVIDE_DESCRIPTION_STATE):
             # TODO This is actually inform
             next_state = self.PROVIDE_DESCRIPTION_STATE
-        elif (current_state == self.PROVIDE_DETAILS_STATE):
-            # TODO This is actually inform
-            next_state = self.PROVIDE_DETAILS_STATE
+    #    elif (current_state == self.PROVIDE_DETAILS_STATE):
+    #        # TODO This is actually inform
+    #        next_state = self.PROVIDE_DETAILS_STATE
         elif (current_state == self.CLOSURE_STATE):
             # Don't transition(?)
             next_state = self.CLOSURE_STATE
@@ -384,9 +416,9 @@ class Dialog:
         elif (current_state == self.PROVIDE_DESCRIPTION_STATE):
             # Like suggest
             next_state = self.PROVIDE_DESCRIPTION_STATE
-        elif (current_state == self.PROVIDE_DETAILS_STATE):
-            # Like suggest
-            next_state = self.PROVIDE_DETAILS_STATE
+    #    elif (current_state == self.PROVIDE_DETAILS_STATE):
+    #        # Like suggest
+    #        next_state = self.PROVIDE_DETAILS_STATE
         elif (current_state == self.CLOSURE_STATE):
             next_state = self.CLOSURE_STATE
         else:
@@ -406,11 +438,11 @@ class Dialog:
             # Don't transition(?)
             next_state = self.REQUEST_MISSING_PREFERENCES_STATE
         elif (current_state == self.SUGGEST_RESTAURANT_STATE):
-            next_state = self.PROVIDE_DETAILS_STATE
+            next_state = self.PROVIDE_DESCRIPTION_STATE
         elif (current_state == self.PROVIDE_DESCRIPTION_STATE):
-            next_state = self.PROVIDE_DETAILS_STATE
-        elif (current_state == self.PROVIDE_DETAILS_STATE):
-            next_state = self.PROVIDE_DETAILS_STATE
+            next_state = self.PROVIDE_DESCRIPTION_STATE
+    #    elif (current_state == self.PROVIDE_DETAILS_STATE):
+    #        next_state = self.PROVIDE_DETAILS_STATE
         elif (current_state == self.CLOSURE_STATE):
             # Don't transition(?)
             next_state = self.CLOSURE_STATE
@@ -423,7 +455,7 @@ class Dialog:
     def restart(self, current_state):
         self.reset_preferences()
         self.dump_restaurants_list()
-        self.next_state = WELCOME_STATE
+        next_state = self.WELCOME_STATE
         return next_state
 
 
@@ -443,9 +475,9 @@ class Dialog:
         elif (current_state == self.PROVIDE_DESCRIPTION_STATE):
             # Most likely a closure, they might know the place
             next_state = self.CLOSURE_STATE
-        elif (current_state == self.PROVIDE_DETAILS_STATE):
-            # Most likely a closure, they might know the place
-            next_state = self.CLOSURE_STATE
+    #    elif (current_state == self.PROVIDE_DETAILS_STATE):
+    #        # Most likely a closure, they might know the place
+    #        next_state = self.CLOSURE_STATE
         elif (current_state == self.CLOSURE_STATE):
             # Obviously a closure
             next_state = self.CLOSURE_STATE
@@ -469,12 +501,12 @@ class Dialog:
     # Dialog state nodes utterances generation handlers
     # Output: <str> next system utterance
     # TODO
-    def welcome(self):
+    def welcome(self, utterance):
         return "Welcome to the restaurant selection assistant. Please enter your preferences."
 
 
     # TODO
-    def inform_no_matches(self):
+    def inform_no_matches(self, utterance):
         if len(self.g_available_restaurants) == 0:
             no_matches = "There are no restaurants matching those preferences in my database."
         return no_matches
@@ -484,7 +516,7 @@ class Dialog:
     # def change_preferences():
     #    return "change_preferences message"
     # TODO
-    def request_missing_preferences(self):
+    def request_missing_preferences(self, utterance):
         missing = []
         # See what preferences are missing
         if not self.g_preferences[self.FOOD]:
@@ -536,69 +568,106 @@ class Dialog:
     # Output: <str> question if there are possible mistakes in g_distant[preference], 0 otherwise
     def spelling_mistakes(self, preference):
         # Make extra sure we are not recycling by any chance
-        g_mistake = []
-        g_preference_at_stake = ""
+        self.g_mistake = []
+        self.g_preference_at_stake = ""
 
         question = 0
         if len(self.g_distant[preference]) > 0:
             mistakes = self.g_distant[preference][0]
             for value in self.g_distant[preference]:
-                g_mistake.append(value)
+                self.g_mistake.append(value)
                 if mistakes == value:
                     continue  # This is only done for the pretty printing
                 mistakes = mistakes + ', ' + value  # this pretty printing
             question = "I did not understand some of what you said. Did you mean %s %s?" % (mistakes, preference)
-            g_preference_at_stake = preference
+            self.g_preference_at_stake = preference
             self.g_distant[preference] = []
         return question
 
 
     # TODO
-    def suggest_restaurant(self):
+    def suggest_restaurant(self, utterance):
         if len(self.g_available_restaurants) == 0:
             suggest = "There are no restaurants left with those preferences"
         else:
             ran_restaurant = random.randint(1, len(self.g_available_restaurants)) - 1
-            g_selected_restaurant = self.g_available_restaurants[ran_restaurant]
-            self.g_available_restaurants.remove(g_selected_restaurant)
+            self.g_selected_restaurant = self.g_available_restaurants[ran_restaurant]
+            self.g_available_restaurants.remove(self.g_selected_restaurant)
             suggest = "%s is a %s restaurant in the %s of the city and the prices are in the %s range" % (
-                g_selected_restaurant[0], g_selected_restaurant[3], g_selected_restaurant[2], g_selected_restaurant[1])
+                self.g_selected_restaurant[0], self.g_selected_restaurant[3], self.g_selected_restaurant[2], self.g_selected_restaurant[1])
             return suggest
 
 
-    # TODO
-    def provide_description(self):
+    # TODO final steps of the merge pending
+    def provide_description(self, utterance):
         description = []
         descriptionname = []
-
+        request_description = utterance.split(" ")
         for d in request_description:
-            if d == self.PRICERANGE:
-                description.append(g_selected_restaurant[1])
-                descriptionname.append(d)
-            if d == self.AREA:
-                description.append(g_selected_restaurant[2])
-                descriptionname.append(d)
-            if d == self.FOOD:
-                description.append(g_selected_restaurant[3])
-                descriptionname.append(d)
-        if len(description) == 1:
-            descriptions = "The %s is %s" % (descriptionname[0], description[0])
-        elif len(description) == 2:
-            descriptions = "The %s is %s and the %s is %s" % (
-                descriptionname[0], description[0], descriptionname[1], description[1])
-        elif len(description) == 3:
-            descriptions = "The %s is %s, the %s is %s and the %s is %s" % (
-                descriptionname[0], description[0], descriptionname[1], description[1], description[2], description[2])
+            if self.check_description_elements(d,self.PRICERANGE):
+                description.append(self.g_selected_restaurant[1])
+                descriptionname.append(self.PRICERANGE)
+            if self.check_description_elements(d,self.AREA):
+                description.append(self.g_selected_restaurant[2])
+                descriptionname.append(self.AREA)
+            if self.check_description_elements(d,self.FOOD):
+                description.append(self.g_selected_restaurant[3])
+                descriptionname.append(self.FOOD)
+            if self.check_details_elements(d,self.PHONENUMBER):
+                description.append(self.g_selected_restaurant[4])
+                descriptionname.append(self.PHONENUMBER)
+            if self.check_details_elements(d, self.ADDRESS):
+                description.append(self.g_selected_restaurant[5])
+                descriptionname.append(self.ADDRESS)
+            if self.check_details_elements(d, self.POSTCODE):
+                description.append(self.g_selected_restaurant[6])
+                descriptionname.append(self.POSTCODE)
+        requests = len(description)
+        if requests > 0:
+            descriptions = "The "
+            for i in range(requests):
+                if i > 0:
+                    if i == requests:
+                        descriptions = descriptions + " and "
+                    else:
+                        descriptions = descriptions + ", the "
+                descriptions = descriptions + ("%s is %s" % (descriptionname[i], description[i]))
+    #    if len(description) == 1:
+    #        descriptions = "The %s is %s" %(descriptionname[0], description[0])
+    #    elif len(description) == 2:
+    #        descriptions = "The %s is %s and the %s is %s" % (
+    #        descriptionname[0], description[0], descriptionname[1], description[1])
+    #    elif len(description) == 3:
+    #        descriptions = "The %s is %s, the %s is %s and the %s is %s" % (
+    #            descriptionname[0], description[0], descriptionname[1], description[1], descriptionname[2], description[2])
         else:
-            descriptions = "This description shouldn't be possible :("
+            descriptions = "What do you want to know about the restaurant? (food, area, pricerange, contact information, post code, address)" #"This description is triggered if there is any misspeling on keywords
         return descriptions
+    
+    # Check if a word matches a certain ontology subset
+    # Input:
+    # word: <str> word to check
+    # ontology_subset: <str> [AREA | PRICERANGE | FOOD] 
+    # Output: <bool> True if it matches, False otherwise
+    def check_description_elements(self, word, ontology_subset):
+    	checks_out = word == ontology_subset or word in self.g_ontology[self.INFORMABLE][ontology_subset]
+    	return checks_out
+	
+	# Check if a word matches a certain details expressions subset
+    # Input:
+    # word: <str> word to check
+    # ontology_subset: <str> [PHONENUMBER | POSTCODE | ADDRESS] 
+    # Output: <bool> True if it matches, False otherwise
+    def check_details_elements(self, word, details_subset):
+    	checks_out = word == details_subset or word in self.DETAILS_EXPRESSIONS[details_subset]
+    	return checks_out
 
 
     # TODO
-    def provide_details(self, request_detail):
+    def provide_details(self, utterance):
         detail = []
         detailname = []
-
+        request_detail = utterance.split(" ")
         for d in request_detail:
             if d == "phone number":
                 detail.append(self.g_selected_restaurant[4])
@@ -622,13 +691,13 @@ class Dialog:
         return details
 
 
-    def closure(self):
+    def closure(self, utterance):
         return "Good bye"
 
 
     # Fallback for the handler when next_state is not correctly determined as a valid state
     # Which in theory should never happen
-    def invalidstate(self):
+    def invalidstate(self, utterance):
         print("An error occurred, please report log")
         return "Something went terribly wrong. This is an unreachable dialog state!"
 
@@ -706,19 +775,21 @@ class Dialog:
         return restaurant
 
 
-    ##########################################
-    #### DIALOG TRANSITION CORE FUNCTIONS ####
-    ##########################################
-    # Start a dialog
+    
+	##########################################
+	#### DIALOG TRANSITION CORE FUNCTIONS ####
+	##########################################
+	# Start a dialog
     def init_dialog(self):
-        # Preprare dialog assistant
-        # 1. Make sure we don't recicle
+		# Preprare dialog assistant
+		# 1. Make sure we don't recicle
         self.reset_preferences()
         next_state = ""
+        next_system_utterance= ""
 
-        # 2. Initialize dialog
+		# 2. Initialize dialog
         current_state = self.WELCOME_STATE  # Initial dialog state
-        next_system_utterance = self.welcome()  # Initial system utterance
+        next_system_utterance = self.welcome("")  # Initial system utterance
         print(next_system_utterance)
         try:
             while current_state != self.CLOSURE_STATE:
@@ -734,13 +805,13 @@ class Dialog:
         return
 
 
-    # Determine state transition and system utterance
-    # Input:
-    # current_state: <str> current dialog state
-    # current_input: <str> current user utterance
-    # Output:
-    # <str>: next dialog state
-    # <str>: next system utterance
+	# Determine state transition and system utterance
+	# Input:
+	# current_state: <str> current dialog state
+	# current_input: <str> current user utterance
+	# Output:
+	# <str>: next dialog state
+	# <str>: next system utterance
     def dialog_transition(self, current_state, current_input):
         self.g_updates = False  # Make sure we don't recycle
         next_dialog_state = ""
@@ -751,7 +822,7 @@ class Dialog:
         if current_act in self.INFORMING_ACTS:
             self.g_updates = self.manage_info(current_input)
         next_dialog_state = self.next_state(current_state, current_act)
-        next_system_utterance = self.generate_utterance(next_dialog_state)
+        next_system_utterance = self.generate_utterance(next_dialog_state, current_input)
         # This is a special case
         if current_act == self.REQALTS_ACT and next_dialog_state == self.INFORM_NO_MATCHES_STATE and not self.g_updates:
             next_system_utterance = "There are no more restaurants with those preferences. Enter new preferences"
@@ -759,31 +830,28 @@ class Dialog:
         return next_dialog_state, next_system_utterance
 
 
-    # Extract the dialog act from the user utterance
-    # Input:
-    # utterance: current user utterance
-    # Output: <str> dialog act identified
+	# Extract the dialog act from the user utterance
+	# Input:
+	# utterance: current user utterance
+	# Output: <str> dialog act identified
     def get_act(self, utterance):
-        if self.baseline:
-            act = self.keywordMatching(utterance)
-            return act
-        else:
-            act = self.g_model.predict(np.array(self.g_tokenizer.texts_to_matrix([utterance], mode='count')))
-            return self.g_encoder.classes_[np.argmax(act[0])]
+        act = self.g_model.predict(np.array(self.g_tokenizer.texts_to_matrix([utterance], mode='count')))
+        return self.g_encoder.classes_[np.argmax(act[0])]
 
-    # Extract possible information contained in the utterance and attempt to
-    # update preferences
-    # Input:
-    # current_input: <str> current user utterance
+
+	# Extract possible information contained in the utterance and attempt to
+	# update preferences
+	# Input:
+	# current_input: <str> current user utterance
     def manage_info(self, current_input):
         extracted_info = self.extract_information(current_input)
         l_updates = False
-        print(extracted_info)
+#        print(extracted_info)
         for preference in extracted_info:
             l_updates = self.set_preference(preference, extracted_info[preference]) or l_updates
         return l_updates
 
-    # TODO this is too ugly to pass
+	# TODO this is too ugly to pass
     def aux(self, word, p_list, threshold, p_match):  # don't repeat code
         for elem in p_list:
             tmp_score = distance(word, elem)
@@ -798,18 +866,18 @@ class Dialog:
             if elem[1] <= levenshteinEditDistance:
                 extracted[preference].append(elem[0])
                 flag = True
-            # Reject anything above our threshold
+			# Reject anything above our threshold
             elif flag or elem[1] > threshold:
                 break
-            # Store separately possible spelling mistakes and await confirmation
+			# Store separately possible spelling mistakes and await confirmation
             elif not flag:
                 self.g_distant[preference].append(elem[0])
         return flag, extracted
 
-    # Extract the relevant information from the current input
-    # Input:
-    # utterance: <str> current user utterance classified as inform
-    # Output: dictionary with <preference,value> pairs for g_preferences
+	# Extract the relevant information from the current input
+	# Input:
+	# utterance: <str> current user utterance classified as inform
+	# Output: dictionary with <preference,value> pairs for g_preferences
     def extract_information(self, utterance):
         food_list = self.g_ontology[self.INFORMABLE][self.FOOD]
         pricerange_list = self.g_ontology[self.INFORMABLE][self.PRICERANGE]
@@ -830,7 +898,7 @@ class Dialog:
         pricerange_match = sorted(pricerange_match.items(), key=operator.itemgetter(1))
         area_match = sorted(area_match.items(), key=operator.itemgetter(1))
 
-        # Same structure as our g_preferences and g_distant
+		# Same structure as our g_preferences and g_distant
         extracted = {
             self.FOOD: [],
             self.PRICERANGE: [],
@@ -844,28 +912,28 @@ class Dialog:
         return extracted
 
 
-    # Decide what the next state should be based on current state and dialog act
-    # Input
-    # current_state: <str> current dialog state
-    # current_act: <str> dialog act extracted from the user input
-    # Output: <str> next dialog state
+	# Decide what the next state should be based on current state and dialog act
+	# Input
+	# current_state: <str> current dialog state
+	# current_act: <str> dialog act extracted from the user input
+	# Output: <str> next dialog state
     def next_state(self, current_state, current_act):
         next_state = ""
         handler = self.DIALOG_ACTS.get(current_act, self.INVALIDACT_ACT)
-        # Refer to "Handlers for the different dialog acts"
+		# Refer to "Handlers for the different dialog acts"
         next_state = handler(current_state)
         return next_state
 
 
-    # Build the next utterance based on the current state of the dialog
-    # Input:
-    # state: <str> next dialog state
-    # Output: <str> next system utterance
-    def generate_utterance(self, current_state):
+	# Build the next utterance based on the current state of the dialog
+	# Input:
+	# state: <str> next dialog state
+	# Output: <str> next system utterance
+    def generate_utterance(self, current_state, current_input):
         utterance = ""
         handler = self.g_system_states.get(current_state, self.INVALIDSTATE_STATE)
-        # Refer to "Handlers for the different dialog acts"
-        utterance = handler()
+		# Refer to "Handlers for the different dialog acts"
+        utterance = handler(current_input)
         return utterance
 
 
@@ -915,102 +983,18 @@ class Dialog:
 
         return tokenizer, encoder
 
-    def keywordMatching(self, utterance, repetition=False):
-
-        dialog_acts = {}
-        # Dialog acts keywords arrays
-        ack_keywords = ["okay", "kay", "well", "great", "fine", "good", "thatll", "do"]
-        affirm_keywords = ["yea", "yes", "correct", "right", "ye", "perfect", "yeah"]
-        bye_keywords = ["goodbye", "bye"]
-        confirm_keywords = ["is", "are", "they", "does",
-                            "do"]  # always a question about the service (does it, do they, is it, are they). We omit 'it' for reasons
-        deny_keywords = ["dont", "wrong", "no", "not", "change"]
-        hello_keywords = ["hello", "hi", "halo"]
-        negate_keywords = ["no"]
-        null_keywords = []  # default to anything else
-        repeat_keywords = ["repeat", "back", "again"]
-        reqalts_keywords = ["another", "about", "else"]  # nonexistent in training data
-        reqmore_keywords = ["more"]
-        restart_keywords = ["start", "over", "reset", "restart"]
-        thankyou_keywords = ["thanks", "thank"]
-        # May be a question requesting (can i, may i, what is...)
-        request_keywords = []
-        request_details_keywords = ["much", "phone", "number", "postcode", "post", "code", "address", "type", "kind",
-                                    "price", "range", "area", "telephone"]
-        request_question_keywords = ["how", "whats", "what", "can", "may", "could", "need"]
-        request_keywords.extend(request_details_keywords)
-        request_keywords.extend(request_question_keywords)
-        # We will need a special set of words for this set
-        inform_food_type_keywords = ["thai", "chinese", "gastropub", "cuban", "seafood", "canapes", "indian", "african",
-                                     "catalan", "turkish", "venetian", "porguguese", "oriental", "hungarian",
-                                     "mediterranean", "creative", "asian", "traditional", "unusual", "malaysian",
-                                     "jamaican", "french", "italian", "european", "american", "persian", "moroccan",
-                                     "british", "korean", "romanian", "polish", "japanese", "english", "christmas",
-                                     "barbecue", "cantonese", "spanish", "lebanese", "swedish", "mexican", "caribbean",
-                                     "danish", "irish", "corsica", "afghan", "australian", "russian", "polynesian",
-                                     "world", "kosher", "vegetarian", "tuscan", "scandinavian", "basque", "german",
-                                     "persian", "eritrean", "austrian", "singaporean", "swiss", "scottish", "bistro",
-                                     "welsh", "brazilian", "fusion", "steak", "pub", "halal", "gastro", "belgian",
-                                     "steakhouse"]
-        inform_price_range_keywords = ["cheap", "moderately", "moderate", "priced", "expensive"]
-        inform_area_keywords = ["south", "north", "east", "west", "center", "anywhere"]
-
-        inform_keywords = ["any", "kind", "food", "restaurant", "town", "part", "looking", "for", "dont", "care",
-                           "doesnt", "matter"]
-        inform_keywords.extend(inform_food_type_keywords)
-        inform_keywords.extend(inform_price_range_keywords)
-        inform_keywords.extend(inform_area_keywords)
-
-        dialog_acts["ack_keywords"] = ack_keywords
-        dialog_acts["affirm_keywords"] = affirm_keywords
-        dialog_acts["bye_keywords"] = bye_keywords
-        dialog_acts["confirm_keywords"] = confirm_keywords
-        dialog_acts["deny_keywords"] = deny_keywords
-        dialog_acts["hello_keywords"] = hello_keywords
-        dialog_acts["inform_keywords"] = inform_keywords
-        dialog_acts["negate_keywords"] = negate_keywords
-        dialog_acts["null_keywords"] = null_keywords
-        dialog_acts["repeat_keywords"] = repeat_keywords
-        dialog_acts["reqalts_keywords"] = reqalts_keywords
-        dialog_acts["reqmore_keywords"] = reqmore_keywords
-        dialog_acts["request_keywords"] = request_keywords
-        dialog_acts["restart_keywords"] = restart_keywords
-        dialog_acts["thankyou_keywords"] = thankyou_keywords
-
-        utterance_keywords = utterance.split(" ")
-
-        utterance_matches = {}  # not really used but could be handy
-        utterance_matches_len = {}
-
-        if repetition == False:
-            for dialog_act in dialog_acts:
-                matches = set(dialog_acts[dialog_act]).intersection(utterance_keywords)
-                utterance_matches[dialog_act] = matches
-                utterance_matches_len[dialog_act] = len(matches)
-        else:
-            for dialog_act in dialog_acts:
-                matches = 0
-                for keyword in dialog_acts[dialog_act]:
-                    matches = matches + utterance_keywords.count(keyword)
-                utterance_matches[dialog_act] = set(dialog_acts[dialog_act]).intersection(utterance_keywords)
-                utterance_matches_len[dialog_act] = matches
-        max_matches = max(utterance_matches_len.values())
-        dialog_matches = [k for k, v in utterance_matches_len.items() if v == max_matches]
-
-        return dialog_matches[0][:dialog_matches[0].index('_')]
 
 ##############
 #### MAIN ####
 ##############
 if __name__ == "__main__":
 
-    config = {"modelFile": '/Users/zhaoshu/Documents/workspace/methods-of-ai-research/part-1b/model/dcnn_model.h5',
-              "trainFileName": '/Users/zhaoshu/Documents/workspace/methods-of-ai-research/part-1b/dataset-txt/label_train_dialogs.txt',
-              "ontologyFile": '/Users/zhaoshu/Documents/workspace/methods-of-ai-research/part-1c/ontology_dstc2.json',
-              "restaurantInfoFile": '/Users/zhaoshu/Documents/workspace/methods-of-ai-research/part-1c/restaurantinfo.csv',
+    config = {"modelFile": '/home/feilem/Documents/git/methods-of-ai-research/part-1b/model/dcnn_model.h5',
+              "trainFileName": '/home/feilem/Documents/git/methods-of-ai-research/part-1b/dataset-txt/label_train_dialogs.txt',
+              "ontologyFile": '/home/feilem/Documents/git/methods-of-ai-research/part-1c/ontology_dstc2.json',
+              "restaurantInfoFile": '/home/feilem/Documents/git/methods-of-ai-research/part-1c/restaurantinfo.csv',
               'levenshteinEditDistance': 0,
-              'lowerCase': True,
-              'baseline': True}
+              'lowerCase': True}
 
 
     dialog = Dialog(config)
