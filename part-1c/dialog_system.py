@@ -63,6 +63,8 @@ class Dialog:
         self.g_model = load_model(config["modelFile"])
         self.g_tokenizer, self.g_encoder = self.loadTokenizerAndEncoder(config["trainFileName"])
         self.g_ontology = json.loads(open(config["ontologyFile"]).read())
+        self.restaurantInfoFile = config['restaurantInfoFile']
+        self.levenshteinEditDistance = config["levenshteinEditDistance"]
 
         # <User dialog act, next_state determining function> dictionary
         self.DIALOG_ACTS = {
@@ -178,7 +180,7 @@ class Dialog:
                 next_state = self.REQUEST_MISSING_PREFERENCES_STATE
             else:
                 # Perform the lookup of restaurants in the db
-                self.g_available_restaurants = self.find_possible_restaurants()
+                self.g_available_restaurants = self.find_possible_restaurants(self.restaurantInfoFile)
                 # Check for availability
                 if len(self.g_available_restaurants) == 0:
                     next_state = self.INFORM_NO_MATCHES_STATE
@@ -295,7 +297,7 @@ class Dialog:
                 next_state = self.REQUEST_MISSING_PREFERENCES_STATE
             else:
                 # Perform the lookup of restaurants in the db
-                self.g_available_restaurants = self.find_possible_restaurants()
+                self.g_available_restaurants = self.find_possible_restaurants(self.restaurantInfoFile)
                 # Check for availability
                 if len(self.g_available_restaurants) == 0:
                     next_state = self.INFORM_NO_MATCHES_STATE
@@ -689,15 +691,15 @@ class Dialog:
 
     # Lookup possible restaurants with the given contraints in the preferences
     # Output: <[str]> list of restaurants that match the preferences
-    def find_possible_restaurants(self):
+    def find_possible_restaurants(self, restaurantInfoFile):
         restaurant = []
-        with open('/home/feilem/Documents/git/methods-of-ai-research/part-1c/restaurantinfo.csv') as csvfile:
+        with open(restaurantInfoFile) as csvfile:
             readcsv = csv.reader(csvfile, delimiter=',')
 
             for row in readcsv:
                 # TODO this is too flexible
                 #            if g_preferences[FOOD][0] in row or g_preferences[AREA][0] in row or g_preferences[PRICERANGE][0] in row:
-                if g_preferences[FOOD][0] in row and g_preferences[AREA][0] in row and g_preferences[PRICERANGE][0] in row:
+                if self.g_preferences[self.FOOD][0] in row and self.g_preferences[self.AREA][0] in row and self.g_preferences[self.PRICERANGE][0] in row:
                     restaurant.append(row)
         return restaurant
 
@@ -769,6 +771,7 @@ class Dialog:
     def manage_info(self, current_input):
         extracted_info = self.extract_information(current_input)
         l_updates = False
+        print(extracted_info)
         for preference in extracted_info:
             l_updates = self.set_preference(preference, extracted_info[preference]) or l_updates
         return l_updates
@@ -781,11 +784,11 @@ class Dialog:
                 p_match[elem] = tmp_score
         return p_match
 
-    def aux2(self, p_match, preference, threshold, extracted):  # don't repeat code
+    def aux2(self, p_match, preference, threshold, extracted, levenshteinEditDistance):  # don't repeat code
         flag = False
         for elem in p_match:
             # If we are sure of something we add it and discard anything else
-            if elem[1] == 0:
+            if elem[1] <= levenshteinEditDistance:
                 extracted[preference].append(elem[0])
                 flag = True
             # Reject anything above our threshold
@@ -827,9 +830,9 @@ class Dialog:
             self.AREA: []
         }
 
-        food_found, extracted = self.aux2(food_match, self.FOOD, threshold, extracted)
-        pricerange_found, extracted = self.aux2(pricerange_match, self.PRICERANGE, threshold, extracted)
-        area_found, extracted = self.aux2(area_match, self.AREA, threshold, extracted)
+        food_found, extracted = self.aux2(food_match, self.FOOD, threshold, extracted, self.levenshteinEditDistance)
+        pricerange_found, extracted = self.aux2(pricerange_match, self.PRICERANGE, threshold, extracted, self.levenshteinEditDistance)
+        area_found, extracted = self.aux2(area_match, self.AREA, threshold, extracted, self.levenshteinEditDistance)
 
         return extracted
 
@@ -913,7 +916,9 @@ if __name__ == "__main__":
 
     config = {"modelFile": '/Users/zhaoshu/Documents/workspace/methods-of-ai-research/part-1b/model/dcnn_model.h5',
               "trainFileName": '/Users/zhaoshu/Documents/workspace/methods-of-ai-research/part-1b/dataset-txt/label_train_dialogs.txt',
-              "ontologyFile": '/Users/zhaoshu/Documents/workspace/methods-of-ai-research/part-1c/ontology_dstc2.json'}
+              "ontologyFile": '/Users/zhaoshu/Documents/workspace/methods-of-ai-research/part-1c/ontology_dstc2.json',
+              "restaurantInfoFile": '/Users/zhaoshu/Documents/workspace/methods-of-ai-research/part-1c/restaurantinfo.csv',
+              'levenshteinEditDistance': 0}
 
 
     dialog = Dialog(config)
