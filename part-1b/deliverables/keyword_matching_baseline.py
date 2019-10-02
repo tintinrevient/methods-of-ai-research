@@ -45,10 +45,6 @@ def __keywordMatching(utterance, repetition = False):
     inform_keywords.extend(inform_price_range_keywords)
     inform_keywords.extend(inform_area_keywords)
     
-    
-    
-    
-    
     dialog_acts["ack_keywords"] = ack_keywords
     dialog_acts["affirm_keywords"] = affirm_keywords
     dialog_acts["bye_keywords"] = bye_keywords
@@ -85,10 +81,9 @@ def __keywordMatching(utterance, repetition = False):
     max_matches = max(utterance_matches_len.values())
     dialog_matches = [ k for k, v in utterance_matches_len.items() if v == max_matches]
     
-    return dialog_matches
+    return dialog_matches[0][:dialog_matches[0].index('_')]
     
-    
-    
+
 if __name__ == "__main__":
 
     utter()
