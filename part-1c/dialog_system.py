@@ -508,7 +508,7 @@ class Dialog:
     # TODO
     def inform_no_matches(self, utterance):
         if len(self.g_available_restaurants) == 0:
-            no_matches = "There are no restaurants matching those preferences in my database."
+            no_matches = "There are no %s restaurants in the %s price range located in the %s." % (self.g_preferences[self.FOOD], self.g_preferences[self.PRICERANGE], self.g_preferences[self.AREA])
         return no_matches
 
 
@@ -825,7 +825,7 @@ class Dialog:
         next_system_utterance = self.generate_utterance(next_dialog_state, current_input)
         # This is a special case
         if current_act == self.REQALTS_ACT and next_dialog_state == self.INFORM_NO_MATCHES_STATE and not self.g_updates:
-            next_system_utterance = "There are no more restaurants with those preferences. Enter new preferences"
+            next_system_utterance = "There are no more %s restaurants in the %s price range in the %s of the city. Resetting preferences. Please enter new ones." % (self.g_preferences[self.FOOD], self.g_preferences[self.PRICERANGE], self.g_preferences[self.AREA])
             self.reset_preferences()
         return next_dialog_state, next_system_utterance
 
@@ -1078,10 +1078,10 @@ class Dialog:
 ##############
 if __name__ == "__main__":
 
-    config = {"modelFile": '/Users/zhaoshu/Documents/workspace/methods-of-ai-research/part-1b/model/dcnn_model.h5',
-              "trainFileName": '/Users/zhaoshu/Documents/workspace/methods-of-ai-research/part-1b/dataset-txt/label_train_dialogs.txt',
-              "ontologyFile": '/Users/zhaoshu/Documents/workspace/methods-of-ai-research/part-1c/ontology_dstc2.json',
-              "restaurantInfoFile": '/Users/zhaoshu/Documents/workspace/methods-of-ai-research/part-1c/restaurantinfo.csv',
+    config = {"modelFile": '/home/feilem/Documents/git/methods-of-ai-research/part-1b/model/dcnn_model.h5',
+              "trainFileName": '/home/feilem/Documents/git/methods-of-ai-research/part-1b/dataset-txt/label_train_dialogs.txt',
+              "ontologyFile": '/home/feilem/Documents/git/methods-of-ai-research/part-1c/ontology_dstc2.json',
+              "restaurantInfoFile": '/home/feilem/Documents/git/methods-of-ai-research/part-1c/restaurantinfo.csv',
               'levenshteinEditDistance': 0,
               'lowerCase': True,
               'baseline': False}
