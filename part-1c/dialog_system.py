@@ -715,7 +715,7 @@ def init_dialog(modelFile, trainFile, ontologyFile):
     try:
         while current_state != CLOSURE_STATE:
             current_input = input()
-            next_state, next_system_utterance = dialog_transition(current_state, current_input)
+            next_state, next_system_utterance = dialog_transition(current_state, current_input.lower())
             current_state = next_state
             print(next_system_utterance)
 
@@ -937,8 +937,8 @@ def __loadTokenizerAndEncoder(fileName):
 ##############
 if __name__ == "__main__":
 
-    modelFile = '/home/feilem/Documents/git/methods-of-ai-research/part-1b/model/dcnn_model.h5'
-    trainFileName = '/home/feilem/Documents/git/methods-of-ai-research/part-1b/dataset-txt/label_train_dialogs.txt'
-    ontologyFile = '/home/feilem/Documents/git/methods-of-ai-research/part-1c/ontology_dstc2.json'
+    modelFile = '/Users/zhaoshu/Documents/workspace/methods-of-ai-research/part-1b/model/dcnn_model.h5'
+    trainFileName = '/Users/zhaoshu/Documents/workspace/methods-of-ai-research/part-1b/dataset-txt/label_train_dialogs.txt'
+    ontologyFile = '/Users/zhaoshu/Documents/workspace/methods-of-ai-research/part-1c/ontology_dstc2.json'
     
     init_dialog(modelFile, trainFileName, ontologyFile)
