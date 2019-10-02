@@ -28,9 +28,9 @@ def ack(current_state):
     elif (current_state == PROVIDE_DESCRIPTION_STATE):
         # Don't transition
         next_state = PROVIDE_DESCRIPTION_STATE
-    elif (current_state == PROVIDE_DETAILS_STATE):
-        # Don't transition
-        next_state = PROVIDE_DETAILS_STATE
+#    elif (current_state == PROVIDE_DETAILS_STATE):
+#        # Don't transition
+#        next_state = PROVIDE_DETAILS_STATE
     elif (current_state == CLOSURE_STATE):
         # Don't transition
         next_state = CLOSURE_STATE
@@ -72,9 +72,9 @@ def affirm(current_state):
     elif (current_state == PROVIDE_DESCRIPTION_STATE):
         # Don't transition
         next_state = PROVIDE_DESCRIPTION_STATE
-    elif (current_state == PROVIDE_DETAILS_STATE):
-        # Don't transition
-        next_state = PROVIDE_DETAILS_STATE
+#    elif (current_state == PROVIDE_DETAILS_STATE):
+#        # Don't transition
+#        next_state = PROVIDE_DETAILS_STATE
     elif (current_state == CLOSURE_STATE):
         # Don't transition
         next_state = CLOSURE_STATE
@@ -101,11 +101,11 @@ def confirm(current_state):
         # Query description of the restaurant
         next_state = PROVIDE_DESCRIPTION_STATE
     elif (current_state == PROVIDE_DESCRIPTION_STATE):
-        # Don't transition
+        # Query description of the restaurant
         next_state = PROVIDE_DESCRIPTION_STATE
-    elif (current_state == PROVIDE_DETAILS_STATE):
-        # Don't transition
-        next_state = PROVIDE_DETAILS_STATE
+#    elif (current_state == PROVIDE_DETAILS_STATE):
+#        # Query description of the restaurant
+#        next_state = PROVIDE_DESCRIPTION_STATE
     elif (current_state == CLOSURE_STATE):
         # Don't transition(?)
         next_state = CLOSURE_STATE
@@ -144,9 +144,9 @@ def deny(current_state):
     elif (current_state == PROVIDE_DESCRIPTION_STATE):
         #TODO like SUGGEST_RESTAURANT_STATE?
         next_state = PROVIDE_DESCRIPTION_STATE
-    elif (current_state == PROVIDE_DETAILS_STATE):
-        #TODO like SUGGEST_RESTAURANT_STATE?
-        next_state = PROVIDE_DETAILS_STATE
+#    elif (current_state == PROVIDE_DETAILS_STATE):
+#        #TODO like SUGGEST_RESTAURANT_STATE?
+#        next_state = PROVIDE_DETAILS_STATE
     elif (current_state == CLOSURE_STATE):
         # Don't transition(?)
         next_state = CLOSURE_STATE
@@ -201,9 +201,9 @@ def negate(current_state):
     elif (current_state == PROVIDE_DESCRIPTION_STATE):
         # TODO This is actually inform
         next_state = PROVIDE_DESCRIPTION_STATE
-    elif (current_state == PROVIDE_DETAILS_STATE):
-        #TODO This is actually inform
-        next_state = PROVIDE_DETAILS_STATE
+#    elif (current_state == PROVIDE_DETAILS_STATE):
+#        #TODO This is actually inform
+#        next_state = PROVIDE_DETAILS_STATE
     elif (current_state == CLOSURE_STATE):
         # Don't transition(?)
         next_state = CLOSURE_STATE
@@ -255,9 +255,9 @@ def reqmore(current_state):
     elif (current_state == PROVIDE_DESCRIPTION_STATE):
         # Like suggest
         next_state = PROVIDE_DESCRIPTION_STATE
-    elif (current_state == PROVIDE_DETAILS_STATE):
-        # Like suggest
-        next_state = PROVIDE_DETAILS_STATE
+#    elif (current_state == PROVIDE_DETAILS_STATE):
+#        # Like suggest
+#        next_state = PROVIDE_DETAILS_STATE
     elif (current_state == CLOSURE_STATE):
         next_state = CLOSURE_STATE
     else:
@@ -276,11 +276,11 @@ def request(current_state):
         # Don't transition(?) 
         next_state = REQUEST_MISSING_PREFERENCES_STATE
     elif (current_state == SUGGEST_RESTAURANT_STATE):
-        next_state = PROVIDE_DETAILS_STATE
+        next_state = PROVIDE_DESCRIPTION_STATE #PROVIDE_DETAILS_STATE
     elif (current_state == PROVIDE_DESCRIPTION_STATE):
-        next_state = PROVIDE_DETAILS_STATE
-    elif (current_state == PROVIDE_DETAILS_STATE):
-        next_state = PROVIDE_DETAILS_STATE
+        next_state = PROVIDE_DESCRIPTION_STATE #PROVIDE_DETAILS_STATE
+#    elif (current_state == PROVIDE_DETAILS_STATE):
+#        next_state = PROVIDE_DETAILS_STATE
     elif (current_state == CLOSURE_STATE):
         # Don't transition(?)
         next_state = CLOSURE_STATE
@@ -311,9 +311,9 @@ def thankyou(current_state):
     elif (current_state == PROVIDE_DESCRIPTION_STATE):
         # Most likely a closure, they might know the place
         next_state = CLOSURE_STATE
-    elif (current_state == PROVIDE_DETAILS_STATE):
-        # Most likely a closure, they might know the place
-        next_state = CLOSURE_STATE
+#    elif (current_state == PROVIDE_DETAILS_STATE):
+#        # Most likely a closure, they might know the place
+#        next_state = CLOSURE_STATE
     elif (current_state == CLOSURE_STATE):
         # Obviously a closure
         next_state = CLOSURE_STATE
@@ -335,12 +335,12 @@ def invalidact(current_state):
 ################################################
 # Dialog state nodes utterances generation handlers
 # Output: <str> next system utterance
-#TODO
-def welcome():
+    
+def welcome(utterance):
     return "Welcome to the restaurant selection assistant. Please enter your preferences."
 
-# TODO
-def inform_no_matches():
+
+def inform_no_matches(utterance):
     if len(g_available_restaurants) == 0:
         no_matches = "There are no restaurants matching those preferences in my database."
     return no_matches
@@ -348,8 +348,8 @@ def inform_no_matches():
 # Deleted, no point in having this dialog state
 #def change_preferences():
 #    return "change_preferences message"
-# TODO
-def request_missing_preferences():
+
+def request_missing_preferences(utterance):
     global g_mistake
     missing = []
     # See what preferences are missing
@@ -415,8 +415,8 @@ def spelling_mistakes(preference):
         g_preference_at_stake = preference
         g_distant[preference] = []
     return question
-# TODO
-def suggest_restaurant():
+
+def suggest_restaurant(utterance):
     global g_selected_restaurant
     if len(g_available_restaurants) == 0:
         suggest = "There are no restaurants left with those preferences"
@@ -429,47 +429,75 @@ def suggest_restaurant():
         return suggest
     
 # TODO
-def provide_description():
+def provide_description(utterance):
     description = []
     descriptionname = []
-
+    request_description = utterance.split(" ")
     for d in request_description:
-        if d == PRICERANGE:
+        if check_description_elements(d,PRICERANGE):
             description.append(g_selected_restaurant[1])
-            descriptionname.append(d)
-        if d == AREA:
+            descriptionname.append(PRICERANGE)
+        if check_description_elements(d,AREA):
             description.append(g_selected_restaurant[2])
-            descriptionname.append(d)
-        if d == FOOD:
+            descriptionname.append(AREA)
+        if check_description_elements(d,FOOD):
             description.append(g_selected_restaurant[3])
-            descriptionname.append(d)
-    if len(description) == 1:
-        descriptions = "The %s is %s" %(descriptionname[0], description[0])
-    elif len(description) == 2:
-        descriptions = "The %s is %s and the %s is %s" % (
-        descriptionname[0], description[0], descriptionname[1], description[1])
-    elif len(description) == 3:
-        descriptions = "The %s is %s, the %s is %s and the %s is %s" % (
-            descriptionname[0], description[0], descriptionname[1], description[1], description[2], description[2])
+            descriptionname.append(FOOD)
+        if check_details_elements(d,PHONENUMBER):
+            description.append(g_selected_restaurant[4])
+            descriptionname.append(PHONENUMBER)
+        if check_details_elements(d, ADDRESS):
+            description.append(g_selected_restaurant[5])
+            descriptionname.append(ADDRESS)
+        if check_details_elements(d, POSTCODE):
+            description.append(g_selected_restaurant[6])
+            descriptionname.append(POSTCODE)
+    requests = len(description)
+    if requests > 0:
+        descriptions = "The "
+        for i in range(requests):
+            if i > 0:
+                if i == requests:
+                    descriptions = descriptions + " and "
+                else:
+                    descriptions = descriptions + ", the "
+            descriptions = descriptions + ("%s is %s" % (descriptionname[i], description[i]))
+#    if len(description) == 1:
+#        descriptions = "The %s is %s" %(descriptionname[0], description[0])
+#    elif len(description) == 2:
+#        descriptions = "The %s is %s and the %s is %s" % (
+#        descriptionname[0], description[0], descriptionname[1], description[1])
+#    elif len(description) == 3:
+#        descriptions = "The %s is %s, the %s is %s and the %s is %s" % (
+#            descriptionname[0], description[0], descriptionname[1], description[1], descriptionname[2], description[2])
     else:
-        descriptions = "This description shouldn't be possible :("
+        descriptions = "What do you want to know about the restaurant? (food, area, pricerange, contact information, post code, address)" #"This description is triggered if there is any misspeling on keywords
     return descriptions
 
-# TODO
-def provide_details(request_detail):
+# Check if a word matches a certain ontology subset
+# Input:
+# word: <str> word to check
+# ontology_subset: <str> [AREA | PRICERANGE | FOOD] 
+# Output: <bool> True if it matches, False otherwise
+def check_description_elements(word, ontology_subset):
+    checks_out = word == ontology_subset or word in g_ontology[INFORMABLE][ontology_subset]
+    return checks_out
+
+# Deprecated
+def provide_details(utterance):
     detail = []
     detailname = []
-
+    request_detail = utterance.split(" ")
     for d in request_detail:
-        if d == "phone number":
+        if check_details_elements(d,PHONENUMBER):
             detail.append(g_selected_restaurant[4])
-            detailname.append(d)
-        if d == "address":
+            detailname.append(PHONENUMBER)
+        if check_details_elements(d, ADDRESS):
             detail.append(g_selected_restaurant[5])
-            detailname.append(d)
-        if d == "post code":
+            detailname.append(ADDRESS)
+        if check_details_elements(d, POSTCODE):
             detail.append(g_selected_restaurant[6])
-            detailname.append(d)
+            detailname.append(POSTCODE)
     if len(detail) == 1:
         details = "The %s is %s" % (detailname[0], detail[0])
     elif len(detail) == 2:
@@ -482,12 +510,22 @@ def provide_details(request_detail):
 
     return details
 
-def closure():
+
+# Check if a word matches a certain details expressions subset
+# Input:
+# word: <str> word to check
+# ontology_subset: <str> [PHONENUMBER | POSTCODE | ADDRESS] 
+# Output: <bool> True if it matches, False otherwise
+def check_details_elements(word, details_subset):
+    checks_out = word == details_subset or word in DETAILS_EXPRESSIONS[details_subset]
+    return checks_out
+
+def closure(utterance):
     return "Good bye"
 
 # Fallback for the handler when next_state is not correctly determined as a valid state
 # Which in theory should never happen
-def invalidstate():
+def invalidstate(utterance):
     print("An error occurred, please report log")
     return "Something went terribly wrong. This is an unreachable dialog state!"
 
@@ -553,14 +591,23 @@ DIALOG_ACTS = {
 # Dialog states
 WELCOME_STATE = "welcome"
 INFORM_NO_MATCHES_STATE = "inform_no_matches"
-
 #        change_preferences_state = change_preferences""
 REQUEST_MISSING_PREFERENCES_STATE = "request_missing_preferences"
 SUGGEST_RESTAURANT_STATE = "suggest_restaurant"
 PROVIDE_DESCRIPTION_STATE = "provide_description"
-PROVIDE_DETAILS_STATE = "provide_details"
+#PROVIDE_DETAILS_STATE = "provide_details"
 CLOSURE_STATE = "closure"
 INVALIDSTATE_STATE = "invalid_state" #fall back dialog state in case something weird happens
+
+# Details expressions
+PHONENUMBER = "phonenumber"
+ADDRESS = "address"
+POSTCODE = "postcode"
+DETAILS_EXPRESSIONS = {
+        PHONENUMBER: ["telephone", "phone", "number", "contact"],
+        ADDRESS: ["location", "direction", "directions", "where"],
+        POSTCODE: ["post", "post-code"]
+}
 
 # <Dialog state, utterance generation function> dictionary
 g_system_states = {
@@ -570,7 +617,7 @@ g_system_states = {
         REQUEST_MISSING_PREFERENCES_STATE:request_missing_preferences, 
         SUGGEST_RESTAURANT_STATE:suggest_restaurant,
         PROVIDE_DESCRIPTION_STATE:provide_description,
-        PROVIDE_DETAILS_STATE:provide_details,
+#        PROVIDE_DETAILS_STATE:provide_details,
         CLOSURE_STATE:closure
 }
 
@@ -704,13 +751,14 @@ def init_dialog(modelFile, trainFile, ontologyFile):
     # 1. Make sure we don't recicle
     reset_preferences() 
     next_state = ""
+    next_system_utterance = ""
     # 2. Load tools
     g_model = load_model(modelFile)
     g_tokenizer, g_encoder = __loadTokenizerAndEncoder(trainFileName)
     g_ontology = json.loads(open(ontologyFile).read())
     # 3. Initialize dialog
     current_state = WELCOME_STATE # Initial dialog state
-    next_system_utterance = welcome() # Initial system utterance
+    next_system_utterance = welcome("") # Initial system utterance
     print(next_system_utterance)
     try:
         while current_state != CLOSURE_STATE:
@@ -737,11 +785,10 @@ def dialog_transition(current_state, current_input):
     next_system_utterance = ""
     
     current_act = get_act(current_input)
-
     if current_act in INFORMING_ACTS:
         g_updates = manage_info(current_input)
     next_dialog_state = next_state(current_state, current_act)
-    next_system_utterance = generate_utterance(next_dialog_state)
+    next_system_utterance = generate_utterance(next_dialog_state, current_input)
     # This is a special case
     if current_act == REQALTS_ACT and next_dialog_state == INFORM_NO_MATCHES_STATE and not g_updates:
         next_system_utterance = "There are no more restaurants with those preferences. Enter new preferences"
@@ -877,11 +924,11 @@ def next_state(current_state, current_act):
 # Input:
 # state: <str> next dialog state
 # Output: <str> next system utterance
-def generate_utterance(current_state):
+def generate_utterance(current_state, current_input):
     utterance = ""
     handler = g_system_states.get(current_state, INVALIDSTATE_STATE)
     # Refer to "Handlers for the different dialog acts"
-    utterance = handler()
+    utterance = handler(current_input)
     return utterance
 
 
