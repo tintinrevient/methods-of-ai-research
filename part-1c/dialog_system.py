@@ -65,6 +65,7 @@ class Dialog:
         self.g_ontology = json.loads(open(config["ontologyFile"]).read())
         self.restaurantInfoFile = config['restaurantInfoFile']
         self.levenshteinEditDistance = config["levenshteinEditDistance"]
+        self.lowerCase = config["lowerCase"]
 
         # <User dialog act, next_state determining function> dictionary
         self.DIALOG_ACTS = {
@@ -721,7 +722,9 @@ class Dialog:
         try:
             while current_state != self.CLOSURE_STATE:
                 current_input = input()
-                next_state, next_system_utterance = self.dialog_transition(current_state, current_input.lower())
+                if self.lowerCase == True:
+                    current_input = current_input.lower()
+                next_state, next_system_utterance = self.dialog_transition(current_state, current_input)
                 current_state = next_state
                 print(next_system_utterance)
 
@@ -918,7 +921,8 @@ if __name__ == "__main__":
               "trainFileName": '/Users/zhaoshu/Documents/workspace/methods-of-ai-research/part-1b/dataset-txt/label_train_dialogs.txt',
               "ontologyFile": '/Users/zhaoshu/Documents/workspace/methods-of-ai-research/part-1c/ontology_dstc2.json',
               "restaurantInfoFile": '/Users/zhaoshu/Documents/workspace/methods-of-ai-research/part-1c/restaurantinfo.csv',
-              'levenshteinEditDistance': 0}
+              'levenshteinEditDistance': 0,
+              'lowerCase': True}
 
 
     dialog = Dialog(config)
