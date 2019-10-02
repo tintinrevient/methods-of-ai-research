@@ -558,7 +558,7 @@ class Dialog:
         if len(self.g_available_restaurants) == 0:
             suggest = "There are no restaurants left with those preferences"
         else:
-            ran_restaurant = random.randint(1, len(g_available_restaurants)) - 1
+            ran_restaurant = random.randint(1, len(self.g_available_restaurants)) - 1
             g_selected_restaurant = self.g_available_restaurants[ran_restaurant]
             self.g_available_restaurants.remove(g_selected_restaurant)
             suggest = "%s is a %s restaurant in the %s of the city and the prices are in the %s range" % (
