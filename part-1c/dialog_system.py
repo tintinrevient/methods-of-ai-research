@@ -628,12 +628,6 @@ class Dialog:
         print("An error occurred, please report log")
         return "Something went terribly wrong. This is an unreachable dialog state!"
 
-    ##################################################
-    #### GLOBAL VARIABLES USED ACROSS THE PROGRAM ####
-    ##################################################
-
-
-
     #############################################
     #### PREFERENCES GLOBAL DICTIONARY 'API' ####
     #############################################
