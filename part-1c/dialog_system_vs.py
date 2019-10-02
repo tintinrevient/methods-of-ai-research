@@ -58,7 +58,6 @@ class Dialog:
     INVALIDSTATE_STATE = "invalid_state"  # fall back dialog state in case something weird happens
 
 
-
     def __init__(self, config):
 
         self.g_model = load_model(config["modelFile"])
