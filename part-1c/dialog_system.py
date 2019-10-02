@@ -353,11 +353,11 @@ def request_missing_preferences():
     global g_mistake
     missing = []
     # See what preferences are missing
-    if g_preferences[FOOD] == []:
+    if not g_preferences[FOOD]:
         missing.append(FOOD)
-    if g_preferences[AREA] == []:
+    if not g_preferences[AREA]:
         missing.append(AREA)
-    if g_preferences[PRICERANGE] == []:
+    if not g_preferences[PRICERANGE]:
         missing.append(PRICERANGE)
     # Check if we have possible spelling mistakes
     if possible_mistakes():
@@ -655,7 +655,7 @@ def reset_preferences():
 # Output: <bool> True if value updated, False otherwise
 def set_preference(preference, value):
     setting = False
-    if value == []: # Skip preference, not present in current input 
+    if not value: # Skip preference, not present in current input 
         return setting
     if preference in g_preferences and g_preferences[preference] != value:
         g_preferences[preference] = value
@@ -743,7 +743,7 @@ def dialog_transition(current_state, current_input):
     next_dialog_state = next_state(current_state, current_act)
     next_system_utterance = generate_utterance(next_dialog_state)
     # This is a special case
-    if current_act == REQALTS_ACT and next_dialog_state == INFORM_NO_MATCHES_STATE:
+    if current_act == REQALTS_ACT and next_dialog_state == INFORM_NO_MATCHES_STATE and not g_updates:
         next_system_utterance = "There are no more restaurants with those preferences. Enter new preferences"
         reset_preferences()
     return next_dialog_state, next_system_utterance
@@ -783,7 +783,7 @@ def extract_information(utterance):
     area_match = {}
     threshold = 3
     #TODO this is too ugly to pass
-    def aux(word, p_list, threshold, p_match):
+    def aux(word, p_list, threshold, p_match): #don't repeat code
         for elem in p_list:
             tmp_score = distance(word, elem)
             if tmp_score < threshold:
@@ -816,37 +816,48 @@ def extract_information(utterance):
         PRICERANGE: [],
         AREA: []
     }
-    food_found = False # This flag will save us time
-    for food in food_match:
-        # If we are sure of something we add it and discard anything else
-        if food[1] == 0:
-            extracted[FOOD].append(food[0])
-            food_found = True
-        # Reject anything above our threshold
-        elif food_found or food[1] > threshold:
-            break
-        # Store separately possible spelling mistakes and await confirmation
-        elif not food_found:
-            g_distant[FOOD].append(food[0]) 
-    pricerange_found = False
-    for price in pricerange_match:
-        if price[1] == 0:
-            extracted[PRICERANGE].append(price[0])
-            pricerange_found = True
-        elif pricerange_found or price[1] > threshold:
-            break
-        elif not pricerange_found:
-            g_distant[PRICERANGE].append(price[0]) 
+    def aux2(p_match, preference, threshold): #don't repeat code
+        flag = False
+        for elem in p_match:
+            # If we are sure of something we add it and discard anything else
+            if elem[1] == 0:
+                extracted[preference].append(elem[0])
+                flag = True
+            # Reject anything above our threshold
+            elif flag or elem[1] > threshold:
+                break
+            # Store separately possible spelling mistakes and await confirmation
+            elif not flag:
+                g_distant[preference].append(elem[0])
+        return flag
+    food_found = aux2(food_match, FOOD, threshold)
+#    for food in food_match:
+#        if food[1] == 0:
+#            extracted[FOOD].append(food[0])
+#            food_found = True
+#        elif food_found or food[1] > threshold:
+#            break
+#        elif not food_found:
+#            g_distant[FOOD].append(food[0]) 
+    pricerange_found = aux2(pricerange_match, PRICERANGE, threshold)
+#    for price in pricerange_match:
+#        if price[1] == 0:
+#            extracted[PRICERANGE].append(price[0])
+#            pricerange_found = True
+#        elif pricerange_found or price[1] > threshold:
+#            break
+#        elif not pricerange_found:
+#            g_distant[PRICERANGE].append(price[0]) 
             
-    area_found = False
-    for area in area_match:
-        if area[1] == 0:
-            extracted[AREA].append(area[0])
-            area_found = True
-        elif area_found or area[1] > threshold:
-            break
-        elif not area_found:
-            g_distant[AREA].append(area[0])
+    area_found = aux2(area_match, AREA, threshold)
+#    for area in area_match:
+#        if area[1] == 0:
+#            extracted[AREA].append(area[0])
+#            area_found = True
+#        elif area_found or area[1] > threshold:
+#            break
+#        elif not area_found:
+#            g_distant[AREA].append(area[0])
 
     return extracted
 
