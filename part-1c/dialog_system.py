@@ -827,6 +827,8 @@ class Dialog:
         if current_act == self.REQALTS_ACT and next_dialog_state == self.INFORM_NO_MATCHES_STATE and not self.g_updates:
             next_system_utterance = "There are no more restaurants with those preferences. Enter new preferences"
             self.reset_preferences()
+
+        # print(self.g_preferences)
         return next_dialog_state, next_system_utterance
 
 
@@ -851,7 +853,6 @@ class Dialog:
     def manage_info(self, current_input):
         extracted_info = self.extract_information(current_input)
         l_updates = False
-        # print(extracted_info)
         for preference in extracted_info:
             l_updates = self.set_preference(preference, extracted_info[preference]) or l_updates
         return l_updates
