@@ -856,15 +856,15 @@ class Dialog:
             l_updates = self.set_preference(preference, extracted_info[preference]) or l_updates
         return l_updates
 
-    # TODO this is too ugly to pass
-    def aux(self, word, p_list, threshold, p_match):  # don't repeat code
+    # Extract the relevant information from the current input, focusing on a single preference
+    def extract_preference_info(self, word, p_list, threshold, p_match):  # don't repeat code
         for elem in p_list:
             tmp_score = distance(word, elem)
             if tmp_score < threshold:
                 p_match[elem] = tmp_score
         return p_match
-
-    def aux2(self, p_match, preference, threshold, extracted, levenshteinEditDistance):  # don't repeat code
+    # Select extracted preferences according to their edit distances 
+    def filter_extracted_preference_info(self, p_match, preference, threshold, extracted, levenshteinEditDistance):  # don't repeat code
         flag = False
         for elem in p_match:
             # If we are sure of something we add it and discard anything else
@@ -895,9 +895,9 @@ class Dialog:
         threshold = 3
 
         for word in words:
-            food_match = self.aux(word, food_list, threshold, food_match)
-            pricerange_match = self.aux(word, pricerange_list, threshold, pricerange_match)
-            area_match = self.aux(word, area_list, threshold, area_match)
+            food_match = self.extract_preference_info(word, food_list, threshold, food_match)
+            pricerange_match = self.extract_preference_info(word, pricerange_list, threshold, pricerange_match)
+            area_match = self.extract_preference_info(word, area_list, threshold, area_match)
 
         food_match = sorted(food_match.items(), key=operator.itemgetter(1))
         pricerange_match = sorted(pricerange_match.items(), key=operator.itemgetter(1))
@@ -910,10 +910,10 @@ class Dialog:
             self.AREA: []
         }
 
-        food_found, extracted = self.aux2(food_match, self.FOOD, threshold, extracted, self.levenshteinEditDistance)
-        pricerange_found, extracted = self.aux2(pricerange_match, self.PRICERANGE, threshold, extracted,
+        food_found, extracted = self.filter_extracted_preference_info(food_match, self.FOOD, threshold, extracted, self.levenshteinEditDistance)
+        pricerange_found, extracted = self.filter_extracted_preference_info(pricerange_match, self.PRICERANGE, threshold, extracted,
                                                 self.levenshteinEditDistance)
-        area_found, extracted = self.aux2(area_match, self.AREA, threshold, extracted, self.levenshteinEditDistance)
+        area_found, extracted = self.filter_extracted_preference_info(area_match, self.AREA, threshold, extracted, self.levenshteinEditDistance)
 
         return extracted
 
