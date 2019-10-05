@@ -193,10 +193,7 @@ class Dialog:
             next_state = self.CLOSURE_STATE
         else:
             sentence = "Generic error message generated when transitioning states"
-            if self.outputAllCaps:
-                print(sentence.upper())
-            else:
-                print(sentence)
+            self.system_print(sentence)
             next_state = self.CLOSURE_STATE
         return next_state
 
@@ -240,10 +237,7 @@ class Dialog:
             next_state = self.CLOSURE_STATE
         else:
             sentence = "Generic error message generated when transitioning states"
-            if self.outputAllCaps:
-                print(sentence.upper())
-            else:
-                print(sentence)
+            self.system_print(sentence)
             next_state = self.CLOSURE_STATE
         return next_state
 
@@ -275,10 +269,7 @@ class Dialog:
             next_state = self.CLOSURE_STATE
         else:
             sentence = "Generic error message generated when transitioning states"
-            if self.outputAllCaps:
-                print(sentence.upper())
-            else:
-                print(sentence)
+            self.system_print(sentence)
             next_state = self.CLOSURE_STATE
         return next_state
 
@@ -320,10 +311,7 @@ class Dialog:
             next_state = self.CLOSURE_STATE
         else:
             sentence = "Generic error message generated when transitioning states"
-            if self.outputAllCaps:
-                print(sentence.upper())
-            else:
-                print(sentence)
+            self.system_print(sentence)
             next_state = self.CLOSURE_STATE
         return next_state
 
@@ -379,10 +367,7 @@ class Dialog:
             next_state = self.CLOSURE_STATE
         else:
             sentence = "Generic error message generated when transitioning states"
-            if self.outputAllCaps:
-                print(sentence.upper())
-            else:
-                print(sentence)
+            self.system_print(sentence)
             next_state = self.CLOSURE_STATE
         return next_state
 
@@ -435,10 +420,7 @@ class Dialog:
             next_state = self.CLOSURE_STATE
         else:
             sentence = "Generic error message generated when transitioning states"
-            if self.outputAllCaps:
-                print(sentence.upper())
-            else:
-                print(sentence)
+            self.system_print(sentence)
             next_state = self.CLOSURE_STATE
         return next_state
 
@@ -463,10 +445,7 @@ class Dialog:
             next_state = self.CLOSURE_STATE
         else:
             sentence = "Generic error message generated when transitioning states"
-            if self.outputAllCaps:
-                print(sentence.upper())
-            else:
-                print(sentence)
+            self.system_print(sentence)
             next_state = self.CLOSURE_STATE
         return next_state
 
@@ -500,10 +479,7 @@ class Dialog:
             next_state = self.CLOSURE_STATE
         else:
             sentence = "Generic error message generated when transitioning states"
-            if self.outputAllCaps:
-                print(sentence.upper())
-            else:
-                print(sentence)
+            self.system_print(sentence)
             next_state = self.CLOSURE_STATE
         return next_state
 
@@ -511,10 +487,7 @@ class Dialog:
     # Which in theory should never happen
     def invalidact(self, current_state):
         sentence = "Something went terribly wrong. We shouldn't have found this unreachable act!"
-        if self.outputAllCaps:
-            print(sentence.upper())
-        else:
-            print(sentence)
+        self.system_print(sentence)
         next_state = self.CLOSURE_STATE  # report bug
         return next_state
 
@@ -532,9 +505,6 @@ class Dialog:
         if len(self.g_available_restaurants) == 0:
             no_matches = "There are no %s restaurants in the %s price range located in the %s." % (
             self.g_preferences[self.FOOD], self.g_preferences[self.PRICERANGE], self.g_preferences[self.AREA])
-
-            if self.outputAllCaps:
-                no_matches = no_matches.upper()
         return no_matches
 
     # Deleted, no point in having this dialog state
@@ -604,9 +574,6 @@ class Dialog:
 
             question = "I did not understand some of what you said. Did you mean %s %s?" % (mistakes, preference)
 
-            if self.outputAllCaps:
-                question = question.upper()
-
             self.g_preference_at_stake = preference
             self.g_distant[preference] = []
         return question
@@ -615,9 +582,6 @@ class Dialog:
     def suggest_restaurant(self, utterance):
         if len(self.g_available_restaurants) == 0:
             suggest = "There are no restaurants left with those preferences"
-            if self.outputAllCaps:
-                suggest = suggest.upper()
-
         else:
             ran_restaurant = random.randint(1, len(self.g_available_restaurants)) - 1
             self.g_selected_restaurant = self.g_available_restaurants[ran_restaurant]
@@ -625,10 +589,7 @@ class Dialog:
             suggest = "%s is a %s restaurant in the %s of the city and the prices are in the %s range" % (
                 self.g_selected_restaurant[0], self.g_selected_restaurant[3], self.g_selected_restaurant[2],
                 self.g_selected_restaurant[1])
-
-            if self.outputAllCaps:
-                suggest = suggest.upper()
-            return suggest
+        return suggest
 
     # TODO final steps of the merge pending
     def provide_description(self, utterance):
@@ -674,9 +635,6 @@ class Dialog:
                 #            descriptionname[0], description[0], descriptionname[1], description[1], descriptionname[2], description[2])
         else:
             descriptions = "What do you want to know about the restaurant? (food, area, pricerange, contact information, post code, address)"  # "This description is triggered if there is any misspeling on keywords
-
-            if self.outputAllCaps:
-                description = description.upper()
 
         return descriptions
 
@@ -728,8 +686,6 @@ class Dialog:
     def closure(self, utterance):
 
         sentence = "Good bye"
-        if self.outputAllCaps:
-            sentence = sentence.upper()
         return sentence
 
     # Fallback for the handler when next_state is not correctly determined as a valid state
@@ -737,11 +693,7 @@ class Dialog:
     def invalidstate(self, utterance):
         sentence = "An error occurred, please report log"
         result = "Something went terribly wrong. This is an unreachable dialog state!"
-        if self.outputAllCaps:
-            print(sentence.upper())
-            result = result.upper()
-        else:
-            print(sentence)
+        self.system_print(sentence.upper())
 
         return result
 
@@ -829,7 +781,7 @@ class Dialog:
         # 2. Initialize dialog
         current_state = self.WELCOME_STATE  # Initial dialog state
         next_system_utterance = self.welcome("")  # Initial system utterance
-        print(next_system_utterance)
+        self.system_print(next_system_utterance)
         try:
             while current_state != self.CLOSURE_STATE:
                 current_input = input()
@@ -837,10 +789,18 @@ class Dialog:
                     current_input = current_input.lower()
                 next_state, next_system_utterance = self.dialog_transition(current_state, current_input)
                 current_state = next_state
-                print(next_system_utterance)
+                self.system_print(next_system_utterance)
 
         except KeyboardInterrupt:
             pass
+        return
+    
+    # System printing handler
+    def system_print(self, utterance):
+        if self.outputAllCaps:
+            print(utterance.upper())
+        else:
+            print(utterance)
         return
 
     # Determine state transition and system utterance
@@ -865,10 +825,6 @@ class Dialog:
         if current_act == self.REQALTS_ACT and next_dialog_state == self.INFORM_NO_MATCHES_STATE and not self.g_updates:
             next_system_utterance = "There are no more %s restaurants in the %s price range in the %s of the city. Resetting preferences. Please enter new ones." % (
             self.g_preferences[self.FOOD], self.g_preferences[self.PRICERANGE], self.g_preferences[self.AREA])
-
-            if self.outputAllCaps:
-                next_system_utterance = next_system_utterance.upper()
-
             self.reset_preferences()
 
         # print(self.g_preferences)
