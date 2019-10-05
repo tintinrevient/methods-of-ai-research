@@ -896,11 +896,11 @@ class Dialog:
         }
         
         # AUX: Select extracted preferences according to their edit distances 
-        def filter_extracted_preference_info(p_match, preference, threshold, extracted, levenshteinEditDistance):  # don't repeat code
+        def filter_extracted_preference_info(p_match, preference, threshold, extracted):  # don't repeat code
             flag = False
             for elem in p_match:
                 # If we are sure of something we add it and discard anything else
-                if elem[1] <= levenshteinEditDistance:
+                if elem[1] <= self.levenshteinEditDistance:
                     extracted[preference].append(elem[0])
                     flag = True
                 # Reject anything above our threshold
@@ -911,10 +911,9 @@ class Dialog:
                     self.g_distant[preference].append(elem[0])
             return flag, extracted
 
-        food_found, extracted = filter_extracted_preference_info(food_match, self.FOOD, threshold, extracted, self.levenshteinEditDistance)
-        pricerange_found, extracted = filter_extracted_preference_info(pricerange_match, self.PRICERANGE, threshold, extracted,
-                                                self.levenshteinEditDistance)
-        area_found, extracted = filter_extracted_preference_info(area_match, self.AREA, threshold, extracted, self.levenshteinEditDistance)
+        food_found, extracted = filter_extracted_preference_info(food_match, self.FOOD, threshold, extracted)
+        pricerange_found, extracted = filter_extracted_preference_info(pricerange_match, self.PRICERANGE, threshold, extracted)
+        area_found, extracted = filter_extracted_preference_info(area_match, self.AREA, threshold, extracted)
 
         return extracted
 
