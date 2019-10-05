@@ -217,7 +217,7 @@ class Dialog:
                 next_state = self.REQUEST_MISSING_PREFERENCES_STATE
             else:
                 # Perform the lookup of restaurants in the db
-                self.g_available_restaurants = self.find_possible_restaurants(self.restaurantInfoFile)
+                self.g_available_restaurants = self.find_possible_restaurants()
                 # Check for availability
                 if len(self.g_available_restaurants) == 0:
                     next_state = self.INFORM_NO_MATCHES_STATE
@@ -332,7 +332,7 @@ class Dialog:
                 next_state = self.REQUEST_MISSING_PREFERENCES_STATE
             else:
                 # Perform the lookup of restaurants in the db
-                self.g_available_restaurants = self.find_possible_restaurants(self.restaurantInfoFile)
+                self.g_available_restaurants = self.find_possible_restaurants()
                 # Check for availability
                 if len(self.g_available_restaurants) == 0:
                     next_state = self.INFORM_NO_MATCHES_STATE
@@ -754,9 +754,9 @@ class Dialog:
 
     # Lookup possible restaurants with the given contraints in the preferences
     # Output: <[str]> list of restaurants that match the preferences
-    def find_possible_restaurants(self, restaurantInfoFile):
+    def find_possible_restaurants(self):
         restaurant = []
-        with open(restaurantInfoFile) as csvfile:
+        with open(self.restaurantInfoFile) as csvfile:
             readcsv = csv.reader(csvfile, delimiter=',')
 
             for row in readcsv:
