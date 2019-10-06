@@ -474,9 +474,11 @@ class Dialog:
     def possible_mistakes(self):
         return len(self.g_distant[self.FOOD]) + len(self.g_distant[self.PRICERANGE]) + len(self.g_distant[self.AREA])
 
-    # Create a question based on stored spelling mistakes, if there are any.
-    # Output: <str> question if there are possible mistakes in g_distant, 0 otherwise
     def question_spelling_mistakes(self):
+        """
+        Create a question based on stored spelling mistakes, if there are any.
+        Output: <str> question if there are possible mistakes in g_distant, 0 otherwise
+        """
         # Check if we have possible misspellings
         question = self.spelling_mistakes(self.FOOD)
         if not question:  # Keep in mind that 0 evaluates to False
@@ -485,11 +487,13 @@ class Dialog:
                 question = self.spelling_mistakes(self.AREA)
         return question
 
-    # Spelling mistakes per preference
-    # Input:
-    # preference: <str> preference to check in g_distant
-    # Output: <str> question if there are possible mistakes in g_distant[preference], 0 otherwise
     def spelling_mistakes(self, preference):
+        """
+        Spelling mistakes per preference
+        Input:
+        preference: <str> preference to check in g_distant
+        Output: <str> question if there are possible mistakes in g_distant[preference], 0 otherwise
+        """
         # Make extra sure we are not recycling by any chance
         self.g_mistake = []
         self.g_preference_at_stake = ""
