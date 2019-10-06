@@ -1,19 +1,23 @@
-
 def utter():
+    """
+    Predict the user dialog act using a keyword matching baseline
+    """
 
+    model = __initModel()
     print("Please enter your sentence...")
 
     try:
         while True:
             utterance = input()
-            print(__keywordMatching(utterance))
+            print(__keywordMatching(model, utterance))
 
     except KeyboardInterrupt:
         pass
 
-import collections
-def __keywordMatching(utterance, repetition = False):
-
+def __initModel():
+    """
+    Initialize the keyword matching baseline model
+    """
     dialog_acts = {}
     # Dialog acts keywords arrays
     ack_keywords = ["okay", "kay", "well", "great", "fine", "good", "thatll", "do"]
@@ -25,7 +29,7 @@ def __keywordMatching(utterance, repetition = False):
     negate_keywords = ["no"]
     null_keywords = [] # default to anything else
     repeat_keywords = ["repeat", "back", "again"]
-    reqalts_keywords = ["another", "about", "else"] #nonexistent in training data
+    reqalts_keywords = ["another", "about", "else"]
     reqmore_keywords = ["more"]
     restart_keywords = ["start", "over", "reset", "restart"]
     thankyou_keywords = ["thanks", "thank"]
@@ -60,6 +64,18 @@ def __keywordMatching(utterance, repetition = False):
     dialog_acts["request_keywords"] = request_keywords
     dialog_acts["restart_keywords"] = restart_keywords
     dialog_acts["thankyou_keywords"] = thankyou_keywords
+    
+    return dialog_acts
+
+def __keywordMatching(model, utterance, repetition = False):
+    """
+    Use the keyword matching baseline to find the dialog act of the input
+    Input:
+    model: {<str>, [<str>]} dictionary of dialog acts and keywords
+    utterance: <str> user input
+    repetition: <bool> should repetition of words be counted towards word count
+    Output: <str> dialog act identified
+    """
 
     utterance_keywords = utterance.split(" ")
     
@@ -67,21 +83,26 @@ def __keywordMatching(utterance, repetition = False):
     utterance_matches_len = {}
     
     if repetition == False:
-        for dialog_act in dialog_acts:
-            matches = set(dialog_acts[dialog_act]).intersection(utterance_keywords)
+        for dialog_act in model:
+            matches = set(model[dialog_act]).intersection(utterance_keywords)
             utterance_matches[dialog_act] = matches
             utterance_matches_len[dialog_act] = len(matches)
     else:
-        for dialog_act in dialog_acts:
+        for dialog_act in model:
             matches = 0
-            for keyword in dialog_acts[dialog_act]:
+            for keyword in model[dialog_act]:
                 matches = matches + utterance_keywords.count(keyword)
-            utterance_matches[dialog_act] = set(dialog_acts[dialog_act]).intersection(utterance_keywords)
+            utterance_matches[dialog_act] = set(model[dialog_act]).intersection(utterance_keywords)
             utterance_matches_len[dialog_act] = matches
     max_matches = max(utterance_matches_len.values())
     dialog_matches = [ k for k, v in utterance_matches_len.items() if v == max_matches]
     
-    return dialog_matches[0][:dialog_matches[0].index('_')]
+    if len(dialog_matches) == len(model):
+        act = "null"
+    else:
+        act = dialog_matches[0][:dialog_matches[0].index('_')]
+    
+    return act
     
 
 if __name__ == "__main__":

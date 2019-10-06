@@ -6,8 +6,9 @@ def prepareDataSet(from_dir, to_dir):
 
     The dataset (i.e., the original training and test set combined) is split in a training part of 85% and a test part of 15%.
 
-    'from_dir' is a string for the absolute path of the input directory, e.g., the parent folder of 'dstc2_test' and 'dstc2_traindev'
-    'to_dir' is a string for the absolute path of the output directory
+    Input: 
+    from_dir: <str> the path of the input directory, e.g., the parent folder of 'dstc2_test' and 'dstc2_traindev'
+    to_dir: <str> the path of the output directory
     """
 
     labels = []
@@ -35,9 +36,9 @@ def __generateDataSet(labels, f):
 
     There also exist multiple dialog_acts for one utterance_content, so the sentence is split into multiple lines of dialog_act utterance_content.
 
-    :param labels:
-    :param f:
-    :return:
+    Input:
+    labels: [<str>] list of labels
+    f: open file on which to write the data
     """
 
     for i in range(len(labels)):
@@ -61,6 +62,7 @@ def __generateDataSet(labels, f):
 
 if __name__ == "__main__":
 
+    # TODO might need some local adjustment
     from_dir = '../dstc2/'
     to_dir = '../label_dialogs/'
 

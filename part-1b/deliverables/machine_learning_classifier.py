@@ -15,9 +15,9 @@ def utter(modelFile, trainFileName):
 
     This method can only be successfully called by the already-trained DCNN model.
 
-    :param modelFile:
-    :param trainFileName:
-    :return:
+    Input:
+    modelFile: <str> path to the model file
+    trainFileName: <str> path to the file containing training dialog data
     """
 
     model = load_model(modelFile)
@@ -45,10 +45,10 @@ def trainModel(trainFileName, testFileName, modelFile):
 
     One-hot encoding is used for the word encoding.
 
-    :param trainFileName:
-    :param testFileName:
-    :param modelFile:
-    :return:
+    Input:
+    trainFileName: <str> path to the file containing training dialog data
+    testFileName: <str> path to the file containing testing dialog data
+    modelFile: path to the model file
     """
 
     tokenizer, encoder = __loadTokenizerAndEncoder(trainFileName)
@@ -100,8 +100,8 @@ def __prepareDataSet(fileName):
     """
     Load the dataset into labels and utterances.
 
-    :param fileName:
-    :return:
+    Inpur: 
+    fileName: <str> path to the file containing dialog data
     """
 
     labels = []
@@ -132,8 +132,8 @@ def __loadTokenizerAndEncoder(fileName):
     """
     Load the tokenizer for the utterances and the encoder for the labels.
 
-    :param fileName:
-    :return:
+    Input: 
+    fileName: <str> path to the file containing dialog data
     """
 
     y, x = __prepareDataSet(fileName)
@@ -150,12 +150,13 @@ def __loadTokenizerAndEncoder(fileName):
 
 if __name__ == "__main__":
 
+    # TODO might need some local adjustment
     trainFileName = '../dataset-txt/label_train_dialogs.txt'
     testFileName = '../dataset-txt/label_test_dialogs.txt'
     modelFile = '../model/dcnn_model.h5'
 
     # Train the model as the first step
-    # trainModel(trainFileName, testFileName, modelFile)
+    trainModel(trainFileName, testFileName, modelFile)
 
     # Predict the user's act by the model
     utter(modelFile, trainFileName)

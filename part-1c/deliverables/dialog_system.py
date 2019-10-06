@@ -99,6 +99,9 @@ class Dialog:
         self.lowerCase = config["lowerCase"]
         self.baseline = config["baseline"]
         self.outputAllCaps = config["outputAllCaps"]
+        
+        # Keyword matching baseline model
+        self.baseline_model = {}
 
         # User preferences
         self.g_preferences = {
@@ -129,7 +132,7 @@ class Dialog:
         # Preference being questioned for mistakes atm
         self.g_preference_at_stake = ""
 
-        # <User dialog act, next_state determining function> dictionary
+        # {<User dialog act, next_state determining function>} dictionary
         self.DIALOG_ACTS = {
             self.ACK_ACT: self.ack,
             self.AFFIRM_ACT: self.affirm,
@@ -147,7 +150,7 @@ class Dialog:
             self.THANKYOU_ACT: self.thankyou
         }
 
-        # <Dialog state, utterance generation function> dictionary
+        # {<Dialog state, utterance generation function>} dictionary
         self.g_system_states = {
             self.WELCOME_STATE: self.welcome,
             self.INFORM_NO_MATCHES_STATE: self.inform_no_matches,
@@ -165,6 +168,7 @@ class Dialog:
     # Input:
     # current_state: <str> current dialog state
     # Output: <str> next dialog state
+    
     # TODO should we move at all with this act?
     def ack(self, current_state):
         if (current_state == self.WELCOME_STATE):
@@ -557,21 +561,25 @@ class Dialog:
 
         return descriptions
 
-    # Check if a word matches a certain ontology subset
-    # Input:
-    # word: <str> word to check
-    # ontology_subset: <str> [AREA | PRICERANGE | FOOD]
-    # Output: <bool> True if it matches, False otherwise
     def check_description_elements(self, word, ontology_subset):
+        """    
+        Check if a word matches a certain ontology subset
+        Input:
+        word: <str> word to check
+        ontology_subset: <str> [AREA | PRICERANGE | FOOD]
+        Output: <bool> True if it matches, False otherwise
+        """
         checks_out = word == ontology_subset or word in self.g_ontology[self.INFORMABLE][ontology_subset]
         return checks_out
 
-    # Check if a word matches a certain details expressions subset
-    # Input:
-    # word: <str> word to check
-    # ontology_subset: <str> [PHONENUMBER | POSTCODE | ADDRESS]
-    # Output: <bool> True if it matches, False otherwise
     def check_details_elements(self, word, details_subset):
+        """
+        Check if a word matches a certain details expressions subset
+        Input:
+        word: <str> word to check
+        ontology_subset: <str> [PHONENUMBER | POSTCODE | ADDRESS]
+        Output: <bool> True if it matches, False otherwise
+        """
         checks_out = word == details_subset or word in self.DETAILS_EXPRESSIONS[details_subset]
         return checks_out
 
@@ -591,18 +599,22 @@ class Dialog:
     #############################################
     #### PREFERENCES GLOBAL DICTIONARY 'API' ####
     #############################################
-    # Find preferences missing user input
-    # Output: <[str]> list of preferences not set
     def preferences_not_set(self):
+        """
+        Find preferences missing user input
+        Output: <[str]> list of preferences not set
+        """
         not_set = []
         for preference in self.g_preferences:
             if not self.g_preferences[preference]:
                 not_set.extend(preference)
         return not_set
 
-    # Restart preferences
-    # Output: <bool> success resetting
     def reset_preferences(self):
+        """
+        Restart preferences
+        Output: <bool> success resetting
+        """
         success = False
         self.dump_restaurants_list()
         self.g_preferences = {
@@ -614,12 +626,14 @@ class Dialog:
         success = True
         return success
 
-    # Overwrite a preference.
-    # Input:
-    # preference: <str> preference retrieved from the inform act
-    # value: <[str]> list of values retrieved from the inform act
-    # Output: <bool> True if value updated, False otherwise
     def set_preference(self, preference, value):
+        """
+        Overwrite a preference.
+        Input:
+        preference: <str> preference retrieved from the inform act
+        value: <[str]> list of values retrieved from the inform act
+        Output: <bool> True if value updated, False otherwise
+        """
         setting = False
         if not value:  # Skip preference, not present in current input (empty list)
             return setting
@@ -634,18 +648,22 @@ class Dialog:
     #######################################
     #### RESTAURANTS GLOBAL LIST 'API' ####
     #######################################
-    # Reset the available restaurants array
-    # Output: <bool> success resetting
     def dump_restaurants_list(self):
+        """
+        Reset the available restaurants array
+        Output: <bool> success resetting
+        """
         success = False
         self.g_available_restaurants = []
         self.g_selected_restaurant = ""
         success = True
         return success
 
-    # Lookup possible restaurants with the given contraints in the preferences
-    # Output: <[str]> list of restaurants that match the preferences
     def find_possible_restaurants(self):
+        """
+        Lookup possible restaurants with the given contraints in the preferences
+        Output: <[str]> list of restaurants that match the preferences
+        """
         restaurant = []
         with open(self.restaurantInfoFile) as csvfile:
             readcsv = csv.reader(csvfile, delimiter=',')
@@ -660,13 +678,17 @@ class Dialog:
     ##########################################
     #### DIALOG TRANSITION CORE FUNCTIONS ####
     ##########################################
-    # Start a dialog
     def init_dialog(self):
+        """
+        Start a dialog
+        """
         # Preprare dialog assistant
         # 1. Make sure we don't recicle
         self.reset_preferences()
         next_state = ""
         next_system_utterance = ""
+        if self.baseline:
+            self.baseline_model = self.__initModel()
 
         # 2. Initialize dialog
         current_state = self.WELCOME_STATE  # Initial dialog state
@@ -685,24 +707,28 @@ class Dialog:
             pass
         return
     
-    # System printing handler
-    # Input:
-    # utterance: <str> current system utterance to be printed
     def system_print(self, utterance):
+        """
+        System printing handler
+        Input:
+        utterance: <str> current system utterance to be printed
+        """
         if self.outputAllCaps:
             print(utterance.upper())
         else:
             print(utterance)
         return
 
-    # Determine state transition and system utterance
-    # Input:
-    # current_state: <str> current dialog state
-    # current_input: <str> current user utterance
-    # Output:
-    # <str>: next dialog state
-    # <str>: next system utterance
     def dialog_transition(self, current_state, current_input):
+        """
+        Determine state transition and system utterance
+        Input:
+        current_state: <str> current dialog state
+        current_input: <str> current user utterance
+        Output:
+        <str>: next dialog state
+        <str>: next system utterance
+        """
         # Make sure we don't recycle
         self.g_updates = False  
         next_dialog_state = ""
@@ -722,11 +748,13 @@ class Dialog:
 
         return next_dialog_state, next_system_utterance
 
-    # Extract the dialog act from the user utterance
-    # Input:
-    # utterance: <str> current user utterance
-    # Output: <str> dialog act identified
     def get_act(self, utterance):
+        """
+        Extract the dialog act from the user utterance
+        Input:
+        utterance: <str> current user utterance
+        Output: <str> dialog act identified
+        """
         if (self.baseline):
             act = self.keywordMatching(utterance)
             return act
@@ -734,23 +762,27 @@ class Dialog:
             act = self.g_model.predict(np.array(self.g_tokenizer.texts_to_matrix([utterance], mode='count')))
             return self.g_encoder.classes_[np.argmax(act[0])]
 
-    # Extract possible information contained in the utterance and attempt to
-    # update preferences
-    # Input:
-    # current_input: <str> current user utterance
-    # Output: <bool> True if a preference was updated, False otherwise
     def manage_info(self, current_input):
+        """
+        Extract possible information contained in the utterance and attempt to
+        update preferences
+        Input:
+        current_input: <str> current user utterance
+        Output: <bool> True if a preference was updated, False otherwise
+        """
         extracted_info = self.extract_information(current_input)
         l_updates = False
         for preference in extracted_info:
             l_updates = self.set_preference(preference, extracted_info[preference]) or l_updates
         return l_updates
 
-    # Extract the relevant information from the current input
-    # Input:
-    # utterance: <str> current user utterance classified as inform
-    # Output: dictionary with <preference,value> pairs for g_preferences
     def extract_information(self, utterance):
+        """
+        Extract the relevant information from the current input
+        Input:
+        utterance: <str> current user utterance classified as inform
+        Output: dictionary with <preference,value> pairs for g_preferences
+        """
         food_list = self.g_ontology[self.INFORMABLE][self.FOOD]
         pricerange_list = self.g_ontology[self.INFORMABLE][self.PRICERANGE]
         area_list = self.g_ontology[self.INFORMABLE][self.AREA]
@@ -824,23 +856,27 @@ class Dialog:
 
         return extracted
 
-    # Decide what the next state should be based on current state and dialog act
-    # Input
-    # current_state: <str> current dialog state
-    # current_act: <str> dialog act extracted from the user input
-    # Output: <str> next dialog state
     def next_state(self, current_state, current_act):
+        """
+        Decide what the next state should be based on current state and dialog act
+        Input
+        current_state: <str> current dialog state
+        current_act: <str> dialog act extracted from the user input
+        Output: <str> next dialog state
+        """
         next_state = ""
         handler = self.DIALOG_ACTS.get(current_act, self.INVALIDACT_ACT)
         # Refer to "Handlers for the different dialog acts"
         next_state = handler(current_state)
         return next_state
 
-    # Build the next utterance based on the current state of the dialog
-    # Input:
-    # state: <str> next dialog state
-    # Output: <str> next system utterance
     def generate_utterance(self, current_state, current_input):
+        """
+        Build the next utterance based on the current state of the dialog
+        Input:
+        state: <str> next dialog state
+        Output: <str> next system utterance
+        """
         utterance = ""
         handler = self.g_system_states.get(current_state, self.INVALIDSTATE_STATE)
         # Refer to "Handlers for the different dialog acts"
@@ -850,20 +886,17 @@ class Dialog:
     #######################################
     #### USER ACT IDENTIFICATION NEEDS ####
     #######################################
-    # Prepare the dataset found in fileName.
-    # File initially contains lines with "act utterance" distribution
-    # This will split the acts and utterances on two separate lists but 
-    # matching the indexes so labels[i] is the label for utterances[i]
-    # Input: 
-    # fileName: <str> path to file containing the dialog data
-    # Output: 
-    # labels: <[str]> list of labels
-    # utterances: <[str]> list of utterances
     def prepareDataSet(self, fileName):
         """
-        Load the dataset into labels and utterances.
-        :param fileName:
-        :return:
+        Prepare the dataset found in fileName.
+        File initially contains lines with "act utterance" distribution
+        This will split the acts and utterances on two separate lists but 
+        matching the indexes so labels[i] is the label for utterances[i]
+        Input: 
+        fileName: <str> path to file containing the dialog data
+        Output: 
+        labels: <[str]> list of labels
+        utterances: <[str]> list of utterances
         """
         labels = []
         utterances = []
@@ -882,14 +915,16 @@ class Dialog:
                 pass
         return labels, utterances
     
-    # Load the tokenizer and train it on the fileName data
-    # Input: 
-    # fileName: <str> path to file containing dialog data
-    # Output: 
-    # tokenizer: tool that allows to vectorize a text corpus, by turning each text into a vector 
-    #            where the coefficient for each token is based on word count (in our case)
-    # encoder: tool that encodes labels with value between 0 and n_classes-1. 
     def loadTokenizerAndEncoder(self, fileName):
+        """
+        Load the tokenizer and train it on the fileName data
+        Input: 
+        fileName: <str> path to file containing dialog data
+        Output: 
+        tokenizer: tool that allows to vectorize a text corpus, by turning each text into a vector 
+                   where the coefficient for each token is based on word count (in our case)
+        encoder: tool that encodes labels with value between 0 and n_classes-1. 
+        """
         labels, utterances = self.prepareDataSet(fileName)
 
         tokenizer = Tokenizer(num_words=self.MAX_WORDS)
@@ -899,95 +934,96 @@ class Dialog:
         encoder.fit(labels)
 
         return tokenizer, encoder
-
-    # Keyword baseline approach. Classify user input based on keywords matching
-    # Input: 
-    # utterance: <str> user input
-    # repetition: <bool> should repetition of words be counted towards word count
-    # Output: <str> dialog act identified
-    def keywordMatching(self, utterance, repetition=False):
-
-        dialog_acts = {}
+    
+    def __initModel(self):
+        """
+        Initialize the keyword matching baseline model
+        """
+        self.baseline_model = {}
         # Dialog acts keywords arrays
         ack_keywords = ["okay", "kay", "well", "great", "fine", "good", "thatll", "do"]
         affirm_keywords = ["yea", "yes", "correct", "right", "ye", "perfect", "yeah"]
         bye_keywords = ["goodbye", "bye"]
-        confirm_keywords = ["is", "are", "they", "does",
-                            "do"]  # always a question about the service (does it, do they, is it, are they). We omit 'it' for reasons
+        confirm_keywords = ["is", "are", "they", "does", "do"] # always a question about the service (does it, do they, is it, are they). We omit 'it' for reasons
         deny_keywords = ["dont", "wrong", "no", "not", "change"]
         hello_keywords = ["hello", "hi", "halo"]
         negate_keywords = ["no"]
-        null_keywords = []  # default to anything else
+        null_keywords = [] # default to anything else
         repeat_keywords = ["repeat", "back", "again"]
-        reqalts_keywords = ["another", "about", "else"]  # nonexistent in training data
+        reqalts_keywords = ["another", "about", "else"]
         reqmore_keywords = ["more"]
         restart_keywords = ["start", "over", "reset", "restart"]
         thankyou_keywords = ["thanks", "thank"]
         # May be a question requesting (can i, may i, what is...)
-        request_keywords = []
-        request_details_keywords = ["much", "phone", "number", "postcode", "post", "code", "address", "type", "kind",
-                                    "price", "range", "area", "telephone"]
+        request_keywords = [] 
+        request_details_keywords = ["much", "phone", "number", "postcode", "post", "code", "address", "type", "kind", "price", "range", "area", "telephone"]
         request_question_keywords = ["how", "whats", "what", "can", "may", "could", "need"]
         request_keywords.extend(request_details_keywords)
         request_keywords.extend(request_question_keywords)
-        # We will need a special set of words for this set
-        inform_food_type_keywords = ["thai", "chinese", "gastropub", "cuban", "seafood", "canapes", "indian", "african",
-                                     "catalan", "turkish", "venetian", "porguguese", "oriental", "hungarian",
-                                     "mediterranean", "creative", "asian", "traditional", "unusual", "malaysian",
-                                     "jamaican", "french", "italian", "european", "american", "persian", "moroccan",
-                                     "british", "korean", "romanian", "polish", "japanese", "english", "christmas",
-                                     "barbecue", "cantonese", "spanish", "lebanese", "swedish", "mexican", "caribbean",
-                                     "danish", "irish", "corsica", "afghan", "australian", "russian", "polynesian",
-                                     "world", "kosher", "vegetarian", "tuscan", "scandinavian", "basque", "german",
-                                     "persian", "eritrean", "austrian", "singaporean", "swiss", "scottish", "bistro",
-                                     "welsh", "brazilian", "fusion", "steak", "pub", "halal", "gastro", "belgian",
-                                     "steakhouse"]
+        #We will need a special set of words for this set
+        inform_food_type_keywords = ["thai", "chinese", "gastropub", "cuban", "seafood", "canapes", "indian", "african", "catalan", "turkish", "venetian", "porguguese", "oriental", "hungarian", "mediterranean", "creative", "asian", "traditional", "unusual", "malaysian", "jamaican", "french", "italian", "european", "american", "persian", "moroccan", "british", "korean", "romanian", "polish", "japanese", "english", "christmas", "barbecue", "cantonese", "spanish", "lebanese", "swedish", "mexican", "caribbean", "danish", "irish", "corsica", "afghan", "australian", "russian", "polynesian", "world", "kosher", "vegetarian", "tuscan", "scandinavian", "basque", "german", "persian", "eritrean", "austrian", "singaporean", "swiss", "scottish", "bistro", "welsh", "brazilian", "fusion", "steak", "pub", "halal", "gastro", "belgian", "steakhouse"]
         inform_price_range_keywords = ["cheap", "moderately", "moderate", "priced", "expensive"]
         inform_area_keywords = ["south", "north", "east", "west", "center", "anywhere"]
-
-        inform_keywords = ["any", "kind", "food", "restaurant", "town", "part", "looking", "for", "dont", "care",
-                           "doesnt", "matter"]
+        
+        inform_keywords = ["any", "kind", "food", "restaurant", "town", "part", "looking", "for", "dont", "care", "doesnt", "matter"] 
         inform_keywords.extend(inform_food_type_keywords)
         inform_keywords.extend(inform_price_range_keywords)
         inform_keywords.extend(inform_area_keywords)
+        
+        self.baseline_model[self.ACK_ACT] = ack_keywords
+        self.baseline_model[self.AFFIRM_ACT] = affirm_keywords
+        self.baseline_model[self.BYE_ACT] = bye_keywords
+        self.baseline_model[self.CONFIRM_ACT] = confirm_keywords
+        self.baseline_model[self.DENY_ACT] = deny_keywords
+        self.baseline_model[self.HELLO_ACT] = hello_keywords
+        self.baseline_model[self.INFORM_ACT] = inform_keywords
+        self.baseline_model[self.NEGATE_ACT] = negate_keywords
+        self.baseline_model[self.NULL_ACT] = null_keywords
+        self.baseline_model[self.REPEAT_ACT] = repeat_keywords
+        self.baseline_model[self.REQUALTS_ACT] = reqalts_keywords
+        self.baseline_model[self.REQMORE_ACT] = reqmore_keywords
+        self.baseline_model[self.REQUEST_ACT] = request_keywords
+        self.baseline_model[self.RESTART_ACT] = restart_keywords
+        self.baseline_model[self.THANKYOU_ACT] = thankyou_keywords
+    
+        return 
 
-        dialog_acts["ack_keywords"] = ack_keywords
-        dialog_acts["affirm_keywords"] = affirm_keywords
-        dialog_acts["bye_keywords"] = bye_keywords
-        dialog_acts["confirm_keywords"] = confirm_keywords
-        dialog_acts["deny_keywords"] = deny_keywords
-        dialog_acts["hello_keywords"] = hello_keywords
-        dialog_acts["inform_keywords"] = inform_keywords
-        dialog_acts["negate_keywords"] = negate_keywords
-        dialog_acts["null_keywords"] = null_keywords
-        dialog_acts["repeat_keywords"] = repeat_keywords
-        dialog_acts["reqalts_keywords"] = reqalts_keywords
-        dialog_acts["reqmore_keywords"] = reqmore_keywords
-        dialog_acts["request_keywords"] = request_keywords
-        dialog_acts["restart_keywords"] = restart_keywords
-        dialog_acts["thankyou_keywords"] = thankyou_keywords
-
+    def __keywordMatching(self, utterance, repetition = False):
+        """
+        Use the keyword matching baseline to find the dialog act of the input
+        Input:
+        model: {<str>, [<str>]} dictionary of dialog acts and keywords
+        utterance: <str> user input
+        repetition: <bool> should repetition of words be counted towards word count
+        Output: <str> dialog act identified
+        """
+    
         utterance_keywords = utterance.split(" ")
-
-        utterance_matches = {}  # TODO not really used but could be handy
+        
+        utterance_matches = {} #not really used but could be handy 
         utterance_matches_len = {}
-
+        
         if repetition == False:
-            for dialog_act in dialog_acts:
-                matches = set(dialog_acts[dialog_act]).intersection(utterance_keywords)
+            for dialog_act in self.baseline_model:
+                matches = set(self.baseline_model[dialog_act]).intersection(utterance_keywords)
                 utterance_matches[dialog_act] = matches
                 utterance_matches_len[dialog_act] = len(matches)
         else:
-            for dialog_act in dialog_acts:
+            for dialog_act in self.baseline_model:
                 matches = 0
-                for keyword in dialog_acts[dialog_act]:
+                for keyword in self.baseline_model[dialog_act]:
                     matches = matches + utterance_keywords.count(keyword)
-                utterance_matches[dialog_act] = set(dialog_acts[dialog_act]).intersection(utterance_keywords)
+                utterance_matches[dialog_act] = set(self.baseline_model[dialog_act]).intersection(utterance_keywords)
                 utterance_matches_len[dialog_act] = matches
         max_matches = max(utterance_matches_len.values())
-        dialog_matches = [k for k, v in utterance_matches_len.items() if v == max_matches]
-
-        return dialog_matches[0][:dialog_matches[0].index('_')]
+        dialog_matches = [ k for k, v in utterance_matches_len.items() if v == max_matches]
+        
+        if len(dialog_matches) == len(self.baseline_model):
+            act = "null"
+        else:
+            act = dialog_matches[0][:dialog_matches[0].index('_')]
+        
+        return act
 
 ##############
 #### MAIN ####
@@ -995,6 +1031,7 @@ class Dialog:
 if __name__ == "__main__":
 
     # Configuration bullets
+    # TODO might need some local adjustments
     config = {"modelFile": './dcnn_model.h5',
               "trainFileName": './dialogs.txt',
               "ontologyFile": './ontology_dstc2.json',

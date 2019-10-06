@@ -2,14 +2,10 @@ import numpy
 
 def utter(fileNames):
     """
-    User types in random sentences, and the system will predict the user's act, a.k.a. intent.
-
-    The prediction is based on the act distribution from the training and test files.
-
-    :param fileNames:
-    :return:
+    Predict the user dialog act using a distribution baseline
+    Input:
+    fileNames: [<str>] files containing dialog label data
     """
-
     model = __initModel(fileNames)
 
     print("Please enter your sentence...")
@@ -22,20 +18,17 @@ def utter(fileNames):
     except KeyboardInterrupt:
         pass
 
-
 def __initModel(fileNames):
     """
-    Initialise the model based on the act distribution from the training and test files.
-
-    :param fileNames:
-    :return:
+    Initialise the model based on the act distribution from the input files
+    Input: 
+    fileNames: [<str>] files containing dialog label data
+    Output: model fit for classifying utterances
     """
-
     lines = []
     for fileName in fileNames:
         with open(fileName) as f:
             lines = lines + f.readlines()
-
     model = {
         'ack': 0,
         'affirm': 0,
@@ -53,29 +46,23 @@ def __initModel(fileNames):
         'restart': 0,
         'thankyou': 0
     }
-
     sum = 0
     for line in lines:
         try:
             act = line[:line.index(" ")]
-
             try:
                 model[act] = model[act] + 1
                 sum = sum + 1
             except KeyError:
                 pass
-
         except ValueError:
             pass
-
     for key in model.keys():
         model[key] = model[key] / sum
-
     return model
 
-
 if __name__ == "__main__":
-
+    # TODO might need some local adjustment
     fileNames = ['../dataset-txt/label_train_dialogs.txt',
                 '../dataset-txt/label_test_dialogs.txt']
     utter(fileNames)
