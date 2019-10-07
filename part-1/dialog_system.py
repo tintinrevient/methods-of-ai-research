@@ -717,9 +717,8 @@ class Dialog:
 
         # Next is a special case
         if current_act == constants.REQALTS_ACT and next_dialog_state == constants.INFORM_NO_MATCHES_STATE and not self.updates:
-            next_system_utterance = "There are no more %s restaurants in the %s price range in the %s of the city. Resetting preferences. Please enter new ones." % (
+            next_system_utterance = "There are no more %s restaurants in the %s price range in the %s of the city. Please change your preferences." % (
                 self.preferences[constants.FOOD], self.preferences[constants.PRICERANGE], self.preferences[constants.AREA])
-            self._reset_preferences()
 
         return next_dialog_state, next_system_utterance
 
@@ -732,7 +731,7 @@ class Dialog:
         Output: <str> dialog act identified
         """
         if (self.baseline):
-            act = keywords.keyword_matching(utterance)
+            act = keywords.keyword_matching(self.baseline_model, utterance)
             return act
         else:
             act = self.model.predict(np.array(self.tokenizer.texts_to_matrix([utterance], mode='count')))
@@ -886,7 +885,7 @@ if __name__ == "__main__":
 
     config = {'levenshtein_edit_distance': 0,
               'lowercase': True,
-              'baseline': False,
+              'baseline': True,
               'output_all_caps': False,
               'all_preferences_recognized': False}
 
