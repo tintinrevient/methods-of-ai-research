@@ -888,7 +888,7 @@ if __name__ == "__main__":
               'lowercase': True,
               'baseline': False,
               'output_all_caps': False,
-              'all_preferences_recognized': True}
+              'all_preferences_recognized': False}
 
     dialogs = Dialog(config)
     dialogs.init_dialog()
