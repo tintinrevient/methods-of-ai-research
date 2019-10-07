@@ -72,9 +72,9 @@ class Dialog:
         r"[I|i] want a restaurant that serves ([\w+\s]+)[food]?",
         r"[I|i] want a restaurant serving ([\w+\s]+)[food]?",
         r"[I|i]'m looking for a restaurant in the (\w+)",
-        r"[I|i] would like a[n]? ([\w+\s]+)restaurant in the (\w+) [part]? of town",
+        r"[I|i] would like an? ([\w+\s]+)restaurant in the (\w+) (part)? of town",
         r"[I|i]'m looking for a[n]? (\w+) [priced]? restaurant in the (\w+) [part]? of town",
-        r"[I|i]'m looking for a restaurant in (\w)+ [area|part]? that serves ([\w+\s]+)[food]?",
+        r"[I|i]'m looking for a restaurant in (\w)+ (area|part)? that serves ([\w+\s]+)[food]?",
         r"[C|c]an [I|i] have a[n]? ([\w+\s]+)restaurant",
         r"[I|i]'m looking for a[n]? ([\w+\s]+)restaurant and it should serve ([\w+\s]+)food",
         r"[I|i] need a[n]? ([\w+\s]+)restaurant that is (\w+) priced",
@@ -787,7 +787,8 @@ class Dialog:
         Input:
         utterance: <str> current user utterance classified as inform
         Output: dictionary with <preference,value> pairs for g_preferences
-        """
+        """        
+        
         food_list = self.g_ontology[self.INFORMABLE][self.FOOD]
         pricerange_list = self.g_ontology[self.INFORMABLE][self.PRICERANGE]
         area_list = self.g_ontology[self.INFORMABLE][self.AREA]
@@ -815,10 +816,23 @@ class Dialog:
                     p_match[elem] = tmp_score
             return p_match
 
-        for word in words:
-            food_match = extract_preference_info(word, food_list, threshold, food_match)
-            pricerange_match = extract_preference_info(word, pricerange_list, threshold, pricerange_match)
-            area_match = extract_preference_info(word, area_list, threshold, area_match)
+        for pattern in self.PATTERNS_INFORM_COMPILED:
+            search = pattern.search(utterance)
+            if search == None:
+                continue
+            for group in search.groups():
+                words = group.split(" ")
+                for word in words:
+                    food_match = extract_preference_info(word, food_list, threshold, food_match)
+                    pricerange_match = extract_preference_info(word, pricerange_list, threshold, pricerange_match)
+                    area_match = extract_preference_info(word, area_list, threshold, area_match)
+
+        # If no pattern matched, we try looking for every word
+        if not (len(food_match) + len(pricerange_match) + len(area_match)):
+            for word in words:
+                food_match = extract_preference_info(word, food_list, threshold, food_match)
+                pricerange_match = extract_preference_info(word, pricerange_list, threshold, pricerange_match)
+                area_match = extract_preference_info(word, area_list, threshold, area_match)
 
         food_match = sorted(food_match.items(), key=operator.itemgetter(1))
         pricerange_match = sorted(pricerange_match.items(), key=operator.itemgetter(1))
