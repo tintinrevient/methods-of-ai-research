@@ -599,7 +599,7 @@ class Dialog:
 
             counter = 0
             for preference_key in preference_keys:
-                if self.preferences[preference_key] in row:
+                if self.preferences[preference_key][0] in row:
                     counter += 1
 
             if counter == goal:
