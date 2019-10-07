@@ -511,13 +511,13 @@ class Dialog:
             if self._check_description_elements(d, constants.FOOD):
                 description.append(self.selected_restaurant[3])
                 descriptionname.append(constants.FOOD)
-            if self._check_description_elements(d, constants.PHONENUMBER):
+            if self._check_details_elements(d, constants.PHONENUMBER):
                 description.append(self.selected_restaurant[4])
                 descriptionname.append(constants.PHONENUMBER)
-            if self._check_description_elements(d, constants.ADDRESS):
+            if self._check_details_elements(d, constants.ADDRESS):
                 description.append(self.selected_restaurant[5])
                 descriptionname.append(constants.ADDRESS)
-            if self._check_description_elements(d, constants.POSTCODE):
+            if self._check_details_elements(d, constants.POSTCODE):
                 description.append(self.selected_restaurant[6])
                 descriptionname.append(constants.POSTCODE)
         requests = len(description)
