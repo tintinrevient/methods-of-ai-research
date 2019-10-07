@@ -73,17 +73,17 @@ class Dialog:
         r"[I|i] want a restaurant serving ([\w+\s]+)[food]?",
         r"[I|i]'m looking for a restaurant in the (\w+)",
         r"[I|i] would like an? ([\w+\s]+)restaurant in the (\w+) (part)? of town",
-        r"[I|i]'m looking for a[n]? (\w+) [priced]? restaurant in the (\w+) [part]? of town",
-        r"[I|i]'m looking for a restaurant in (\w)+ (area|part)? that serves ([\w+\s]+)[food]?",
-        r"[C|c]an [I|i] have a[n]? ([\w+\s]+)restaurant",
+        r"[I|i]'m looking for an? (\w+) (priced)? restaurant in the (\w+) (part)? of town",
+        r"[I|i]'m looking for a restaurant in (\w)+ (area|part)? that serves ([\w+\s]+)(food)?",
+        r"[C|c]an [I|i] have an? ([\w+\s]+)restaurant",
         r"[I|i]'m looking for a[n]? ([\w+\s]+)restaurant and it should serve ([\w+\s]+)food",
-        r"[I|i] need a[n]? ([\w+\s]+)restaurant that is (\w+) priced",
-        r"[I|i]'m looking for a[n]? (\w+) priced restaurant with (\w+) food",
-        r"[W|w]hat is a[n]? ([\w+\s]+)restaurant in the (\w+) [part|area] of town",
+        r"[I|i] need an? ([\w+\s]+)restaurant that is (\w+) priced",
+        r"[I|i]'m looking for an? (\w+) priced restaurant with (\w+) food",
+        r"[W|w]hat is an? ([\w+\s]+)restaurant in the (\w+) (part|area) of town",
         r"[W|w]hat about (\w+) food",
-        r"[I|i] wanna find a[n]? (\w+) restaurant",
+        r"[I|i] wanna find an? (\w+) restaurant",
         r"[I|i]'m looking for ([\w+\s]+)food please",
-        r"[F|f]ind a[n]? ([\w+\s]+)restaurant in the (\w+)"
+        r"[F|f]ind an? ([\w+\s]+)restaurant in the (\w+)"
     ]
     # Compilations of the patterns above
     PATTERNS_INFORM_COMPILED = []
@@ -823,6 +823,7 @@ class Dialog:
             for group in search.groups():
                 words = group.split(" ")
                 for word in words:
+                    word = word.strip()
                     food_match = extract_preference_info(word, food_list, threshold, food_match)
                     pricerange_match = extract_preference_info(word, pricerange_list, threshold, pricerange_match)
                     area_match = extract_preference_info(word, area_list, threshold, area_match)
