@@ -1,3 +1,7 @@
+"""
+A Python program that reads the source data and displays the dialogs one by one in human-readable format
+"""
+
 import os, json, yaml
 
 def display_dialogs():

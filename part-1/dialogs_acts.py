@@ -1,3 +1,7 @@
+"""
+Python code to produce a text file with one utterance per line in the format dialog_act utterance_content
+"""
+
 import os, json, random, yaml
 
 def produce_act_dialogs():

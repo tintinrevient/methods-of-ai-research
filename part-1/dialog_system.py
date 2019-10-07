@@ -1,3 +1,7 @@
+"""
+A working dialog system interface implementing a state transition function with the dialog model configurability
+"""
+
 import Levenshtein
 import json, csv, yaml, random, operator, re
 import numpy as np
@@ -889,7 +893,7 @@ if __name__ == "__main__":
               'lowercase': True,
               'baseline': True,
               'output_all_caps': False,
-              'all_preferences_recognized': False}
+              'all_preferences_recognized': True}
 
     dialogs = Dialog(config)
     dialogs.init_dialog()

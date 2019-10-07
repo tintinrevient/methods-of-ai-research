@@ -1,3 +1,7 @@
+"""
+Python code that implements a dialog act distribution baseline
+"""
+
 import numpy, yaml
 
 def utter():

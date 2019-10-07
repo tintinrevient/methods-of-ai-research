@@ -1,3 +1,7 @@
+"""
+Python code that implements a keyword matching baseline
+"""
+
 def utter():
     """
     Predict the user dialog act using a keyword matching baseline
