@@ -7,14 +7,35 @@ def utter():
 
     model = __initModel()
 
-    print("Please enter your sentence...")
+    feedback = {
+        "count": 0,
+        "yes": 0,
+        "no": 0
+    }
 
     try:
         while True:
+            print("Please enter your sentence...")
+
             utterance = input()
             print(numpy.random.choice(list(model.keys()), 1, p=list(model.values()))[0])
 
+            print("Is the predicted act correct? Please enter 'yes' or 'no':")
+
+            answer = input()
+
+            if answer == "yes":
+                feedback["yes"] += 1
+            elif answer == "no":
+                feedback["no"] += 1
+
+            feedback["count"] += 1
+
     except KeyboardInterrupt:
+
+        error_rate = feedback["yes"] / feedback["count"]
+        print("Thanks for your feedback and the error rate is {:4.2f} %".format(error_rate*100))
+
         pass
 
 def __initModel():
