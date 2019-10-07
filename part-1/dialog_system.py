@@ -233,7 +233,9 @@ class Dialog:
         else:
             # Check constraints
             # CONFIGURATION POINT
-            if len([i for i in list(self.preferences.values()) if len(i) < 1]) > 0:
+            if len([i for i in list(self.preferences.values()) if len(i) > 0]) < 1:
+                next_state = constants.REQUEST_MISSING_PREFERENCES_STATE
+            elif self.all_preferences_recognized and len([i for i in list(self.preferences.values()) if len(i) > 0]) < 3:
                 next_state = constants.REQUEST_MISSING_PREFERENCES_STATE
             else:
                 # Perform the lookup of restaurants in the db
