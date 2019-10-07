@@ -1,5 +1,10 @@
 path:
   dataset: "data/dataset"
   label_dialogs:
-    - "data/label_test_dialogs.txt"
-    - "data/label_train_dialogs.txt"
+    train: "data/label_train_dialogs.txt"
+    test: "data/label_test_dialogs.txt"
+  model: "data/model.h5"
+
+max_words: 1000
+batch_size: 32
+epochs: 10

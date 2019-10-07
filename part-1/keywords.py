@@ -3,7 +3,7 @@ def utter():
     Predict the user dialog act using a keyword matching baseline
     """
 
-    model = __initModel()
+    model = init_model()
 
     feedback = {
         "count": 0,
@@ -16,7 +16,7 @@ def utter():
             print("Please enter your sentence...")
 
             utterance = input()
-            print(__keywordMatching(model, utterance))
+            print(keyword_matching(model, utterance))
 
             print("Is the predicted act correct? Please enter 'yes' or 'no':")
 
@@ -36,7 +36,8 @@ def utter():
 
         pass
 
-def __initModel():
+
+def init_model():
     """
     Initialize the keyword matching baseline model
     """
@@ -91,7 +92,8 @@ def __initModel():
     
     return dialog_acts
 
-def __keywordMatching(model, utterance, repetition = False):
+
+def keyword_matching(model, utterance, repetition = False):
     """
     Use the keyword matching baseline to find the dialog act of the input
     Input:

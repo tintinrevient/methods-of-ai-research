@@ -5,7 +5,7 @@ def utter():
     Predict the user dialog act using a distribution baseline
     """
 
-    model = __initModel()
+    model = init_model()
 
     feedback = {
         "count": 0,
@@ -38,17 +38,18 @@ def utter():
 
         pass
 
-def __initModel():
+
+def init_model():
     """
     Initialise the model based on the act distribution from the input files
     """
 
     with open("config.yml", 'r') as file:
-        config = yaml.load(file)
+        config = yaml.load(file, Loader=yaml.BaseLoader)
 
     lines = []
 
-    for file in config["path"]["label_dialogs"]:
+    for file in [config["path"]["label_dialogs"]["train"], config["path"]["label_dialogs"]["test"]]:
         with open(file) as f:
             lines = lines + f.readlines()
 
@@ -87,6 +88,7 @@ def __initModel():
         model[key] = model[key] / sum
 
     return model
+
 
 if __name__ == "__main__":
 

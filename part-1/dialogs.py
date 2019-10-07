@@ -7,7 +7,7 @@ def display_dialogs():
     Use <KeyboardInterrupt> (Ctr+C) to escape
     """
 
-    logs, labels = __load()
+    logs, labels = load()
 
     try: 
         for i in range(len(logs)):
@@ -21,12 +21,13 @@ def display_dialogs():
     except KeyboardInterrupt:
         pass
 
+
 def save_dialogs(filename):
     """
     Read the source data and write all dialogs in human readable format to a file
     """
-    
-    logs, labels = __load()
+
+    logs, labels = load()
 
     f = open(filename, "w+")
 
@@ -39,10 +40,11 @@ def save_dialogs(filename):
         f.write("\n")
     f.close()
 
-def __load():
+
+def load():
 
     with open("config.yml", 'r') as file:
-        config = yaml.load(file)
+        config = yaml.load(file, Loader=yaml.BaseLoader)
 
     logs = []
     labels = []
@@ -55,6 +57,7 @@ def __load():
                 labels.append(os.path.join(r, file))
 
     return logs, labels
+
 
 if __name__ == "__main__":
 
