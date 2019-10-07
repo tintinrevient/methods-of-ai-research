@@ -36,7 +36,9 @@ def utter():
 def train_model():
     """
     This method can train the model based on the train file, and validate its accuracy by the test file.
+
     The model will be dumped to a model file, which can be imported and used during the utter() method.
+
     One-hot encoding is used for the word encoding.
     """
 

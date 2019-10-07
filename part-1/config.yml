@@ -4,6 +4,8 @@ path:
     train: "data/label_train_dialogs.txt"
     test: "data/label_test_dialogs.txt"
   model: "data/model.h5"
+  ontology: "data/ontology_dstc2.json"
+  restaurant_info_file: "data/restaurantinfo.csv"
 
 max_words: 1000
 batch_size: 32

@@ -3,7 +3,9 @@ import os, json, yaml
 def display_dialogs():
     """
     Read the source data and display the dialogs one by one in human-readable format.
+
     Use the Enter key to proceed to the next dialog.
+
     Use <KeyboardInterrupt> (Ctr+C) to escape
     """
 

@@ -4,7 +4,8 @@ from keras.models import load_model
 from Levenshtein import distance
 import numpy as np
 import json, csv, operator, random, re
-
+import classifier
+import keywords
 
 class Dialog:
     ############################
@@ -92,7 +93,7 @@ class Dialog:
     def __init__(self, config):
         # Load configuration
         self.g_model = load_model(config["modelFile"])
-        self.g_tokenizer, self.g_encoder = self.loadTokenizerAndEncoder(config["trainFileName"])
+        self.g_tokenizer, self.g_encoder = classifier.load_tokenizer_and_encoder(config["trainFileName"])
         self.g_ontology = json.loads(open(config["ontologyFile"]).read())
         self.restaurantInfoFile = config['restaurantInfoFile']
         self.levenshteinEditDistance = config["levenshteinEditDistance"]
@@ -692,7 +693,7 @@ class Dialog:
         next_state = ""
         next_system_utterance = ""
         if self.baseline:
-            self.baseline_model = self.__initModel()
+            self.baseline_model = keywords.init_model()
 
         # 2. Initialize dialog
         current_state = self.WELCOME_STATE  # Initial dialog state
@@ -760,7 +761,7 @@ class Dialog:
         Output: <str> dialog act identified
         """
         if (self.baseline):
-            act = self.keywordMatching(utterance)
+            act = keywords.keyword_matching(utterance)
             return act
         else:
             act = self.g_model.predict(np.array(self.g_tokenizer.texts_to_matrix([utterance], mode='count')))
@@ -890,144 +891,8 @@ class Dialog:
     #######################################
     #### USER ACT IDENTIFICATION NEEDS ####
     #######################################
-    def prepareDataSet(self, fileName):
-        """
-        Prepare the dataset found in fileName.
-        File initially contains lines with "act utterance" distribution
-        This will split the acts and utterances on two separate lists but 
-        matching the indexes so labels[i] is the label for utterances[i]
-        Input: 
-        fileName: <str> path to file containing the dialog data
-        Output: 
-        labels: <[str]> list of labels
-        utterances: <[str]> list of utterances
-        """
-        labels = []
-        utterances = []
-        with open(fileName) as f:
-            lines = f.readlines()
-        for line in lines:
-            try:
-                act = line[:line.index(" ")]
-                utterance = line[line.index(" "):line.index("\n")]
-                try:
-                    labels.append(act.strip())
-                    utterances.append(utterance.strip())
-                except KeyError:
-                    pass
-            except ValueError:
-                pass
-        return labels, utterances
-    
-    def loadTokenizerAndEncoder(self, fileName):
-        """
-        Load the tokenizer and train it on the fileName data
-        Input: 
-        fileName: <str> path to file containing dialog data
-        Output: 
-        tokenizer: tool that allows to vectorize a text corpus, by turning each text into a vector 
-                   where the coefficient for each token is based on word count (in our case)
-        encoder: tool that encodes labels with value between 0 and n_classes-1. 
-        """
-        labels, utterances = self.prepareDataSet(fileName)
 
-        tokenizer = Tokenizer(num_words=self.MAX_WORDS)
-        tokenizer.fit_on_texts(utterances)
 
-        encoder = LabelEncoder()
-        encoder.fit(labels)
-
-        return tokenizer, encoder
-    
-    def __initModel(self):
-        """
-        Initialize the keyword matching baseline model
-        """
-        self.baseline_model = {}
-        # Dialog acts keywords arrays
-        ack_keywords = ["okay", "kay", "well", "great", "fine", "good", "thatll", "do"]
-        affirm_keywords = ["yea", "yes", "correct", "right", "ye", "perfect", "yeah"]
-        bye_keywords = ["goodbye", "bye"]
-        confirm_keywords = ["is", "are", "they", "does", "do"] # always a question about the service (does it, do they, is it, are they). We omit 'it' for reasons
-        deny_keywords = ["dont", "wrong", "no", "not", "change"]
-        hello_keywords = ["hello", "hi", "halo"]
-        negate_keywords = ["no"]
-        null_keywords = [] # default to anything else
-        repeat_keywords = ["repeat", "back", "again"]
-        reqalts_keywords = ["another", "about", "else"]
-        reqmore_keywords = ["more"]
-        restart_keywords = ["start", "over", "reset", "restart"]
-        thankyou_keywords = ["thanks", "thank"]
-        # May be a question requesting (can i, may i, what is...)
-        request_keywords = [] 
-        request_details_keywords = ["much", "phone", "number", "postcode", "post", "code", "address", "type", "kind", "price", "range", "area", "telephone"]
-        request_question_keywords = ["how", "whats", "what", "can", "may", "could", "need"]
-        request_keywords.extend(request_details_keywords)
-        request_keywords.extend(request_question_keywords)
-        #We will need a special set of words for this set
-        inform_food_type_keywords = ["thai", "chinese", "gastropub", "cuban", "seafood", "canapes", "indian", "african", "catalan", "turkish", "venetian", "porguguese", "oriental", "hungarian", "mediterranean", "creative", "asian", "traditional", "unusual", "malaysian", "jamaican", "french", "italian", "european", "american", "persian", "moroccan", "british", "korean", "romanian", "polish", "japanese", "english", "christmas", "barbecue", "cantonese", "spanish", "lebanese", "swedish", "mexican", "caribbean", "danish", "irish", "corsica", "afghan", "australian", "russian", "polynesian", "world", "kosher", "vegetarian", "tuscan", "scandinavian", "basque", "german", "persian", "eritrean", "austrian", "singaporean", "swiss", "scottish", "bistro", "welsh", "brazilian", "fusion", "steak", "pub", "halal", "gastro", "belgian", "steakhouse"]
-        inform_price_range_keywords = ["cheap", "moderately", "moderate", "priced", "expensive"]
-        inform_area_keywords = ["south", "north", "east", "west", "center", "anywhere"]
-        
-        inform_keywords = ["any", "kind", "food", "restaurant", "town", "part", "looking", "for", "dont", "care", "doesnt", "matter"] 
-        inform_keywords.extend(inform_food_type_keywords)
-        inform_keywords.extend(inform_price_range_keywords)
-        inform_keywords.extend(inform_area_keywords)
-        
-        self.baseline_model[self.ACK_ACT] = ack_keywords
-        self.baseline_model[self.AFFIRM_ACT] = affirm_keywords
-        self.baseline_model[self.BYE_ACT] = bye_keywords
-        self.baseline_model[self.CONFIRM_ACT] = confirm_keywords
-        self.baseline_model[self.DENY_ACT] = deny_keywords
-        self.baseline_model[self.HELLO_ACT] = hello_keywords
-        self.baseline_model[self.INFORM_ACT] = inform_keywords
-        self.baseline_model[self.NEGATE_ACT] = negate_keywords
-        self.baseline_model[self.NULL_ACT] = null_keywords
-        self.baseline_model[self.REPEAT_ACT] = repeat_keywords
-        self.baseline_model[self.REQUALTS_ACT] = reqalts_keywords
-        self.baseline_model[self.REQMORE_ACT] = reqmore_keywords
-        self.baseline_model[self.REQUEST_ACT] = request_keywords
-        self.baseline_model[self.RESTART_ACT] = restart_keywords
-        self.baseline_model[self.THANKYOU_ACT] = thankyou_keywords
-    
-        return 
-
-    def __keywordMatching(self, utterance, repetition = False):
-        """
-        Use the keyword matching baseline to find the dialog act of the input
-        Input:
-        model: {<str>, [<str>]} dictionary of dialog acts and keywords
-        utterance: <str> user input
-        repetition: <bool> should repetition of words be counted towards word count
-        Output: <str> dialog act identified
-        """
-    
-        utterance_keywords = utterance.split(" ")
-        
-        utterance_matches = {} #not really used but could be handy 
-        utterance_matches_len = {}
-        
-        if repetition == False:
-            for dialog_act in self.baseline_model:
-                matches = set(self.baseline_model[dialog_act]).intersection(utterance_keywords)
-                utterance_matches[dialog_act] = matches
-                utterance_matches_len[dialog_act] = len(matches)
-        else:
-            for dialog_act in self.baseline_model:
-                matches = 0
-                for keyword in self.baseline_model[dialog_act]:
-                    matches = matches + utterance_keywords.count(keyword)
-                utterance_matches[dialog_act] = set(self.baseline_model[dialog_act]).intersection(utterance_keywords)
-                utterance_matches_len[dialog_act] = matches
-        max_matches = max(utterance_matches_len.values())
-        dialog_matches = [ k for k, v in utterance_matches_len.items() if v == max_matches]
-        
-        if len(dialog_matches) == len(self.baseline_model):
-            act = "null"
-        else:
-            act = dialog_matches[0][:dialog_matches[0].index('_')]
-        
-        return act
 
 ##############
 #### MAIN ####
@@ -1036,14 +901,14 @@ if __name__ == "__main__":
 
     # Configuration bullets
     # TODO might need some local adjustments
-    config = {"modelFile": './dcnn_model.h5',
-              "trainFileName": './dialogs.txt',
-              "ontologyFile": './ontology_dstc2.json',
-              "restaurantInfoFile": './restaurantinfo.csv',
+    config = {"modelFile": './data/model.h5',
+              "trainFileName": './data/label_train_dialogs.txt',
+              "ontologyFile": './data/ontology_dstc2.json',
+              "restaurantInfoFile": './data/restaurantinfo.csv',
               'levenshteinEditDistance': 0,
               'lowerCase': True,
               'baseline': False,
-              'outputAllCaps': True}
+              'outputAllCaps': False}
 
 
     dialog = Dialog(config)
