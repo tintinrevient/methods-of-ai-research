@@ -1,0 +1,5 @@
+path:
+  dataset: "data/dataset"
+  label_dialogs:
+    - "data/label_test_dialogs.txt"
+    - "data/label_train_dialogs.txt"
