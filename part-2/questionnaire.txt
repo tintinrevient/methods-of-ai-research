@@ -1,0 +1,31 @@
+Friendliness == human-like polite communication
+
+
+Personal annonymous information:
+Gender: 
+Age: 
+Nationality: 
+
+Rate (1-7)
+annoying 		O O O O O O O 		enjoyable
+not understandable 	O O O O O O O 		understandable 2
+creative 		O O O O O O O 		dull
+valuable 		O O O O O O O 		inferior
+boring 			O O O O O O O 		exciting
+not interesting 	O O O O O O O 		interesting
+unpredictable 		O O O O O O O 		predictable
+fast 			O O O O O O O 		slow
+inventive 		O O O O O O O 		conventional
+obstructive 		O O O O O O O 		supportive 
+good 			O O O O O O O 		bad 
+complicated 		O O O O O O O 		easy
+unlikable 		O O O O O O O 		pleasing
+unpleasant 		O O O O O O O 		pleasant
+secure 			O O O O O O O 		not secure
+meets expectations 	O O O O O O O 		does not meet expectations 
+inefficient 		O O O O O O O 		efficient
+clear 			O O O O O O O 		confusing
+impractical 		O O O O O O O 		practical 
+organized 		O O O O O O O 		cluttered 
+attractive 		O O O O O O O 		unattractive 
+friendly 		O O O O O O O 		unfriendly
