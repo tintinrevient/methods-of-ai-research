@@ -62,7 +62,7 @@
 
 * **Precision recall curve**
 <p float="left">
-	<img src="./pix/precision-recall-curve-1.png" width="200" />
+	<img src="./pix/precision-recall-curve-1.png" width="250" />
 	<img src="./pix/precision-recall-curve-2.png" width="300" />
 	<img src="./pix/precision-recall-curve-3.png" width="300" />
 </p>
@@ -94,4 +94,9 @@
 
 
 ### Reference
-* 
+* https://www.kaggle.com/
+* https://scikit-learn.org/stable/
+* http://image-net.org/explore
+* https://archive.ics.uci.edu/ml/index.php
+* http://www.deeplearningbook.org
+* https://web.stanford.edu/~hastie/ElemStatLearn/
