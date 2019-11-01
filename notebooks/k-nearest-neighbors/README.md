@@ -73,8 +73,8 @@ This is **memory-based/instance-based learning**.
 
 **1-nearest neighbors**
 <p float="left">
-	<img src="./pix/1-nearest-neighbors-1.png" width="400">
 	<img src="./pix/1-nearest-neighbors-2.png" width="400">
+	<img src="./pix/1-nearest-neighbors-1.png" width="400">
 </p>
 
 ![1-nearest-neighbors-3](./pix/1-nearest-neighbors-3.png)
