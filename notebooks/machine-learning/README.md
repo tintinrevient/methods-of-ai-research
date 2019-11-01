@@ -27,14 +27,14 @@
 	* Time-consuming
 	* High maintenance cost
 	* Difficult for tasks, e.g. Author identification of texts. 
-		* NOT about **specific words**, about the (relative) **frequencies of words** and **grammatical constructions**.
+		* NOT about **specific words**, but about the (relative) **frequencies of words** and **grammatical constructions**.
 
 * **Machine learning model**
 	* **Features**: characteristics of the instances that the model uses for predictions.
 	* **Setting**
 		* **X**: input space, e.g. features and dimension of the features: x<sup>(i)</sup> ∈ R<sup>2</sup>
 		* **Y**: output space, e.g. targets and dimension of the targets: y<sup>(i)</sup> ∈ {0, 1}
-		* **H = {f|f: X -> Y}**: set of hypotheses = the set of all possible classifiers we consider
+		* **H = {f|f: X -> Y}**: set of hypotheses = set of all possible classifiers we consider
 	* **Learning**
 		* **Input: < x<sup>(i)</sup>, y<sup>(i)</sup> >**: training examples
 		* **Learning algorithm**: defines a data-driven search over the hypothesis space
@@ -63,8 +63,8 @@
 * **Precision recall curve**
 <p float="left">
 	<img src="./pix/precision-recall-curve-1.png" width="200" />
-	<img src="./pix/precision-recall-curve-2.png" width="200" />
-	<img src="./pix/precision-recall-curve-3.png" width="200" />
+	<img src="./pix/precision-recall-curve-2.png" width="300" />
+	<img src="./pix/precision-recall-curve-3.png" width="300" />
 </p>
 
 * **F-measure**
