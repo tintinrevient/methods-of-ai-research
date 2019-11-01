@@ -99,4 +99,4 @@ This is **memory-based/instance-based learning**.
 * https://spacy.io
 * https://web.stanford.edu/~jurafsky/slp3/
 * http://www.nltk.org/
-
+* https://fasttext.cc/
