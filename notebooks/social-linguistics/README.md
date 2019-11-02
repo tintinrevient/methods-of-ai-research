@@ -34,9 +34,9 @@ Conversational structure:
 	* Proposal and Acceptance/Rejection
 
 Identify dialog acts:
-	* **Words**: Please, Would you -> request
-	* **Conversational structure**: yeah after a proposal vs yeah after an inform
-	* **Prosody**: Final rising pitch -> question
+* **Words**: Please, Would you -> request
+* **Conversational structure**: yeah after a proposal vs yeah after an inform
+* **Prosody**: Final rising pitch -> question
 
 ### Two Components
 
