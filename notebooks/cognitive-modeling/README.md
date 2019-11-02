@@ -96,8 +96,8 @@ Ideal cognitive architecture:
 
 * In what **process** are you interested?
 * What are the **steps** that are involved in this process **over time**?
-![abstraction-continuum-1](./pix/aabstraction-continuum-1.png)
-![abstraction-continuum-2](./pix/aabstraction-continuum-2.png)
+![abstraction-continuum-1](./pix/abstraction-continuum-1.png)
+![abstraction-continuum-2](./pix/abstraction-continuum-2.png)
 
 ### Reference
 
