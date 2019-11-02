@@ -4,7 +4,6 @@
 
 ![linear-regression](./pix/linear-regression-1.png)
 
-#### This is a **linear model**
 <p float="left">
 	<img src="./pix/linear-regression-2.png" width="400" />
 	<img src="./pix/linear-regression-3.png" width="400" />
