@@ -23,9 +23,9 @@ Speech act taxonomy:
 ### Dialog Act
 
 Comparison:
-	* Speech act focuses on the **intention** of the speaker.
-	* Dialogue requires **coordination** amongst speakers:
-		* Many actions in dialogue serve to manage the **interaction** itself, which are overlooked by speech act.
+* Speech act focuses on the **intention** of the speaker.
+* Dialogue requires **coordination** amongst speakers:
+	* Many actions in dialogue serve to manage the **interaction** itself, which are overlooked by speech act.
 
 Conversational structure:
 * **Adjacency pairs**: Pairing of two dialog acts
