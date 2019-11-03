@@ -24,4 +24,6 @@ a formula φ is **valid**/**satisfied** in M under valuation μ: (M, μ |= φ) i
 
 ### Syllogism
 
-![syllogism](./pix/syllogism.png)
+<p float="left">
+	<img src="./pix/syllogism.png" width="400" />
+</p>
