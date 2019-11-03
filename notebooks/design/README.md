@@ -2,7 +2,7 @@
 
 ### Automated System
 
-![automated-system](./pix/automated-system.png)
+![automated-system](./pix/automated-system.jpg)
 
 Why is designing for human-automation (and AI) interaction tricky?
 * Dynamic **Humans**
@@ -21,3 +21,9 @@ Microsoft: https://www.microsoft.com/en-us/research/project/guidelines-for-human
 
 Lee: Designing for People
 ![lee](./pix/lee.png)
+
+### Reference
+
+* https://www.sciencedirect.com/science/article/pii/S1071581919300552#fig0001
+* https://www.autofutures.tv/2019/05/22/nissan-unveil-worlds-first-next-gen-driver-assistance-system/
+* https://www.youtube.com/watch?v=jLud5XYfY_c
