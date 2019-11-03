@@ -61,6 +61,11 @@ Arguments can **attack** / **defeat** each other:
 
 ![counterarguments](./pix/counterarguments.png)
 
+**Abstract Argumentation**:
+<p float="left">
+	<img src="./pix/abstract-argumentation.png" width="500">
+</p>
+
 ### Argumentation Semantics
 
 Argumentation semantics are **dialectical**.
