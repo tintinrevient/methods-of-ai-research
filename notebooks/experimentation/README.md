@@ -46,10 +46,10 @@
 ### Terms
 
 **Manipulation**:
-* Controll **Independent variable** and **Factor**
+* Controll **Independent variable** / **Factor** / **Condition**
 * Test causal effects: **factor** X on **variable** Y
 
-**Independent variable**/**Factor**/**Condition**:
+**Independent variable** / **Factor** / **Condition**:
 * Manipulated through a **manipulation**
 * Have different **Levels**
 	* driving condition: stationary, autonomous, manual
