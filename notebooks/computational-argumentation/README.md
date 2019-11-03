@@ -54,7 +54,7 @@
 
 ### Counterarguments
 
-Arguments can **attach** / **defeat** each other:
+Arguments can **attack** / **defeat** each other:
 * **Undercutting**: Attack the inference
 * **Undermining**: Attack the premise
 * **Rebutting**: Attack the conclusion
