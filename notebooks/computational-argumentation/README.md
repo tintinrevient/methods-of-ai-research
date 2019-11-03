@@ -59,6 +59,8 @@ Arguments can **attack** / **defeat** each other:
 * **Undermining**: Attack the premise
 * **Rebutting**: Attack the conclusion
 
+![counterarguments](./pix/counterarguments.png)
+
 ### Argumentation Semantics
 
 Argumentation semantics are **dialectical**.
