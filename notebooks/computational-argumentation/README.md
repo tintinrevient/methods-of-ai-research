@@ -75,18 +75,27 @@ a set of arguments A is an **admissible extension** if:
 An **admissible extension** is a **preferred extension** if it is a **maximal admissible extension**.
 
 Preferred extensions: {A, C}
-![preferred-extension-1](./pix/preferred-extension-1.png)
+<p float="left">
+	<img src="./pix/preferred-extension-1.png" width="500">
+</p>
 
 Preferred extensions: {A}, {B}
-![preferred-extension-2](./pix/preferred-extension-2.png)
+<p float="left">
+	<img src="./pix/preferred-extension-2.png" width="500">
+</p>
 
 Preferred extensions: ∅
-![preferred-extension-3](./pix/preferred-extension-3.png)
+<p float="left">
+	<img src="./pix/preferred-extension-3.png" width="500">
+</p>
 
 Preferred extensions: {A, D}, {B, C}
-![preferred-extension-4](./pix/preferred-extension-4.png)
+<p float="left">
+	<img src="./pix/preferred-extension-4.png" width="500">
+</p>
 
 Preferred extensions: {C, D, B}, {C, D, E}
-![preferred-extension-5](./pix/preferred-extension-5.png)
-
+<p float="left">
+	<img src="./pix/preferred-extension-5.png" width="500">
+</p>
 
