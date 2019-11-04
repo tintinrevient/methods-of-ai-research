@@ -44,3 +44,13 @@ Comparison between:
 **Subsumption** between concepts is not only **decidable**, it can be decided in time **polynomial** in the length of the concept expressions.
 
 ![subsumption](./pix/subsumption.png)
+
+### Symbolic AI vs Subsymbolic AI
+
+**Symbolic AI**:
+* concerned with describing and manipulating our **knowledge** of the world via explicit symbols
+* **knowledge**, **logic**, **reasoning**
+
+**Subsymbolic AI**:
+* concerned with obtaining correct **responses** to **input stimuli** without looking inside the “black box”
+* **probability**, **network**, **learning**
