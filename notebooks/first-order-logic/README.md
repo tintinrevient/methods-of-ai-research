@@ -38,3 +38,9 @@ Comparison between:
 * **FOL**: Strong expressive power, Bad computational properties
 * **Propositional Logic**: Weak expressive power, Good computational properties
 * **DL**: Average expressive power, Average computational properties
+
+### DL is decidable
+
+**Subsumption** between concepts is not only **decidable**, it can be decided in time **polynomial** in the length of the concept expressions.
+
+![subsumption](./pix/subsumption.png)
