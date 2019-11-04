@@ -27,3 +27,14 @@ a formula φ is **valid**/**satisfied** in M under valuation μ: (M, μ |= φ) i
 <p float="left">
 	<img src="./pix/syllogism.png" width="600" />
 </p>
+
+### FOL is undecidable
+
+Tension between:
+* **Expressive power** (what can be represented)
+* **Efficiency** (good computational properties)
+
+Comparison between:
+* **FOL**: Strong expressive power, Bad computational properties
+* **Propositional Logic**: Weak expressive power, Good computational properties
+* **DL**: Average expressive power, Average computational properties
