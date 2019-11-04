@@ -13,7 +13,7 @@ a **model** M = (D, I):
 ![denotation](./pix/denotation.png)
 
 a formula φ is **valid**/**satisfied** in M under valuation μ: (M, μ |= φ) if:
-* φ = P(x<sub>1</sub>, ..., x<sub>n</sub>), and (|t<sub>1</sub>|<sub>I, μ</sub>, ..., |t<sub>n</sub>|<sub>I, μ</sub>) belongs to I(P)
+* φ = P(t<sub>1</sub>, ..., t<sub>n</sub>), and (|t<sub>1</sub>|<sub>I, μ</sub>, ..., |t<sub>n</sub>|<sub>I, μ</sub>) belongs to I(P)
 * φ = φ1 ∧ φ2, and (M, μ) |= φ1 and (M, μ) |= φ2
 * φ = φ1 ∨ φ2, and (M, μ) |= φ1 or (M, μ) |= φ2
 * φ = ¬ψ, and (M, μ) does not entail ψ
