@@ -29,7 +29,7 @@
 
 **Tasks** can often be represented as **frames**.
 
-A **frame consists of a set of **slots** to be filled with a **value** of a given **type**.
+A **frame** consists of a set of **slots** to be filled with a **value** of a given **type**.
 
 Each **slot** is associated with a **question** to the user.
 
