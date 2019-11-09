@@ -68,9 +68,6 @@ var.test(values_vector ~ case_vector, data = plot_data)
 ## t.test
 t.test(lowercase, uppercase)
 
-## wilcox
-wilcox.test(lowercase, uppercase, alternative = "greater")
-
 ## IOS
 IOS_lowercase <- data.frame()
 IOS_uppercase <- data.frame()
@@ -87,7 +84,6 @@ IOS_l_means <- colMeans(IOS_lowercase)
 IOS_u_means <- colMeans(IOS_uppercase)
 IOS_l_sums <- colSums(IOS_lowercase)
 IOS_u_sums <- colSums(IOS_uppercase)
-
 
 
 
